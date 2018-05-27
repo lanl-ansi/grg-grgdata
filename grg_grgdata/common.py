@@ -18,21 +18,10 @@ except NameError:
 
 print_err = partial(print, file=sys.stderr)
 
-# this approach fails in RTD for some reason
-# def _get_resource(*resource_path):
-#     path = os.path.join(*resource_path)
-#     package = __name__  ## Could be any module/package name.
-#     return pkg_resources.resource_string(package, path).decode("utf-8")
-
 def _get_resource(*resource_path):
-    pkg_dir = os.path.dirname(__file__) # assumes in package root
-    path = os.path.join(pkg_dir, *resource_path)
-
-    with open(path, 'r') as file:
-        file_string = file.read()
-
-    return file_string
-
+    path = os.path.join(*resource_path)
+    package = __name__  ## Could be any module/package name.
+    return pkg_resources.resource_string(package, path).decode("utf-8")
 
 grg_schema = _get_resource('schema', 'GRGv2.0_schema.json')
 grg_version = 'v.2.0'
