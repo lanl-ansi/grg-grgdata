@@ -47,7 +47,6 @@ setup(
     description='Data structures and methods for reading and writing GRG data files',
     long_description=long_description,
     include_package_data=True,
-    package_data={'grg_grgdata': ['*.json']},
-
+    package_data={'grg_grgdata': ['schema/*.json']},
     classifiers = classifiers,
 )
