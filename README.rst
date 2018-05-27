@@ -24,7 +24,7 @@ grg-grgdata
   :alt: Documentation Status
 
 
-grg-grgdata is a minimalist python package for working with Matpower data files.
+grg-grgdata is a minimalist python package for working with GRG data files.
 
 The package can be installed via::
 
