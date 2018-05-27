@@ -46,6 +46,7 @@ setup(
     test_suite='tests',
     description='Data structures and methods for reading and writing GRG data files',
     long_description=long_description,
+    include_package_data=True,
 
     classifiers = classifiers,
 )
