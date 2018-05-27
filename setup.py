@@ -40,7 +40,7 @@ setup(
     author='Carleton Coffrin',
     author_email='cjc@lanl.gov',
 
-    install_requires=['tabulate'],
+    install_requires=['tabulate', 'jsonschema'],
     setup_requires=['pytest-runner'],
     tests_require=['pytest-cov'],
     test_suite='tests',
