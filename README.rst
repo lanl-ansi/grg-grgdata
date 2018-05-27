@@ -39,6 +39,11 @@ This package is developed at Los Alamos National Laboratory and is provided unde
 Changelog
 ------------
 
+**v0.1.0**
+
+- Initial release
+
+
 **v0.0.1**
 
 - Initial test tag
