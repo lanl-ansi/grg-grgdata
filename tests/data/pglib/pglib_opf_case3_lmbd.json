@@ -1,0 +1,669 @@
+{
+  "grg_version": "v.2.0",
+  "mappings": {
+    "breakers_assignment": {
+      "switch_01/status": "on",
+      "switch_02/status": "on",
+      "switch_03/status": "on",
+      "switch_04/status": "on",
+      "switch_05/status": "on",
+      "switch_06/status": "on",
+      "switch_07/status": "on",
+      "switch_08/status": "on",
+      "switch_09/status": "on",
+      "switch_10/status": "on",
+      "switch_11/status": "on",
+      "switch_12/status": "on"
+    },
+    "starting_points": {
+      "bus_1/voltage": {
+        "angle": 0.0,
+        "magnitude": 1.0
+      },
+      "bus_2/voltage": {
+        "angle": 0.0,
+        "magnitude": 1.0
+      },
+      "bus_3/voltage": {
+        "angle": 0.0,
+        "magnitude": 1.0
+      },
+      "gen_1/output": {
+        "active": 10.0,
+        "reactive": 0.0
+      },
+      "gen_2/output": {
+        "active": 10.0,
+        "reactive": 0.0
+      },
+      "load_1/demand": {
+        "active": 1.1,
+        "reactive": 0.4
+      },
+      "load_2/demand": {
+        "active": 1.1,
+        "reactive": 0.4
+      },
+      "load_3/demand": {
+        "active": 0.95,
+        "reactive": 0.5
+      },
+      "sync_cond_1/output": {
+        "reactive": 0.0
+      }
+    }
+  },
+  "market": {
+    "costs": {
+      "gen_1": {
+        "arguments": [
+          "gen_1/output/active"
+        ],
+        "coefficients": [
+          [
+            0.0,
+            500.0,
+            1100.0
+          ]
+        ],
+        "type": "polynomial"
+      },
+      "gen_2": {
+        "arguments": [
+          "gen_2/output/active"
+        ],
+        "coefficients": [
+          [
+            0.0,
+            120.0,
+            850.0000000000001
+          ]
+        ],
+        "type": "polynomial"
+      }
+    }
+  },
+  "network": {
+    "base_mva": 100.0,
+    "components": {
+      "line_1": {
+        "id": "line_1",
+        "impedance": {
+          "reactance": 0.62,
+          "resistance": 0.065
+        },
+        "link_1": "voltage_switch_id_07",
+        "link_2": "voltage_switch_id_08",
+        "rates": 1,
+        "shunt_1": {
+          "conductance": 0.0,
+          "susceptance": 0.225
+        },
+        "shunt_2": {
+          "conductance": 0.0,
+          "susceptance": 0.225
+        },
+        "source_id": "0",
+        "subtype": "overhead",
+        "thermal_limits_1": {
+          "arguments": [
+            "duration",
+            "min",
+            "max",
+            "report"
+          ],
+          "values": [
+            [
+              "Inf",
+              0.0,
+              90.0,
+              "off"
+            ]
+          ]
+        },
+        "thermal_limits_2": {
+          "arguments": [
+            "duration",
+            "min",
+            "max",
+            "report"
+          ],
+          "values": [
+            [
+              "Inf",
+              0.0,
+              90.0,
+              "off"
+            ]
+          ]
+        },
+        "type": "ac_line"
+      },
+      "line_2": {
+        "id": "line_2",
+        "impedance": {
+          "reactance": 0.75,
+          "resistance": 0.025
+        },
+        "link_1": "voltage_switch_id_09",
+        "link_2": "voltage_switch_id_10",
+        "rates": 1,
+        "shunt_1": {
+          "conductance": 0.0,
+          "susceptance": 0.35
+        },
+        "shunt_2": {
+          "conductance": 0.0,
+          "susceptance": 0.35
+        },
+        "source_id": "1",
+        "subtype": "overhead",
+        "thermal_limits_1": {
+          "arguments": [
+            "duration",
+            "min",
+            "max",
+            "report"
+          ],
+          "values": [
+            [
+              "Inf",
+              0.0,
+              0.5,
+              "off"
+            ]
+          ]
+        },
+        "thermal_limits_2": {
+          "arguments": [
+            "duration",
+            "min",
+            "max",
+            "report"
+          ],
+          "values": [
+            [
+              "Inf",
+              0.0,
+              0.5,
+              "off"
+            ]
+          ]
+        },
+        "type": "ac_line"
+      },
+      "line_3": {
+        "id": "line_3",
+        "impedance": {
+          "reactance": 0.9,
+          "resistance": 0.042
+        },
+        "link_1": "voltage_switch_id_11",
+        "link_2": "voltage_switch_id_12",
+        "rates": 1,
+        "shunt_1": {
+          "conductance": 0.0,
+          "susceptance": 0.15
+        },
+        "shunt_2": {
+          "conductance": 0.0,
+          "susceptance": 0.15
+        },
+        "source_id": "2",
+        "subtype": "overhead",
+        "thermal_limits_1": {
+          "arguments": [
+            "duration",
+            "min",
+            "max",
+            "report"
+          ],
+          "values": [
+            [
+              "Inf",
+              0.0,
+              90.0,
+              "off"
+            ]
+          ]
+        },
+        "thermal_limits_2": {
+          "arguments": [
+            "duration",
+            "min",
+            "max",
+            "report"
+          ],
+          "values": [
+            [
+              "Inf",
+              0.0,
+              90.0,
+              "off"
+            ]
+          ]
+        },
+        "type": "ac_line"
+      },
+      "substation_1": {
+        "id": "substation_1",
+        "substation_components": {
+          "voltage_level_1": {
+            "id": "voltage_level_1",
+            "type": "voltage_level",
+            "voltage": {
+              "lower_limit": 0.9,
+              "nominal_value": 240.0,
+              "upper_limit": 1.1
+            },
+            "voltage_level_components": {
+              "bus_1": {
+                "area": 1,
+                "id": "bus_1",
+                "link": "voltage_bus_id_1",
+                "reference": true,
+                "source_id": "1",
+                "type": "bus",
+                "voltage": {
+                  "angle": {
+                    "var": {
+                      "lb": "-Inf",
+                      "ub": "Inf"
+                    }
+                  },
+                  "magnitude": {
+                    "var": {
+                      "lb": 0.9,
+                      "ub": 1.1
+                    }
+                  }
+                },
+                "zone": 1
+              },
+              "gen_1": {
+                "id": "gen_1",
+                "link": "voltage_switch_id_04",
+                "output": {
+                  "active": {
+                    "var": {
+                      "lb": 0.0,
+                      "ub": 20.0
+                    }
+                  },
+                  "reactive": {
+                    "var": {
+                      "lb": -10.0,
+                      "ub": 10.0
+                    }
+                  }
+                },
+                "source_id": "0",
+                "type": "generator",
+                "vg": 1.0
+              },
+              "load_1": {
+                "demand": {
+                  "active": 1.1,
+                  "reactive": 0.4
+                },
+                "id": "load_1",
+                "link": "voltage_switch_id_01",
+                "subtype": "withdrawal",
+                "type": "load"
+              },
+              "switch_01": {
+                "id": "switch_01",
+                "link_1": "voltage_bus_id_1",
+                "link_2": "voltage_switch_id_01",
+                "status": {
+                  "var": [
+                    "off",
+                    "on"
+                  ]
+                },
+                "subtype": "breaker",
+                "type": "switch"
+              },
+              "switch_04": {
+                "id": "switch_04",
+                "link_1": "voltage_bus_id_1",
+                "link_2": "voltage_switch_id_04",
+                "status": {
+                  "var": [
+                    "off",
+                    "on"
+                  ]
+                },
+                "subtype": "breaker",
+                "type": "switch"
+              },
+              "switch_07": {
+                "id": "switch_07",
+                "link_1": "voltage_bus_id_1",
+                "link_2": "voltage_switch_id_07",
+                "status": {
+                  "var": [
+                    "off",
+                    "on"
+                  ]
+                },
+                "subtype": "breaker",
+                "type": "switch"
+              },
+              "switch_11": {
+                "id": "switch_11",
+                "link_1": "voltage_bus_id_1",
+                "link_2": "voltage_switch_id_11",
+                "status": {
+                  "var": [
+                    "off",
+                    "on"
+                  ]
+                },
+                "subtype": "breaker",
+                "type": "switch"
+              }
+            },
+            "voltage_points": [
+              "voltage_bus_id_1",
+              "voltage_switch_id_01",
+              "voltage_switch_id_04",
+              "voltage_switch_id_07",
+              "voltage_switch_id_11"
+            ]
+          }
+        },
+        "type": "substation"
+      },
+      "substation_2": {
+        "id": "substation_2",
+        "substation_components": {
+          "voltage_level_2": {
+            "id": "voltage_level_2",
+            "type": "voltage_level",
+            "voltage": {
+              "lower_limit": 0.9,
+              "nominal_value": 240.0,
+              "upper_limit": 1.1
+            },
+            "voltage_level_components": {
+              "bus_2": {
+                "area": 1,
+                "id": "bus_2",
+                "link": "voltage_bus_id_2",
+                "source_id": "2",
+                "type": "bus",
+                "voltage": {
+                  "angle": {
+                    "var": {
+                      "lb": "-Inf",
+                      "ub": "Inf"
+                    }
+                  },
+                  "magnitude": {
+                    "var": {
+                      "lb": 0.9,
+                      "ub": 1.1
+                    }
+                  }
+                },
+                "zone": 1
+              },
+              "gen_2": {
+                "id": "gen_2",
+                "link": "voltage_switch_id_05",
+                "output": {
+                  "active": {
+                    "var": {
+                      "lb": 0.0,
+                      "ub": 20.0
+                    }
+                  },
+                  "reactive": {
+                    "var": {
+                      "lb": -10.0,
+                      "ub": 10.0
+                    }
+                  }
+                },
+                "source_id": "1",
+                "type": "generator",
+                "vg": 1.0
+              },
+              "load_2": {
+                "demand": {
+                  "active": 1.1,
+                  "reactive": 0.4
+                },
+                "id": "load_2",
+                "link": "voltage_switch_id_02",
+                "subtype": "withdrawal",
+                "type": "load"
+              },
+              "switch_02": {
+                "id": "switch_02",
+                "link_1": "voltage_bus_id_2",
+                "link_2": "voltage_switch_id_02",
+                "status": {
+                  "var": [
+                    "off",
+                    "on"
+                  ]
+                },
+                "subtype": "breaker",
+                "type": "switch"
+              },
+              "switch_05": {
+                "id": "switch_05",
+                "link_1": "voltage_bus_id_2",
+                "link_2": "voltage_switch_id_05",
+                "status": {
+                  "var": [
+                    "off",
+                    "on"
+                  ]
+                },
+                "subtype": "breaker",
+                "type": "switch"
+              },
+              "switch_10": {
+                "id": "switch_10",
+                "link_1": "voltage_bus_id_2",
+                "link_2": "voltage_switch_id_10",
+                "status": {
+                  "var": [
+                    "off",
+                    "on"
+                  ]
+                },
+                "subtype": "breaker",
+                "type": "switch"
+              },
+              "switch_12": {
+                "id": "switch_12",
+                "link_1": "voltage_bus_id_2",
+                "link_2": "voltage_switch_id_12",
+                "status": {
+                  "var": [
+                    "off",
+                    "on"
+                  ]
+                },
+                "subtype": "breaker",
+                "type": "switch"
+              }
+            },
+            "voltage_points": [
+              "voltage_bus_id_2",
+              "voltage_switch_id_02",
+              "voltage_switch_id_05",
+              "voltage_switch_id_10",
+              "voltage_switch_id_12"
+            ]
+          }
+        },
+        "type": "substation"
+      },
+      "substation_3": {
+        "id": "substation_3",
+        "substation_components": {
+          "voltage_level_3": {
+            "id": "voltage_level_3",
+            "type": "voltage_level",
+            "voltage": {
+              "lower_limit": 0.9,
+              "nominal_value": 240.0,
+              "upper_limit": 1.1
+            },
+            "voltage_level_components": {
+              "bus_3": {
+                "area": 1,
+                "id": "bus_3",
+                "link": "voltage_bus_id_3",
+                "source_id": "3",
+                "type": "bus",
+                "voltage": {
+                  "angle": {
+                    "var": {
+                      "lb": "-Inf",
+                      "ub": "Inf"
+                    }
+                  },
+                  "magnitude": {
+                    "var": {
+                      "lb": 0.9,
+                      "ub": 1.1
+                    }
+                  }
+                },
+                "zone": 1
+              },
+              "load_3": {
+                "demand": {
+                  "active": 0.95,
+                  "reactive": 0.5
+                },
+                "id": "load_3",
+                "link": "voltage_switch_id_03",
+                "subtype": "withdrawal",
+                "type": "load"
+              },
+              "switch_03": {
+                "id": "switch_03",
+                "link_1": "voltage_bus_id_3",
+                "link_2": "voltage_switch_id_03",
+                "status": {
+                  "var": [
+                    "off",
+                    "on"
+                  ]
+                },
+                "subtype": "breaker",
+                "type": "switch"
+              },
+              "switch_06": {
+                "id": "switch_06",
+                "link_1": "voltage_bus_id_3",
+                "link_2": "voltage_switch_id_06",
+                "status": {
+                  "var": [
+                    "off",
+                    "on"
+                  ]
+                },
+                "subtype": "breaker",
+                "type": "switch"
+              },
+              "switch_08": {
+                "id": "switch_08",
+                "link_1": "voltage_bus_id_3",
+                "link_2": "voltage_switch_id_08",
+                "status": {
+                  "var": [
+                    "off",
+                    "on"
+                  ]
+                },
+                "subtype": "breaker",
+                "type": "switch"
+              },
+              "switch_09": {
+                "id": "switch_09",
+                "link_1": "voltage_bus_id_3",
+                "link_2": "voltage_switch_id_09",
+                "status": {
+                  "var": [
+                    "off",
+                    "on"
+                  ]
+                },
+                "subtype": "breaker",
+                "type": "switch"
+              },
+              "sync_cond_1": {
+                "id": "sync_cond_1",
+                "link": "voltage_switch_id_06",
+                "output": {
+                  "reactive": {
+                    "var": {
+                      "lb": -10.0,
+                      "ub": 10.0
+                    }
+                  }
+                },
+                "source_id": "2",
+                "type": "synchronous_condenser",
+                "vg": 1.0
+              }
+            },
+            "voltage_points": [
+              "voltage_bus_id_3",
+              "voltage_switch_id_03",
+              "voltage_switch_id_06",
+              "voltage_switch_id_08",
+              "voltage_switch_id_09"
+            ]
+          }
+        },
+        "type": "substation"
+      }
+    },
+    "description": "Translated from Matpower data v2 by grg-mp2grg.  No model description is available in this format.",
+    "id": "pglib_opf_case3_lmbd",
+    "per_unit": true,
+    "subtype": "bus_breaker",
+    "type": "network"
+  },
+  "operation_constraints": {
+    "line_1/angle_difference": {
+      "var": {
+        "lb": -0.5235987755982988,
+        "ub": 0.5235987755982988
+      }
+    },
+    "line_2/angle_difference": {
+      "var": {
+        "lb": -0.5235987755982988,
+        "ub": 0.5235987755982988
+      }
+    },
+    "line_3/angle_difference": {
+      "var": {
+        "lb": -0.5235987755982988,
+        "ub": 0.5235987755982988
+      }
+    }
+  },
+  "units": {
+    "active_power": "mega_watt",
+    "angle": "degree",
+    "conductance": "siemens",
+    "current": "ampere",
+    "impedance": "ohm",
+    "reactance": "ohm",
+    "reactive_power": "mega_volt_ampre_reactive",
+    "resistance": "ohm",
+    "susceptance": "siemens",
+    "voltage": "kilo_volt"
+  }
+}
