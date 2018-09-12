@@ -1917,7 +1917,7 @@
         },
         "zone" : {
             "type" : "object",
-            "required" : ["type", "name", "source_id", "component_ids"],
+            "required" : ["type", "name", "component_ids"],
             "additionalProperties": true,
             "properties" :{
                 "type" : { "enum" : ["zone"]},
@@ -1932,7 +1932,7 @@
         },
         "area" : {
             "type" : "object",
-            "required" : ["type", "name", "ptol", "source_id", "component_ids"],
+            "required" : ["type", "name", "component_ids"],
             "additionalProperties": true,
             "properties" :{
                 "type" : { "enum" : ["area"]},
@@ -1948,7 +1948,7 @@
         },
         "owner" : {
             "type" : "object",
-            "required" : ["type", "name", "source_id", "component_ids"],
+            "required" : ["type", "name", "component_ids"],
             "additionalProperties": true,
             "properties" :{
                 "type" : { "enum" : ["owner"]},
