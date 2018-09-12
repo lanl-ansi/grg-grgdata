@@ -40,6 +40,10 @@ zone_name_template = u'zone_%s'
 voltage_level_name_template = u'voltage_level_%s'
 substation_name_template = u'substation_%s'
 
+area_name_template = u'area_%s'
+owner_name_template = u'owner_%s'
+zone_name_template = u'zone_%s'
+
 bus_voltage_name_template = u'voltage_bus_id_%s'
 switch_voltage_name_template = u'voltage_switch_id_%s'
 
