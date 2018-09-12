@@ -23,8 +23,8 @@ def _get_resource(*resource_path):
     package = __name__  ## Could be any module/package name.
     return pkg_resources.resource_string(package, path).decode("utf-8")
 
-grg_schema = _get_resource('schema', 'GRGv2.0_schema.json')
-grg_version = 'v.2.0'
+grg_schema = _get_resource('schema', 'GRGv4.1_schema.json')
+grg_version = 'v.4.1'
 
 bus_name_template = u'bus_%s'
 shunt_name_template = u'shunt_%s'
@@ -252,9 +252,9 @@ def remap_to_dict(arg_dict, obj_dict, arg_name, obj_name, scale=None, float_prec
 # returns the largest limit value that meets that time threshold
 def max_limit(limit_table, threshold):
 
-    for value in sorted(limit_table['values'], key=lambda x: float(x[0])):
-        if float(value[0]) >= threshold:
-            return float(value[2])
+    for value in sorted(limit_table, key=lambda x: float(x['duration'])):
+        if float(value['duration']) >= threshold:
+            return float(value['max'])
 
     return 0.0
 
@@ -337,14 +337,8 @@ def get_thermal_rates(component, time_a=float('Inf'), time_b=14400, time_c=900):
 # returns the tap values
 def tap_setting(tap_changer, position):
 
-    for step in tap_changer['steps']['values']:
-        if step[0] == position:
-            return {
-                'position': step[0],
-                'impedance': step[1],
-                'shunt': step[2],
-                'tap_ratio': step[3],
-                'angle_shift': step[4]
-            }
+    for step in tap_changer['steps']:
+        if step['position'] == position:
+            return step
 
     return None

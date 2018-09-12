@@ -54,7 +54,7 @@ def validate_grg(grg_data):
         #print(e)
         return False
 
-    valid_versions = ['v.1.6', 'v.2.0',' v.3.0', 'v.4.0']
+    valid_versions = ['v.1.6', 'v.2.0',' v.3.0', 'v.4.0', 'v.4.1']
     if all(vv != grg_data['grg_version'] for vv in valid_versions):
         print('given a file in grg version %s but only versions v.1.6, v.2.0, v.3.0, and v.4.0 are supported' % (grg_data['grg_version']))
         return False

@@ -39,6 +39,11 @@ This package is developed at Los Alamos National Laboratory and is provided unde
 Changelog
 ------------
 
+**staged**
+
+- Update to GRG v4.1
+
+
 **v0.1.1**
 
 - Fixed minor typo in readme.
