@@ -36,13 +36,11 @@ class TestFunctions:
     def test_003(self):
         setting = grg_grgdata.common.tap_setting(self.transformer['tap_changer'], 0)
 
-        assert(len(setting) == 5)
+        assert(len(setting) == 4)
         assert(setting['position'] == 0)
         assert(len(setting['impedance']) == 2)
         assert(len(setting['shunt']) == 2)
-        assert(setting['tap_ratio'] == 0.978)
-        assert(setting['angle_shift'] == 0.0)
-
+        assert(len(setting['transform']) == 2)
 
     # def test_004(self):
     #     vps = grg_grgdata.cmd.collapse_voltage_points(self.case)
