@@ -54,7 +54,7 @@ def validate_grg(grg_data):
         #print(e)
         return False
 
-    valid_versions = ['v.1.6', 'v.2.0',' v.3.0', 'v.4.0']
+    valid_versions = ['v.1.6', 'v.2.0',' v.3.0', 'v.4.0', 'v.4.1']
     if all(vv != grg_data['grg_version'] for vv in valid_versions):
         print('given a file in grg version %s but only versions v.1.6, v.2.0, v.3.0, and v.4.0 are supported' % (grg_data['grg_version']))
         return False
@@ -269,19 +269,13 @@ def validate_grg_switch(identifier, switch_data):
 
 def validate_grg_flow_limit(identifier, limit_name, comp_data):
     if limit_name in comp_data:
-        limit_data = comp_data[limit_name]
-        values = []
-        for value_data in limit_data['values']:
-            value_data = [x for x in value_data]
-            value_data[0] = float(value_data[0])
-            values.append(value_data)
-        values.sort(key=lambda x: x[0], reverse=True)
-        for i, value_data in enumerate(values):
+        limit_data = sorted(comp_data[limit_name], key=lambda x: float(x['duration']))
+        for i, value_data in enumerate(limit_data):
             if i > 0:
-                if value_data[2] < values[i-1][2]:
+                if value_data['max'] < limit_data[i-1]['max']:
                     check_property(False, 'flow limits are not increasing in {} on {}'.format(limit_name, identifier))
                     return False
-                if value_data[0] >= values[i-1][0]:
+                if float(value_data['duration']) >= float(limit_data[i-1]['duration']):
                     check_property(False, 'flow limit times are not decreasing in {} on {}'.format(limit_name, identifier))
                     return False
     return True
@@ -428,8 +422,8 @@ def check_flow_limit_bound(identifier, ac_line_data, ad_lookup, vl_lookup, per_u
 def validate_grg_flow_limit_bound(identifier, limit_name, comp_data, limit_bound):
     if limit_name in comp_data:
         limit_data = comp_data[limit_name]
-        for value_data in limit_data['values']:
-            limit_value = value_data[2]
+        for value_data in limit_data:
+            limit_value = value_data['max']
             if limit_value > limit_bound:
                 check_property(False, 'the flow limit of {} in {} on {} is redundant (max value {})'.format(limit_value, limit_name, identifier, limit_bound))
     return True

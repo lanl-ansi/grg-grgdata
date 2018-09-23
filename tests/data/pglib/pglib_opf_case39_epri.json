@@ -1,5 +1,5 @@
 {
-  "grg_version": "v.2.0",
+  "grg_version": "v.4.1",
   "mappings": {
     "breakers_assignment": {
       "switch_001/status": "on",
@@ -417,140 +417,119 @@
       "transformer_08/tap_changer/position": 0,
       "transformer_09/tap_changer/position": 0,
       "transformer_10/tap_changer/position": 0,
-      "transformer_11/tap_changer/position": 0,
-      "transformer_12/tap_changer/position": 0
+      "transformer_11/tap_changer/position": 0
     }
   },
   "market": {
-    "costs": {
+    "operational_costs": {
       "gen_1": {
-        "arguments": [
-          "gen_1/output/active"
-        ],
         "coefficients": [
-          [
-            0.0,
-            716.6982,
-            0.0
-          ]
+          0.0,
+          716.6982,
+          0.0
         ],
+        "input": "gen_1/output/active",
+        "shutdown": 0.0,
+        "startup": 0.0,
         "type": "polynomial"
       },
       "gen_10": {
-        "arguments": [
-          "gen_10/output/active"
-        ],
         "coefficients": [
-          [
-            0.0,
-            2799.5137,
-            0.0
-          ]
+          0.0,
+          2799.5137,
+          0.0
         ],
+        "input": "gen_10/output/active",
+        "shutdown": 0.0,
+        "startup": 0.0,
         "type": "polynomial"
       },
       "gen_2": {
-        "arguments": [
-          "gen_2/output/active"
-        ],
         "coefficients": [
-          [
-            0.0,
-            1618.7269000000001,
-            0.0
-          ]
+          0.0,
+          1618.7269000000001,
+          0.0
         ],
+        "input": "gen_2/output/active",
+        "shutdown": 0.0,
+        "startup": 0.0,
         "type": "polynomial"
       },
       "gen_3": {
-        "arguments": [
-          "gen_3/output/active"
-        ],
         "coefficients": [
-          [
-            0.0,
-            2555.5307,
-            0.0
-          ]
+          0.0,
+          2555.5307,
+          0.0
         ],
+        "input": "gen_3/output/active",
+        "shutdown": 0.0,
+        "startup": 0.0,
         "type": "polynomial"
       },
       "gen_4": {
-        "arguments": [
-          "gen_4/output/active"
-        ],
         "coefficients": [
-          [
-            0.0,
-            3487.0276,
-            0.0
-          ]
+          0.0,
+          3487.0276,
+          0.0
         ],
+        "input": "gen_4/output/active",
+        "shutdown": 0.0,
+        "startup": 0.0,
         "type": "polynomial"
       },
       "gen_5": {
-        "arguments": [
-          "gen_5/output/active"
-        ],
         "coefficients": [
-          [
-            0.0,
-            2541.4524,
-            0.0
-          ]
+          0.0,
+          2541.4524,
+          0.0
         ],
+        "input": "gen_5/output/active",
+        "shutdown": 0.0,
+        "startup": 0.0,
         "type": "polynomial"
       },
       "gen_6": {
-        "arguments": [
-          "gen_6/output/active"
-        ],
         "coefficients": [
-          [
-            0.0,
-            3251.5386,
-            0.0
-          ]
+          0.0,
+          3251.5386,
+          0.0
         ],
+        "input": "gen_6/output/active",
+        "shutdown": 0.0,
+        "startup": 0.0,
         "type": "polynomial"
       },
       "gen_7": {
-        "arguments": [
-          "gen_7/output/active"
-        ],
         "coefficients": [
-          [
-            0.0,
-            1938.8020999999999,
-            0.0
-          ]
+          0.0,
+          1938.8020999999999,
+          0.0
         ],
+        "input": "gen_7/output/active",
+        "shutdown": 0.0,
+        "startup": 0.0,
         "type": "polynomial"
       },
       "gen_8": {
-        "arguments": [
-          "gen_8/output/active"
-        ],
         "coefficients": [
-          [
-            0.0,
-            3181.3693000000003,
-            0.0
-          ]
+          0.0,
+          3181.3693000000003,
+          0.0
         ],
+        "input": "gen_8/output/active",
+        "shutdown": 0.0,
+        "startup": 0.0,
         "type": "polynomial"
       },
       "gen_9": {
-        "arguments": [
-          "gen_9/output/active"
-        ],
         "coefficients": [
-          [
-            0.0,
-            2341.9927000000002,
-            0.0
-          ]
+          0.0,
+          2341.9927000000002,
+          0.0
         ],
+        "input": "gen_9/output/active",
+        "shutdown": 0.0,
+        "startup": 0.0,
         "type": "polynomial"
       }
     }
@@ -577,38 +556,22 @@
         },
         "source_id": "0",
         "subtype": "overhead",
-        "thermal_limits_1": {
-          "arguments": [
-            "duration",
-            "min",
-            "max",
-            "report"
-          ],
-          "values": [
-            [
-              "Inf",
-              0.0,
-              6.0,
-              "off"
-            ]
-          ]
-        },
-        "thermal_limits_2": {
-          "arguments": [
-            "duration",
-            "min",
-            "max",
-            "report"
-          ],
-          "values": [
-            [
-              "Inf",
-              0.0,
-              6.0,
-              "off"
-            ]
-          ]
-        },
+        "thermal_limits_1": [
+          {
+            "duration": "Inf",
+            "max": 6.0,
+            "min": 0.0,
+            "report": "off"
+          }
+        ],
+        "thermal_limits_2": [
+          {
+            "duration": "Inf",
+            "max": 6.0,
+            "min": 0.0,
+            "report": "off"
+          }
+        ],
         "type": "ac_line"
       },
       "line_02": {
@@ -630,38 +593,22 @@
         },
         "source_id": "1",
         "subtype": "overhead",
-        "thermal_limits_1": {
-          "arguments": [
-            "duration",
-            "min",
-            "max",
-            "report"
-          ],
-          "values": [
-            [
-              "Inf",
-              0.0,
-              10.0,
-              "off"
-            ]
-          ]
-        },
-        "thermal_limits_2": {
-          "arguments": [
-            "duration",
-            "min",
-            "max",
-            "report"
-          ],
-          "values": [
-            [
-              "Inf",
-              0.0,
-              10.0,
-              "off"
-            ]
-          ]
-        },
+        "thermal_limits_1": [
+          {
+            "duration": "Inf",
+            "max": 10.0,
+            "min": 0.0,
+            "report": "off"
+          }
+        ],
+        "thermal_limits_2": [
+          {
+            "duration": "Inf",
+            "max": 10.0,
+            "min": 0.0,
+            "report": "off"
+          }
+        ],
         "type": "ac_line"
       },
       "line_03": {
@@ -683,38 +630,22 @@
         },
         "source_id": "2",
         "subtype": "overhead",
-        "thermal_limits_1": {
-          "arguments": [
-            "duration",
-            "min",
-            "max",
-            "report"
-          ],
-          "values": [
-            [
-              "Inf",
-              0.0,
-              5.0,
-              "off"
-            ]
-          ]
-        },
-        "thermal_limits_2": {
-          "arguments": [
-            "duration",
-            "min",
-            "max",
-            "report"
-          ],
-          "values": [
-            [
-              "Inf",
-              0.0,
-              5.0,
-              "off"
-            ]
-          ]
-        },
+        "thermal_limits_1": [
+          {
+            "duration": "Inf",
+            "max": 5.0,
+            "min": 0.0,
+            "report": "off"
+          }
+        ],
+        "thermal_limits_2": [
+          {
+            "duration": "Inf",
+            "max": 5.0,
+            "min": 0.0,
+            "report": "off"
+          }
+        ],
         "type": "ac_line"
       },
       "line_04": {
@@ -736,38 +667,22 @@
         },
         "source_id": "3",
         "subtype": "overhead",
-        "thermal_limits_1": {
-          "arguments": [
-            "duration",
-            "min",
-            "max",
-            "report"
-          ],
-          "values": [
-            [
-              "Inf",
-              0.0,
-              5.0,
-              "off"
-            ]
-          ]
-        },
-        "thermal_limits_2": {
-          "arguments": [
-            "duration",
-            "min",
-            "max",
-            "report"
-          ],
-          "values": [
-            [
-              "Inf",
-              0.0,
-              5.0,
-              "off"
-            ]
-          ]
-        },
+        "thermal_limits_1": [
+          {
+            "duration": "Inf",
+            "max": 5.0,
+            "min": 0.0,
+            "report": "off"
+          }
+        ],
+        "thermal_limits_2": [
+          {
+            "duration": "Inf",
+            "max": 5.0,
+            "min": 0.0,
+            "report": "off"
+          }
+        ],
         "type": "ac_line"
       },
       "line_05": {
@@ -789,38 +704,22 @@
         },
         "source_id": "5",
         "subtype": "overhead",
-        "thermal_limits_1": {
-          "arguments": [
-            "duration",
-            "min",
-            "max",
-            "report"
-          ],
-          "values": [
-            [
-              "Inf",
-              0.0,
-              5.0,
-              "off"
-            ]
-          ]
-        },
-        "thermal_limits_2": {
-          "arguments": [
-            "duration",
-            "min",
-            "max",
-            "report"
-          ],
-          "values": [
-            [
-              "Inf",
-              0.0,
-              5.0,
-              "off"
-            ]
-          ]
-        },
+        "thermal_limits_1": [
+          {
+            "duration": "Inf",
+            "max": 5.0,
+            "min": 0.0,
+            "report": "off"
+          }
+        ],
+        "thermal_limits_2": [
+          {
+            "duration": "Inf",
+            "max": 5.0,
+            "min": 0.0,
+            "report": "off"
+          }
+        ],
         "type": "ac_line"
       },
       "line_06": {
@@ -842,38 +741,22 @@
         },
         "source_id": "6",
         "subtype": "overhead",
-        "thermal_limits_1": {
-          "arguments": [
-            "duration",
-            "min",
-            "max",
-            "report"
-          ],
-          "values": [
-            [
-              "Inf",
-              0.0,
-              5.0,
-              "off"
-            ]
-          ]
-        },
-        "thermal_limits_2": {
-          "arguments": [
-            "duration",
-            "min",
-            "max",
-            "report"
-          ],
-          "values": [
-            [
-              "Inf",
-              0.0,
-              5.0,
-              "off"
-            ]
-          ]
-        },
+        "thermal_limits_1": [
+          {
+            "duration": "Inf",
+            "max": 5.0,
+            "min": 0.0,
+            "report": "off"
+          }
+        ],
+        "thermal_limits_2": [
+          {
+            "duration": "Inf",
+            "max": 5.0,
+            "min": 0.0,
+            "report": "off"
+          }
+        ],
         "type": "ac_line"
       },
       "line_07": {
@@ -895,38 +778,22 @@
         },
         "source_id": "7",
         "subtype": "overhead",
-        "thermal_limits_1": {
-          "arguments": [
-            "duration",
-            "min",
-            "max",
-            "report"
-          ],
-          "values": [
-            [
-              "Inf",
-              0.0,
-              6.0,
-              "off"
-            ]
-          ]
-        },
-        "thermal_limits_2": {
-          "arguments": [
-            "duration",
-            "min",
-            "max",
-            "report"
-          ],
-          "values": [
-            [
-              "Inf",
-              0.0,
-              6.0,
-              "off"
-            ]
-          ]
-        },
+        "thermal_limits_1": [
+          {
+            "duration": "Inf",
+            "max": 6.0,
+            "min": 0.0,
+            "report": "off"
+          }
+        ],
+        "thermal_limits_2": [
+          {
+            "duration": "Inf",
+            "max": 6.0,
+            "min": 0.0,
+            "report": "off"
+          }
+        ],
         "type": "ac_line"
       },
       "line_08": {
@@ -948,38 +815,22 @@
         },
         "source_id": "8",
         "subtype": "overhead",
-        "thermal_limits_1": {
-          "arguments": [
-            "duration",
-            "min",
-            "max",
-            "report"
-          ],
-          "values": [
-            [
-              "Inf",
-              0.0,
-              5.0,
-              "off"
-            ]
-          ]
-        },
-        "thermal_limits_2": {
-          "arguments": [
-            "duration",
-            "min",
-            "max",
-            "report"
-          ],
-          "values": [
-            [
-              "Inf",
-              0.0,
-              5.0,
-              "off"
-            ]
-          ]
-        },
+        "thermal_limits_1": [
+          {
+            "duration": "Inf",
+            "max": 5.0,
+            "min": 0.0,
+            "report": "off"
+          }
+        ],
+        "thermal_limits_2": [
+          {
+            "duration": "Inf",
+            "max": 5.0,
+            "min": 0.0,
+            "report": "off"
+          }
+        ],
         "type": "ac_line"
       },
       "line_09": {
@@ -1001,38 +852,22 @@
         },
         "source_id": "9",
         "subtype": "overhead",
-        "thermal_limits_1": {
-          "arguments": [
-            "duration",
-            "min",
-            "max",
-            "report"
-          ],
-          "values": [
-            [
-              "Inf",
-              0.0,
-              12.0,
-              "off"
-            ]
-          ]
-        },
-        "thermal_limits_2": {
-          "arguments": [
-            "duration",
-            "min",
-            "max",
-            "report"
-          ],
-          "values": [
-            [
-              "Inf",
-              0.0,
-              12.0,
-              "off"
-            ]
-          ]
-        },
+        "thermal_limits_1": [
+          {
+            "duration": "Inf",
+            "max": 12.0,
+            "min": 0.0,
+            "report": "off"
+          }
+        ],
+        "thermal_limits_2": [
+          {
+            "duration": "Inf",
+            "max": 12.0,
+            "min": 0.0,
+            "report": "off"
+          }
+        ],
         "type": "ac_line"
       },
       "line_10": {
@@ -1054,38 +889,22 @@
         },
         "source_id": "10",
         "subtype": "overhead",
-        "thermal_limits_1": {
-          "arguments": [
-            "duration",
-            "min",
-            "max",
-            "report"
-          ],
-          "values": [
-            [
-              "Inf",
-              0.0,
-              9.0,
-              "off"
-            ]
-          ]
-        },
-        "thermal_limits_2": {
-          "arguments": [
-            "duration",
-            "min",
-            "max",
-            "report"
-          ],
-          "values": [
-            [
-              "Inf",
-              0.0,
-              9.0,
-              "off"
-            ]
-          ]
-        },
+        "thermal_limits_1": [
+          {
+            "duration": "Inf",
+            "max": 9.0,
+            "min": 0.0,
+            "report": "off"
+          }
+        ],
+        "thermal_limits_2": [
+          {
+            "duration": "Inf",
+            "max": 9.0,
+            "min": 0.0,
+            "report": "off"
+          }
+        ],
         "type": "ac_line"
       },
       "line_11": {
@@ -1107,38 +926,22 @@
         },
         "source_id": "11",
         "subtype": "overhead",
-        "thermal_limits_1": {
-          "arguments": [
-            "duration",
-            "min",
-            "max",
-            "report"
-          ],
-          "values": [
-            [
-              "Inf",
-              0.0,
-              9.0,
-              "off"
-            ]
-          ]
-        },
-        "thermal_limits_2": {
-          "arguments": [
-            "duration",
-            "min",
-            "max",
-            "report"
-          ],
-          "values": [
-            [
-              "Inf",
-              0.0,
-              9.0,
-              "off"
-            ]
-          ]
-        },
+        "thermal_limits_1": [
+          {
+            "duration": "Inf",
+            "max": 9.0,
+            "min": 0.0,
+            "report": "off"
+          }
+        ],
+        "thermal_limits_2": [
+          {
+            "duration": "Inf",
+            "max": 9.0,
+            "min": 0.0,
+            "report": "off"
+          }
+        ],
         "type": "ac_line"
       },
       "line_12": {
@@ -1160,38 +963,22 @@
         },
         "source_id": "12",
         "subtype": "overhead",
-        "thermal_limits_1": {
-          "arguments": [
-            "duration",
-            "min",
-            "max",
-            "report"
-          ],
-          "values": [
-            [
-              "Inf",
-              0.0,
-              4.8,
-              "off"
-            ]
-          ]
-        },
-        "thermal_limits_2": {
-          "arguments": [
-            "duration",
-            "min",
-            "max",
-            "report"
-          ],
-          "values": [
-            [
-              "Inf",
-              0.0,
-              4.8,
-              "off"
-            ]
-          ]
-        },
+        "thermal_limits_1": [
+          {
+            "duration": "Inf",
+            "max": 4.8,
+            "min": 0.0,
+            "report": "off"
+          }
+        ],
+        "thermal_limits_2": [
+          {
+            "duration": "Inf",
+            "max": 4.8,
+            "min": 0.0,
+            "report": "off"
+          }
+        ],
         "type": "ac_line"
       },
       "line_13": {
@@ -1213,38 +1000,22 @@
         },
         "source_id": "14",
         "subtype": "overhead",
-        "thermal_limits_1": {
-          "arguments": [
-            "duration",
-            "min",
-            "max",
-            "report"
-          ],
-          "values": [
-            [
-              "Inf",
-              0.0,
-              9.0,
-              "off"
-            ]
-          ]
-        },
-        "thermal_limits_2": {
-          "arguments": [
-            "duration",
-            "min",
-            "max",
-            "report"
-          ],
-          "values": [
-            [
-              "Inf",
-              0.0,
-              9.0,
-              "off"
-            ]
-          ]
-        },
+        "thermal_limits_1": [
+          {
+            "duration": "Inf",
+            "max": 9.0,
+            "min": 0.0,
+            "report": "off"
+          }
+        ],
+        "thermal_limits_2": [
+          {
+            "duration": "Inf",
+            "max": 9.0,
+            "min": 0.0,
+            "report": "off"
+          }
+        ],
         "type": "ac_line"
       },
       "line_14": {
@@ -1266,38 +1037,22 @@
         },
         "source_id": "15",
         "subtype": "overhead",
-        "thermal_limits_1": {
-          "arguments": [
-            "duration",
-            "min",
-            "max",
-            "report"
-          ],
-          "values": [
-            [
-              "Inf",
-              0.0,
-              9.0,
-              "off"
-            ]
-          ]
-        },
-        "thermal_limits_2": {
-          "arguments": [
-            "duration",
-            "min",
-            "max",
-            "report"
-          ],
-          "values": [
-            [
-              "Inf",
-              0.0,
-              9.0,
-              "off"
-            ]
-          ]
-        },
+        "thermal_limits_1": [
+          {
+            "duration": "Inf",
+            "max": 9.0,
+            "min": 0.0,
+            "report": "off"
+          }
+        ],
+        "thermal_limits_2": [
+          {
+            "duration": "Inf",
+            "max": 9.0,
+            "min": 0.0,
+            "report": "off"
+          }
+        ],
         "type": "ac_line"
       },
       "line_15": {
@@ -1319,38 +1074,22 @@
         },
         "source_id": "16",
         "subtype": "overhead",
-        "thermal_limits_1": {
-          "arguments": [
-            "duration",
-            "min",
-            "max",
-            "report"
-          ],
-          "values": [
-            [
-              "Inf",
-              0.0,
-              9.0,
-              "off"
-            ]
-          ]
-        },
-        "thermal_limits_2": {
-          "arguments": [
-            "duration",
-            "min",
-            "max",
-            "report"
-          ],
-          "values": [
-            [
-              "Inf",
-              0.0,
-              9.0,
-              "off"
-            ]
-          ]
-        },
+        "thermal_limits_1": [
+          {
+            "duration": "Inf",
+            "max": 9.0,
+            "min": 0.0,
+            "report": "off"
+          }
+        ],
+        "thermal_limits_2": [
+          {
+            "duration": "Inf",
+            "max": 9.0,
+            "min": 0.0,
+            "report": "off"
+          }
+        ],
         "type": "ac_line"
       },
       "line_16": {
@@ -1372,38 +1111,22 @@
         },
         "source_id": "17",
         "subtype": "overhead",
-        "thermal_limits_1": {
-          "arguments": [
-            "duration",
-            "min",
-            "max",
-            "report"
-          ],
-          "values": [
-            [
-              "Inf",
-              0.0,
-              6.0,
-              "off"
-            ]
-          ]
-        },
-        "thermal_limits_2": {
-          "arguments": [
-            "duration",
-            "min",
-            "max",
-            "report"
-          ],
-          "values": [
-            [
-              "Inf",
-              0.0,
-              6.0,
-              "off"
-            ]
-          ]
-        },
+        "thermal_limits_1": [
+          {
+            "duration": "Inf",
+            "max": 6.0,
+            "min": 0.0,
+            "report": "off"
+          }
+        ],
+        "thermal_limits_2": [
+          {
+            "duration": "Inf",
+            "max": 6.0,
+            "min": 0.0,
+            "report": "off"
+          }
+        ],
         "type": "ac_line"
       },
       "line_17": {
@@ -1425,38 +1148,22 @@
         },
         "source_id": "18",
         "subtype": "overhead",
-        "thermal_limits_1": {
-          "arguments": [
-            "duration",
-            "min",
-            "max",
-            "report"
-          ],
-          "values": [
-            [
-              "Inf",
-              0.0,
-              6.0,
-              "off"
-            ]
-          ]
-        },
-        "thermal_limits_2": {
-          "arguments": [
-            "duration",
-            "min",
-            "max",
-            "report"
-          ],
-          "values": [
-            [
-              "Inf",
-              0.0,
-              6.0,
-              "off"
-            ]
-          ]
-        },
+        "thermal_limits_1": [
+          {
+            "duration": "Inf",
+            "max": 6.0,
+            "min": 0.0,
+            "report": "off"
+          }
+        ],
+        "thermal_limits_2": [
+          {
+            "duration": "Inf",
+            "max": 6.0,
+            "min": 0.0,
+            "report": "off"
+          }
+        ],
         "type": "ac_line"
       },
       "line_18": {
@@ -1478,38 +1185,22 @@
         },
         "source_id": "22",
         "subtype": "overhead",
-        "thermal_limits_1": {
-          "arguments": [
-            "duration",
-            "min",
-            "max",
-            "report"
-          ],
-          "values": [
-            [
-              "Inf",
-              0.0,
-              6.0,
-              "off"
-            ]
-          ]
-        },
-        "thermal_limits_2": {
-          "arguments": [
-            "duration",
-            "min",
-            "max",
-            "report"
-          ],
-          "values": [
-            [
-              "Inf",
-              0.0,
-              6.0,
-              "off"
-            ]
-          ]
-        },
+        "thermal_limits_1": [
+          {
+            "duration": "Inf",
+            "max": 6.0,
+            "min": 0.0,
+            "report": "off"
+          }
+        ],
+        "thermal_limits_2": [
+          {
+            "duration": "Inf",
+            "max": 6.0,
+            "min": 0.0,
+            "report": "off"
+          }
+        ],
         "type": "ac_line"
       },
       "line_19": {
@@ -1531,38 +1222,22 @@
         },
         "source_id": "23",
         "subtype": "overhead",
-        "thermal_limits_1": {
-          "arguments": [
-            "duration",
-            "min",
-            "max",
-            "report"
-          ],
-          "values": [
-            [
-              "Inf",
-              0.0,
-              6.0,
-              "off"
-            ]
-          ]
-        },
-        "thermal_limits_2": {
-          "arguments": [
-            "duration",
-            "min",
-            "max",
-            "report"
-          ],
-          "values": [
-            [
-              "Inf",
-              0.0,
-              6.0,
-              "off"
-            ]
-          ]
-        },
+        "thermal_limits_1": [
+          {
+            "duration": "Inf",
+            "max": 6.0,
+            "min": 0.0,
+            "report": "off"
+          }
+        ],
+        "thermal_limits_2": [
+          {
+            "duration": "Inf",
+            "max": 6.0,
+            "min": 0.0,
+            "report": "off"
+          }
+        ],
         "type": "ac_line"
       },
       "line_20": {
@@ -1584,38 +1259,22 @@
         },
         "source_id": "24",
         "subtype": "overhead",
-        "thermal_limits_1": {
-          "arguments": [
-            "duration",
-            "min",
-            "max",
-            "report"
-          ],
-          "values": [
-            [
-              "Inf",
-              0.0,
-              6.0,
-              "off"
-            ]
-          ]
-        },
-        "thermal_limits_2": {
-          "arguments": [
-            "duration",
-            "min",
-            "max",
-            "report"
-          ],
-          "values": [
-            [
-              "Inf",
-              0.0,
-              6.0,
-              "off"
-            ]
-          ]
-        },
+        "thermal_limits_1": [
+          {
+            "duration": "Inf",
+            "max": 6.0,
+            "min": 0.0,
+            "report": "off"
+          }
+        ],
+        "thermal_limits_2": [
+          {
+            "duration": "Inf",
+            "max": 6.0,
+            "min": 0.0,
+            "report": "off"
+          }
+        ],
         "type": "ac_line"
       },
       "line_21": {
@@ -1637,38 +1296,22 @@
         },
         "source_id": "25",
         "subtype": "overhead",
-        "thermal_limits_1": {
-          "arguments": [
-            "duration",
-            "min",
-            "max",
-            "report"
-          ],
-          "values": [
-            [
-              "Inf",
-              0.0,
-              6.0,
-              "off"
-            ]
-          ]
-        },
-        "thermal_limits_2": {
-          "arguments": [
-            "duration",
-            "min",
-            "max",
-            "report"
-          ],
-          "values": [
-            [
-              "Inf",
-              0.0,
-              6.0,
-              "off"
-            ]
-          ]
-        },
+        "thermal_limits_1": [
+          {
+            "duration": "Inf",
+            "max": 6.0,
+            "min": 0.0,
+            "report": "off"
+          }
+        ],
+        "thermal_limits_2": [
+          {
+            "duration": "Inf",
+            "max": 6.0,
+            "min": 0.0,
+            "report": "off"
+          }
+        ],
         "type": "ac_line"
       },
       "line_22": {
@@ -1690,50 +1333,34 @@
         },
         "source_id": "26",
         "subtype": "overhead",
-        "thermal_limits_1": {
-          "arguments": [
-            "duration",
-            "min",
-            "max",
-            "report"
-          ],
-          "values": [
-            [
-              "Inf",
-              0.0,
-              6.0,
-              "off"
-            ],
-            [
-              900,
-              0.0,
-              25.0,
-              "off"
-            ]
-          ]
-        },
-        "thermal_limits_2": {
-          "arguments": [
-            "duration",
-            "min",
-            "max",
-            "report"
-          ],
-          "values": [
-            [
-              "Inf",
-              0.0,
-              6.0,
-              "off"
-            ],
-            [
-              900,
-              0.0,
-              25.0,
-              "off"
-            ]
-          ]
-        },
+        "thermal_limits_1": [
+          {
+            "duration": "Inf",
+            "max": 6.0,
+            "min": 0.0,
+            "report": "off"
+          },
+          {
+            "duration": 900,
+            "max": 25.0,
+            "min": 0.0,
+            "report": "off"
+          }
+        ],
+        "thermal_limits_2": [
+          {
+            "duration": "Inf",
+            "max": 6.0,
+            "min": 0.0,
+            "report": "off"
+          },
+          {
+            "duration": 900,
+            "max": 25.0,
+            "min": 0.0,
+            "report": "off"
+          }
+        ],
         "type": "ac_line"
       },
       "line_23": {
@@ -1755,38 +1382,22 @@
         },
         "source_id": "27",
         "subtype": "overhead",
-        "thermal_limits_1": {
-          "arguments": [
-            "duration",
-            "min",
-            "max",
-            "report"
-          ],
-          "values": [
-            [
-              "Inf",
-              0.0,
-              6.0,
-              "off"
-            ]
-          ]
-        },
-        "thermal_limits_2": {
-          "arguments": [
-            "duration",
-            "min",
-            "max",
-            "report"
-          ],
-          "values": [
-            [
-              "Inf",
-              0.0,
-              6.0,
-              "off"
-            ]
-          ]
-        },
+        "thermal_limits_1": [
+          {
+            "duration": "Inf",
+            "max": 6.0,
+            "min": 0.0,
+            "report": "off"
+          }
+        ],
+        "thermal_limits_2": [
+          {
+            "duration": "Inf",
+            "max": 6.0,
+            "min": 0.0,
+            "report": "off"
+          }
+        ],
         "type": "ac_line"
       },
       "line_24": {
@@ -1808,38 +1419,22 @@
         },
         "source_id": "28",
         "subtype": "overhead",
-        "thermal_limits_1": {
-          "arguments": [
-            "duration",
-            "min",
-            "max",
-            "report"
-          ],
-          "values": [
-            [
-              "Inf",
-              0.0,
-              6.0,
-              "off"
-            ]
-          ]
-        },
-        "thermal_limits_2": {
-          "arguments": [
-            "duration",
-            "min",
-            "max",
-            "report"
-          ],
-          "values": [
-            [
-              "Inf",
-              0.0,
-              6.0,
-              "off"
-            ]
-          ]
-        },
+        "thermal_limits_1": [
+          {
+            "duration": "Inf",
+            "max": 6.0,
+            "min": 0.0,
+            "report": "off"
+          }
+        ],
+        "thermal_limits_2": [
+          {
+            "duration": "Inf",
+            "max": 6.0,
+            "min": 0.0,
+            "report": "off"
+          }
+        ],
         "type": "ac_line"
       },
       "line_25": {
@@ -1861,38 +1456,22 @@
         },
         "source_id": "29",
         "subtype": "overhead",
-        "thermal_limits_1": {
-          "arguments": [
-            "duration",
-            "min",
-            "max",
-            "report"
-          ],
-          "values": [
-            [
-              "Inf",
-              0.0,
-              6.0,
-              "off"
-            ]
-          ]
-        },
-        "thermal_limits_2": {
-          "arguments": [
-            "duration",
-            "min",
-            "max",
-            "report"
-          ],
-          "values": [
-            [
-              "Inf",
-              0.0,
-              6.0,
-              "off"
-            ]
-          ]
-        },
+        "thermal_limits_1": [
+          {
+            "duration": "Inf",
+            "max": 6.0,
+            "min": 0.0,
+            "report": "off"
+          }
+        ],
+        "thermal_limits_2": [
+          {
+            "duration": "Inf",
+            "max": 6.0,
+            "min": 0.0,
+            "report": "off"
+          }
+        ],
         "type": "ac_line"
       },
       "line_26": {
@@ -1914,38 +1493,22 @@
         },
         "source_id": "30",
         "subtype": "overhead",
-        "thermal_limits_1": {
-          "arguments": [
-            "duration",
-            "min",
-            "max",
-            "report"
-          ],
-          "values": [
-            [
-              "Inf",
-              0.0,
-              6.0,
-              "off"
-            ]
-          ]
-        },
-        "thermal_limits_2": {
-          "arguments": [
-            "duration",
-            "min",
-            "max",
-            "report"
-          ],
-          "values": [
-            [
-              "Inf",
-              0.0,
-              6.0,
-              "off"
-            ]
-          ]
-        },
+        "thermal_limits_1": [
+          {
+            "duration": "Inf",
+            "max": 6.0,
+            "min": 0.0,
+            "report": "off"
+          }
+        ],
+        "thermal_limits_2": [
+          {
+            "duration": "Inf",
+            "max": 6.0,
+            "min": 0.0,
+            "report": "off"
+          }
+        ],
         "type": "ac_line"
       },
       "line_27": {
@@ -1967,38 +1530,22 @@
         },
         "source_id": "34",
         "subtype": "overhead",
-        "thermal_limits_1": {
-          "arguments": [
-            "duration",
-            "min",
-            "max",
-            "report"
-          ],
-          "values": [
-            [
-              "Inf",
-              0.0,
-              9.0,
-              "off"
-            ]
-          ]
-        },
-        "thermal_limits_2": {
-          "arguments": [
-            "duration",
-            "min",
-            "max",
-            "report"
-          ],
-          "values": [
-            [
-              "Inf",
-              0.0,
-              9.0,
-              "off"
-            ]
-          ]
-        },
+        "thermal_limits_1": [
+          {
+            "duration": "Inf",
+            "max": 9.0,
+            "min": 0.0,
+            "report": "off"
+          }
+        ],
+        "thermal_limits_2": [
+          {
+            "duration": "Inf",
+            "max": 9.0,
+            "min": 0.0,
+            "report": "off"
+          }
+        ],
         "type": "ac_line"
       },
       "line_28": {
@@ -2020,38 +1567,22 @@
         },
         "source_id": "35",
         "subtype": "overhead",
-        "thermal_limits_1": {
-          "arguments": [
-            "duration",
-            "min",
-            "max",
-            "report"
-          ],
-          "values": [
-            [
-              "Inf",
-              0.0,
-              6.0,
-              "off"
-            ]
-          ]
-        },
-        "thermal_limits_2": {
-          "arguments": [
-            "duration",
-            "min",
-            "max",
-            "report"
-          ],
-          "values": [
-            [
-              "Inf",
-              0.0,
-              6.0,
-              "off"
-            ]
-          ]
-        },
+        "thermal_limits_1": [
+          {
+            "duration": "Inf",
+            "max": 6.0,
+            "min": 0.0,
+            "report": "off"
+          }
+        ],
+        "thermal_limits_2": [
+          {
+            "duration": "Inf",
+            "max": 6.0,
+            "min": 0.0,
+            "report": "off"
+          }
+        ],
         "type": "ac_line"
       },
       "line_29": {
@@ -2073,48 +1604,81 @@
         },
         "source_id": "37",
         "subtype": "overhead",
-        "thermal_limits_1": {
-          "arguments": [
-            "duration",
-            "min",
-            "max",
-            "report"
-          ],
-          "values": [
-            [
-              "Inf",
-              0.0,
-              6.0,
-              "off"
-            ]
-          ]
-        },
-        "thermal_limits_2": {
-          "arguments": [
-            "duration",
-            "min",
-            "max",
-            "report"
-          ],
-          "values": [
-            [
-              "Inf",
-              0.0,
-              6.0,
-              "off"
-            ]
-          ]
-        },
+        "thermal_limits_1": [
+          {
+            "duration": "Inf",
+            "max": 6.0,
+            "min": 0.0,
+            "report": "off"
+          }
+        ],
+        "thermal_limits_2": [
+          {
+            "duration": "Inf",
+            "max": 6.0,
+            "min": 0.0,
+            "report": "off"
+          }
+        ],
         "type": "ac_line"
       },
       "line_30": {
         "id": "line_30",
         "impedance": {
-          "reactance": 0.0323,
-          "resistance": 0.0032
+          "reactance": 0.0272,
+          "resistance": 0.0005
         },
         "link_1": "voltage_switch_id_090",
         "link_2": "voltage_switch_id_091",
+        "rates": 3,
+        "shunt_1": {
+          "conductance": 0.0,
+          "susceptance": 0.0
+        },
+        "shunt_2": {
+          "conductance": 0.0,
+          "susceptance": 0.0
+        },
+        "source_id": "38",
+        "subtype": "overhead",
+        "thermal_limits_1": [
+          {
+            "duration": "Inf",
+            "max": 9.0,
+            "min": 0.0,
+            "report": "off"
+          },
+          {
+            "duration": 900,
+            "max": 25.0,
+            "min": 0.0,
+            "report": "off"
+          }
+        ],
+        "thermal_limits_2": [
+          {
+            "duration": "Inf",
+            "max": 9.0,
+            "min": 0.0,
+            "report": "off"
+          },
+          {
+            "duration": 900,
+            "max": 25.0,
+            "min": 0.0,
+            "report": "off"
+          }
+        ],
+        "type": "ac_line"
+      },
+      "line_31": {
+        "id": "line_31",
+        "impedance": {
+          "reactance": 0.0323,
+          "resistance": 0.0032
+        },
+        "link_1": "voltage_switch_id_092",
+        "link_2": "voltage_switch_id_093",
         "rates": 3,
         "shunt_1": {
           "conductance": 0.0,
@@ -2126,48 +1690,32 @@
         },
         "source_id": "39",
         "subtype": "overhead",
-        "thermal_limits_1": {
-          "arguments": [
-            "duration",
-            "min",
-            "max",
-            "report"
-          ],
-          "values": [
-            [
-              "Inf",
-              0.0,
-              6.0,
-              "off"
-            ]
-          ]
-        },
-        "thermal_limits_2": {
-          "arguments": [
-            "duration",
-            "min",
-            "max",
-            "report"
-          ],
-          "values": [
-            [
-              "Inf",
-              0.0,
-              6.0,
-              "off"
-            ]
-          ]
-        },
+        "thermal_limits_1": [
+          {
+            "duration": "Inf",
+            "max": 6.0,
+            "min": 0.0,
+            "report": "off"
+          }
+        ],
+        "thermal_limits_2": [
+          {
+            "duration": "Inf",
+            "max": 6.0,
+            "min": 0.0,
+            "report": "off"
+          }
+        ],
         "type": "ac_line"
       },
-      "line_31": {
-        "id": "line_31",
+      "line_32": {
+        "id": "line_32",
         "impedance": {
           "reactance": 0.0147,
           "resistance": 0.0014
         },
-        "link_1": "voltage_switch_id_092",
-        "link_2": "voltage_switch_id_093",
+        "link_1": "voltage_switch_id_094",
+        "link_2": "voltage_switch_id_095",
         "rates": 3,
         "shunt_1": {
           "conductance": 0.0,
@@ -2179,48 +1727,32 @@
         },
         "source_id": "41",
         "subtype": "overhead",
-        "thermal_limits_1": {
-          "arguments": [
-            "duration",
-            "min",
-            "max",
-            "report"
-          ],
-          "values": [
-            [
-              "Inf",
-              0.0,
-              6.0,
-              "off"
-            ]
-          ]
-        },
-        "thermal_limits_2": {
-          "arguments": [
-            "duration",
-            "min",
-            "max",
-            "report"
-          ],
-          "values": [
-            [
-              "Inf",
-              0.0,
-              6.0,
-              "off"
-            ]
-          ]
-        },
+        "thermal_limits_1": [
+          {
+            "duration": "Inf",
+            "max": 6.0,
+            "min": 0.0,
+            "report": "off"
+          }
+        ],
+        "thermal_limits_2": [
+          {
+            "duration": "Inf",
+            "max": 6.0,
+            "min": 0.0,
+            "report": "off"
+          }
+        ],
         "type": "ac_line"
       },
-      "line_32": {
-        "id": "line_32",
+      "line_33": {
+        "id": "line_33",
         "impedance": {
           "reactance": 0.0474,
           "resistance": 0.0043
         },
-        "link_1": "voltage_switch_id_094",
-        "link_2": "voltage_switch_id_095",
+        "link_1": "voltage_switch_id_096",
+        "link_2": "voltage_switch_id_097",
         "rates": 3,
         "shunt_1": {
           "conductance": 0.0,
@@ -2232,48 +1764,32 @@
         },
         "source_id": "42",
         "subtype": "overhead",
-        "thermal_limits_1": {
-          "arguments": [
-            "duration",
-            "min",
-            "max",
-            "report"
-          ],
-          "values": [
-            [
-              "Inf",
-              0.0,
-              6.0,
-              "off"
-            ]
-          ]
-        },
-        "thermal_limits_2": {
-          "arguments": [
-            "duration",
-            "min",
-            "max",
-            "report"
-          ],
-          "values": [
-            [
-              "Inf",
-              0.0,
-              6.0,
-              "off"
-            ]
-          ]
-        },
+        "thermal_limits_1": [
+          {
+            "duration": "Inf",
+            "max": 6.0,
+            "min": 0.0,
+            "report": "off"
+          }
+        ],
+        "thermal_limits_2": [
+          {
+            "duration": "Inf",
+            "max": 6.0,
+            "min": 0.0,
+            "report": "off"
+          }
+        ],
         "type": "ac_line"
       },
-      "line_33": {
-        "id": "line_33",
+      "line_34": {
+        "id": "line_34",
         "impedance": {
           "reactance": 0.0625,
           "resistance": 0.0057
         },
-        "link_1": "voltage_switch_id_096",
-        "link_2": "voltage_switch_id_097",
+        "link_1": "voltage_switch_id_098",
+        "link_2": "voltage_switch_id_099",
         "rates": 3,
         "shunt_1": {
           "conductance": 0.0,
@@ -2285,48 +1801,32 @@
         },
         "source_id": "43",
         "subtype": "overhead",
-        "thermal_limits_1": {
-          "arguments": [
-            "duration",
-            "min",
-            "max",
-            "report"
-          ],
-          "values": [
-            [
-              "Inf",
-              0.0,
-              6.0,
-              "off"
-            ]
-          ]
-        },
-        "thermal_limits_2": {
-          "arguments": [
-            "duration",
-            "min",
-            "max",
-            "report"
-          ],
-          "values": [
-            [
-              "Inf",
-              0.0,
-              6.0,
-              "off"
-            ]
-          ]
-        },
+        "thermal_limits_1": [
+          {
+            "duration": "Inf",
+            "max": 6.0,
+            "min": 0.0,
+            "report": "off"
+          }
+        ],
+        "thermal_limits_2": [
+          {
+            "duration": "Inf",
+            "max": 6.0,
+            "min": 0.0,
+            "report": "off"
+          }
+        ],
         "type": "ac_line"
       },
-      "line_34": {
-        "id": "line_34",
+      "line_35": {
+        "id": "line_35",
         "impedance": {
           "reactance": 0.0151,
           "resistance": 0.0014
         },
-        "link_1": "voltage_switch_id_098",
-        "link_2": "voltage_switch_id_099",
+        "link_1": "voltage_switch_id_100",
+        "link_2": "voltage_switch_id_101",
         "rates": 3,
         "shunt_1": {
           "conductance": 0.0,
@@ -2338,38 +1838,22 @@
         },
         "source_id": "44",
         "subtype": "overhead",
-        "thermal_limits_1": {
-          "arguments": [
-            "duration",
-            "min",
-            "max",
-            "report"
-          ],
-          "values": [
-            [
-              "Inf",
-              0.0,
-              6.0,
-              "off"
-            ]
-          ]
-        },
-        "thermal_limits_2": {
-          "arguments": [
-            "duration",
-            "min",
-            "max",
-            "report"
-          ],
-          "values": [
-            [
-              "Inf",
-              0.0,
-              6.0,
-              "off"
-            ]
-          ]
-        },
+        "thermal_limits_1": [
+          {
+            "duration": "Inf",
+            "max": 6.0,
+            "min": 0.0,
+            "report": "off"
+          }
+        ],
+        "thermal_limits_2": [
+          {
+            "duration": "Inf",
+            "max": 6.0,
+            "min": 0.0,
+            "report": "off"
+          }
+        ],
         "type": "ac_line"
       },
       "substation_01": {
@@ -2471,18 +1955,11 @@
         "substation_components": {
           "transformer_01": {
             "id": "transformer_01",
-            "link_1": "voltage_switch_id_104",
-            "link_2": "voltage_switch_id_105",
+            "link_1": "voltage_switch_id_102",
+            "link_2": "voltage_switch_id_103",
             "rates": 3,
             "source_id": "4",
-            "subtype": "PI_model",
             "tap_changer": {
-              "angle_shift": {
-                "var": {
-                  "lb": 0.0,
-                  "ub": 0.0
-                }
-              },
               "impedance": {
                 "reactance": {
                   "var": {
@@ -2517,81 +1994,66 @@
                   }
                 }
               },
-              "steps": {
-                "arguments": [
-                  "position",
-                  "impedance",
-                  "shunt",
-                  "tap_ratio",
-                  "angle_shift"
-                ],
-                "values": [
-                  [
-                    0,
-                    {
-                      "reactance": 0.0181,
-                      "resistance": 0.0
-                    },
-                    {
-                      "conductance": 0.0,
-                      "susceptance": 0.0
-                    },
-                    1.025,
-                    0.0
-                  ]
-                ]
-              },
-              "tap_ratio": {
-                "var": {
-                  "lb": 1.025,
-                  "ub": 1.025
+              "steps": [
+                {
+                  "impedance": {
+                    "reactance": 0.0181,
+                    "resistance": 0.0
+                  },
+                  "position": 0,
+                  "shunt": {
+                    "conductance": 0.0,
+                    "susceptance": 0.0
+                  },
+                  "transform": {
+                    "angle_shift": 0.0,
+                    "tap_ratio": 1.025
+                  }
+                }
+              ],
+              "transform": {
+                "angle_shift": {
+                  "var": {
+                    "lb": 0.0,
+                    "ub": 0.0
+                  }
+                },
+                "tap_ratio": {
+                  "var": {
+                    "lb": 1.025,
+                    "ub": 1.025
+                  }
                 }
               }
             },
-            "thermal_limits_1": {
-              "arguments": [
-                "duration",
-                "min",
-                "max",
-                "report"
-              ],
-              "values": [
-                [
-                  "Inf",
-                  0.0,
-                  9.0,
-                  "off"
-                ],
-                [
-                  900,
-                  0.0,
-                  25.0,
-                  "off"
-                ]
-              ]
-            },
-            "thermal_limits_2": {
-              "arguments": [
-                "duration",
-                "min",
-                "max",
-                "report"
-              ],
-              "values": [
-                [
-                  "Inf",
-                  0.0,
-                  9.0,
-                  "off"
-                ],
-                [
-                  900,
-                  0.0,
-                  25.0,
-                  "off"
-                ]
-              ]
-            },
+            "thermal_limits_1": [
+              {
+                "duration": "Inf",
+                "max": 9.0,
+                "min": 0.0,
+                "report": "off"
+              },
+              {
+                "duration": 900,
+                "max": 25.0,
+                "min": 0.0,
+                "report": "off"
+              }
+            ],
+            "thermal_limits_2": [
+              {
+                "duration": "Inf",
+                "max": 9.0,
+                "min": 0.0,
+                "report": "off"
+              },
+              {
+                "duration": 900,
+                "max": 25.0,
+                "min": 0.0,
+                "report": "off"
+              }
+            ],
             "type": "two_winding_transformer"
           },
           "voltage_level_02": {
@@ -2664,10 +2126,10 @@
                 "subtype": "breaker",
                 "type": "switch"
               },
-              "switch_104": {
-                "id": "switch_104",
+              "switch_102": {
+                "id": "switch_102",
                 "link_1": "voltage_bus_id_02",
-                "link_2": "voltage_switch_id_104",
+                "link_2": "voltage_switch_id_102",
                 "status": {
                   "var": [
                     "off",
@@ -2683,7 +2145,7 @@
               "voltage_switch_id_033",
               "voltage_switch_id_036",
               "voltage_switch_id_038",
-              "voltage_switch_id_104"
+              "voltage_switch_id_102"
             ]
           },
           "voltage_level_30": {
@@ -2751,10 +2213,10 @@
                 "subtype": "breaker",
                 "type": "switch"
               },
-              "switch_105": {
-                "id": "switch_105",
+              "switch_103": {
+                "id": "switch_103",
                 "link_1": "voltage_bus_id_30",
-                "link_2": "voltage_switch_id_105",
+                "link_2": "voltage_switch_id_103",
                 "status": {
                   "var": [
                     "off",
@@ -2768,7 +2230,7 @@
             "voltage_points": [
               "voltage_bus_id_30",
               "voltage_switch_id_022",
-              "voltage_switch_id_105"
+              "voltage_switch_id_103"
             ]
           }
         },
@@ -3079,18 +2541,11 @@
         "substation_components": {
           "transformer_02": {
             "id": "transformer_02",
-            "link_1": "voltage_switch_id_100",
-            "link_2": "voltage_switch_id_101",
+            "link_1": "voltage_switch_id_104",
+            "link_2": "voltage_switch_id_105",
             "rates": 3,
             "source_id": "13",
-            "subtype": "PI_model",
             "tap_changer": {
-              "angle_shift": {
-                "var": {
-                  "lb": 0.0,
-                  "ub": 0.0
-                }
-              },
               "impedance": {
                 "reactance": {
                   "var": {
@@ -3125,69 +2580,54 @@
                   }
                 }
               },
-              "steps": {
-                "arguments": [
-                  "position",
-                  "impedance",
-                  "shunt",
-                  "tap_ratio",
-                  "angle_shift"
-                ],
-                "values": [
-                  [
-                    0,
-                    {
-                      "reactance": 0.025,
-                      "resistance": 0.0
-                    },
-                    {
-                      "conductance": 0.0,
-                      "susceptance": 0.0
-                    },
-                    1.07,
-                    0.0
-                  ]
-                ]
-              },
-              "tap_ratio": {
-                "var": {
-                  "lb": 1.07,
-                  "ub": 1.07
+              "steps": [
+                {
+                  "impedance": {
+                    "reactance": 0.025,
+                    "resistance": 0.0
+                  },
+                  "position": 0,
+                  "shunt": {
+                    "conductance": 0.0,
+                    "susceptance": 0.0
+                  },
+                  "transform": {
+                    "angle_shift": 0.0,
+                    "tap_ratio": 1.07
+                  }
+                }
+              ],
+              "transform": {
+                "angle_shift": {
+                  "var": {
+                    "lb": 0.0,
+                    "ub": 0.0
+                  }
+                },
+                "tap_ratio": {
+                  "var": {
+                    "lb": 1.07,
+                    "ub": 1.07
+                  }
                 }
               }
             },
-            "thermal_limits_1": {
-              "arguments": [
-                "duration",
-                "min",
-                "max",
-                "report"
-              ],
-              "values": [
-                [
-                  "Inf",
-                  0.0,
-                  18.0,
-                  "off"
-                ]
-              ]
-            },
-            "thermal_limits_2": {
-              "arguments": [
-                "duration",
-                "min",
-                "max",
-                "report"
-              ],
-              "values": [
-                [
-                  "Inf",
-                  0.0,
-                  18.0,
-                  "off"
-                ]
-              ]
-            },
+            "thermal_limits_1": [
+              {
+                "duration": "Inf",
+                "max": 18.0,
+                "min": 0.0,
+                "report": "off"
+              }
+            ],
+            "thermal_limits_2": [
+              {
+                "duration": "Inf",
+                "max": 18.0,
+                "min": 0.0,
+                "report": "off"
+              }
+            ],
             "type": "two_winding_transformer"
           },
           "voltage_level_06": {
@@ -3260,10 +2700,10 @@
                 "subtype": "breaker",
                 "type": "switch"
               },
-              "switch_100": {
-                "id": "switch_100",
+              "switch_104": {
+                "id": "switch_104",
                 "link_1": "voltage_bus_id_06",
-                "link_2": "voltage_switch_id_100",
+                "link_2": "voltage_switch_id_104",
                 "status": {
                   "var": [
                     "off",
@@ -3279,7 +2719,7 @@
               "voltage_switch_id_049",
               "voltage_switch_id_052",
               "voltage_switch_id_054",
-              "voltage_switch_id_100"
+              "voltage_switch_id_104"
             ]
           },
           "voltage_level_31": {
@@ -3371,10 +2811,10 @@
                 "subtype": "breaker",
                 "type": "switch"
               },
-              "switch_101": {
-                "id": "switch_101",
+              "switch_105": {
+                "id": "switch_105",
                 "link_1": "voltage_bus_id_31",
-                "link_2": "voltage_switch_id_101",
+                "link_2": "voltage_switch_id_105",
                 "status": {
                   "var": [
                     "off",
@@ -3389,7 +2829,7 @@
               "voltage_bus_id_31",
               "voltage_switch_id_020",
               "voltage_switch_id_023",
-              "voltage_switch_id_101"
+              "voltage_switch_id_105"
             ]
           }
         },
@@ -3696,18 +3136,11 @@
         "substation_components": {
           "transformer_03": {
             "id": "transformer_03",
-            "link_1": "voltage_switch_id_102",
-            "link_2": "voltage_switch_id_103",
+            "link_1": "voltage_switch_id_106",
+            "link_2": "voltage_switch_id_107",
             "rates": 3,
             "source_id": "19",
-            "subtype": "PI_model",
             "tap_changer": {
-              "angle_shift": {
-                "var": {
-                  "lb": 0.0,
-                  "ub": 0.0
-                }
-              },
               "impedance": {
                 "reactance": {
                   "var": {
@@ -3742,81 +3175,66 @@
                   }
                 }
               },
-              "steps": {
-                "arguments": [
-                  "position",
-                  "impedance",
-                  "shunt",
-                  "tap_ratio",
-                  "angle_shift"
-                ],
-                "values": [
-                  [
-                    0,
-                    {
-                      "reactance": 0.02,
-                      "resistance": 0.0
-                    },
-                    {
-                      "conductance": 0.0,
-                      "susceptance": 0.0
-                    },
-                    1.07,
-                    0.0
-                  ]
-                ]
-              },
-              "tap_ratio": {
-                "var": {
-                  "lb": 1.07,
-                  "ub": 1.07
+              "steps": [
+                {
+                  "impedance": {
+                    "reactance": 0.02,
+                    "resistance": 0.0
+                  },
+                  "position": 0,
+                  "shunt": {
+                    "conductance": 0.0,
+                    "susceptance": 0.0
+                  },
+                  "transform": {
+                    "angle_shift": 0.0,
+                    "tap_ratio": 1.07
+                  }
+                }
+              ],
+              "transform": {
+                "angle_shift": {
+                  "var": {
+                    "lb": 0.0,
+                    "ub": 0.0
+                  }
+                },
+                "tap_ratio": {
+                  "var": {
+                    "lb": 1.07,
+                    "ub": 1.07
+                  }
                 }
               }
             },
-            "thermal_limits_1": {
-              "arguments": [
-                "duration",
-                "min",
-                "max",
-                "report"
-              ],
-              "values": [
-                [
-                  "Inf",
-                  0.0,
-                  9.0,
-                  "off"
-                ],
-                [
-                  900,
-                  0.0,
-                  25.0,
-                  "off"
-                ]
-              ]
-            },
-            "thermal_limits_2": {
-              "arguments": [
-                "duration",
-                "min",
-                "max",
-                "report"
-              ],
-              "values": [
-                [
-                  "Inf",
-                  0.0,
-                  9.0,
-                  "off"
-                ],
-                [
-                  900,
-                  0.0,
-                  25.0,
-                  "off"
-                ]
-              ]
-            },
+            "thermal_limits_1": [
+              {
+                "duration": "Inf",
+                "max": 9.0,
+                "min": 0.0,
+                "report": "off"
+              },
+              {
+                "duration": 900,
+                "max": 25.0,
+                "min": 0.0,
+                "report": "off"
+              }
+            ],
+            "thermal_limits_2": [
+              {
+                "duration": "Inf",
+                "max": 9.0,
+                "min": 0.0,
+                "report": "off"
+              },
+              {
+                "duration": 900,
+                "max": 25.0,
+                "min": 0.0,
+                "report": "off"
+              }
+            ],
             "type": "two_winding_transformer"
           },
           "voltage_level_10": {
@@ -3876,10 +3294,10 @@
                 "subtype": "breaker",
                 "type": "switch"
               },
-              "switch_102": {
-                "id": "switch_102",
+              "switch_106": {
+                "id": "switch_106",
                 "link_1": "voltage_bus_id_10",
-                "link_2": "voltage_switch_id_102",
+                "link_2": "voltage_switch_id_106",
                 "status": {
                   "var": [
                     "off",
@@ -3894,7 +3312,7 @@
               "voltage_bus_id_10",
               "voltage_switch_id_062",
               "voltage_switch_id_064",
-              "voltage_switch_id_102"
+              "voltage_switch_id_106"
             ]
           },
           "voltage_level_32": {
@@ -3962,10 +3380,10 @@
                 "subtype": "breaker",
                 "type": "switch"
               },
-              "switch_103": {
-                "id": "switch_103",
+              "switch_107": {
+                "id": "switch_107",
                 "link_1": "voltage_bus_id_32",
-                "link_2": "voltage_switch_id_103",
+                "link_2": "voltage_switch_id_107",
                 "status": {
                   "var": [
                     "off",
@@ -3979,7 +3397,7 @@
             "voltage_points": [
               "voltage_bus_id_32",
               "voltage_switch_id_024",
-              "voltage_switch_id_103"
+              "voltage_switch_id_107"
             ]
           }
         },
@@ -3990,18 +3408,11 @@
         "substation_components": {
           "transformer_04": {
             "id": "transformer_04",
-            "link_1": "voltage_switch_id_110",
-            "link_2": "voltage_switch_id_111",
+            "link_1": "voltage_switch_id_108",
+            "link_2": "voltage_switch_id_109",
             "rates": 3,
             "source_id": "20",
-            "subtype": "PI_model",
             "tap_changer": {
-              "angle_shift": {
-                "var": {
-                  "lb": 0.0,
-                  "ub": 0.0
-                }
-              },
               "impedance": {
                 "reactance": {
                   "var": {
@@ -4036,85 +3447,63 @@
                   }
                 }
               },
-              "steps": {
-                "arguments": [
-                  "position",
-                  "impedance",
-                  "shunt",
-                  "tap_ratio",
-                  "angle_shift"
-                ],
-                "values": [
-                  [
-                    0,
-                    {
-                      "reactance": 0.0435,
-                      "resistance": 0.0016
-                    },
-                    {
-                      "conductance": 0.0,
-                      "susceptance": 0.0
-                    },
-                    1.006,
-                    0.0
-                  ]
-                ]
-              },
-              "tap_ratio": {
-                "var": {
-                  "lb": 1.006,
-                  "ub": 1.006
+              "steps": [
+                {
+                  "impedance": {
+                    "reactance": 0.0435,
+                    "resistance": 0.0016
+                  },
+                  "position": 0,
+                  "shunt": {
+                    "conductance": 0.0,
+                    "susceptance": 0.0
+                  },
+                  "transform": {
+                    "angle_shift": 0.0,
+                    "tap_ratio": 1.006
+                  }
+                }
+              ],
+              "transform": {
+                "angle_shift": {
+                  "var": {
+                    "lb": 0.0,
+                    "ub": 0.0
+                  }
+                },
+                "tap_ratio": {
+                  "var": {
+                    "lb": 1.006,
+                    "ub": 1.006
+                  }
                 }
               }
             },
-            "thermal_limits_1": {
-              "arguments": [
-                "duration",
-                "min",
-                "max",
-                "report"
-              ],
-              "values": [
-                [
-                  "Inf",
-                  0.0,
-                  5.0,
-                  "off"
-                ]
-              ]
-            },
-            "thermal_limits_2": {
-              "arguments": [
-                "duration",
-                "min",
-                "max",
-                "report"
-              ],
-              "values": [
-                [
-                  "Inf",
-                  0.0,
-                  5.0,
-                  "off"
-                ]
-              ]
-            },
+            "thermal_limits_1": [
+              {
+                "duration": "Inf",
+                "max": 5.0,
+                "min": 0.0,
+                "report": "off"
+              }
+            ],
+            "thermal_limits_2": [
+              {
+                "duration": "Inf",
+                "max": 5.0,
+                "min": 0.0,
+                "report": "off"
+              }
+            ],
             "type": "two_winding_transformer"
           },
           "transformer_05": {
             "id": "transformer_05",
-            "link_1": "voltage_switch_id_106",
-            "link_2": "voltage_switch_id_107",
+            "link_1": "voltage_switch_id_110",
+            "link_2": "voltage_switch_id_111",
             "rates": 3,
             "source_id": "21",
-            "subtype": "PI_model",
             "tap_changer": {
-              "angle_shift": {
-                "var": {
-                  "lb": 0.0,
-                  "ub": 0.0
-                }
-              },
               "impedance": {
                 "reactance": {
                   "var": {
@@ -4149,69 +3538,54 @@
                   }
                 }
               },
-              "steps": {
-                "arguments": [
-                  "position",
-                  "impedance",
-                  "shunt",
-                  "tap_ratio",
-                  "angle_shift"
-                ],
-                "values": [
-                  [
-                    0,
-                    {
-                      "reactance": 0.0435,
-                      "resistance": 0.0016
-                    },
-                    {
-                      "conductance": 0.0,
-                      "susceptance": 0.0
-                    },
-                    1.006,
-                    0.0
-                  ]
-                ]
-              },
-              "tap_ratio": {
-                "var": {
-                  "lb": 1.006,
-                  "ub": 1.006
+              "steps": [
+                {
+                  "impedance": {
+                    "reactance": 0.0435,
+                    "resistance": 0.0016
+                  },
+                  "position": 0,
+                  "shunt": {
+                    "conductance": 0.0,
+                    "susceptance": 0.0
+                  },
+                  "transform": {
+                    "angle_shift": 0.0,
+                    "tap_ratio": 1.006
+                  }
+                }
+              ],
+              "transform": {
+                "angle_shift": {
+                  "var": {
+                    "lb": 0.0,
+                    "ub": 0.0
+                  }
+                },
+                "tap_ratio": {
+                  "var": {
+                    "lb": 1.006,
+                    "ub": 1.006
+                  }
                 }
               }
             },
-            "thermal_limits_1": {
-              "arguments": [
-                "duration",
-                "min",
-                "max",
-                "report"
-              ],
-              "values": [
-                [
-                  "Inf",
-                  0.0,
-                  5.0,
-                  "off"
-                ]
-              ]
-            },
-            "thermal_limits_2": {
-              "arguments": [
-                "duration",
-                "min",
-                "max",
-                "report"
-              ],
-              "values": [
-                [
-                  "Inf",
-                  0.0,
-                  5.0,
-                  "off"
-                ]
-              ]
-            },
+            "thermal_limits_1": [
+              {
+                "duration": "Inf",
+                "max": 5.0,
+                "min": 0.0,
+                "report": "off"
+              }
+            ],
+            "thermal_limits_2": [
+              {
+                "duration": "Inf",
+                "max": 5.0,
+                "min": 0.0,
+                "report": "off"
+              }
+            ],
             "type": "two_winding_transformer"
           },
           "voltage_level_11": {
@@ -4271,10 +3645,10 @@
                 "subtype": "breaker",
                 "type": "switch"
               },
-              "switch_111": {
-                "id": "switch_111",
+              "switch_109": {
+                "id": "switch_109",
                 "link_1": "voltage_bus_id_11",
-                "link_2": "voltage_switch_id_111",
+                "link_2": "voltage_switch_id_109",
                 "status": {
                   "var": [
                     "off",
@@ -4289,7 +3663,7 @@
               "voltage_bus_id_11",
               "voltage_switch_id_055",
               "voltage_switch_id_063",
-              "voltage_switch_id_111"
+              "voltage_switch_id_109"
             ]
           },
           "voltage_level_12": {
@@ -4346,10 +3720,10 @@
                 "subtype": "breaker",
                 "type": "switch"
               },
-              "switch_106": {
-                "id": "switch_106",
+              "switch_108": {
+                "id": "switch_108",
                 "link_1": "voltage_bus_id_12",
-                "link_2": "voltage_switch_id_106",
+                "link_2": "voltage_switch_id_108",
                 "status": {
                   "var": [
                     "off",
@@ -4376,7 +3750,7 @@
             "voltage_points": [
               "voltage_bus_id_12",
               "voltage_switch_id_007",
-              "voltage_switch_id_106",
+              "voltage_switch_id_108",
               "voltage_switch_id_110"
             ]
           },
@@ -4437,10 +3811,10 @@
                 "subtype": "breaker",
                 "type": "switch"
               },
-              "switch_107": {
-                "id": "switch_107",
+              "switch_111": {
+                "id": "switch_111",
                 "link_1": "voltage_bus_id_13",
-                "link_2": "voltage_switch_id_107",
+                "link_2": "voltage_switch_id_111",
                 "status": {
                   "var": [
                     "off",
@@ -4455,7 +3829,7 @@
               "voltage_bus_id_13",
               "voltage_switch_id_065",
               "voltage_switch_id_066",
-              "voltage_switch_id_107"
+              "voltage_switch_id_111"
             ]
           }
         },
@@ -4958,18 +4332,11 @@
         "substation_components": {
           "transformer_06": {
             "id": "transformer_06",
-            "link_1": "voltage_switch_id_116",
-            "link_2": "voltage_switch_id_117",
+            "link_1": "voltage_switch_id_112",
+            "link_2": "voltage_switch_id_113",
             "rates": 3,
             "source_id": "31",
-            "subtype": "PI_model",
             "tap_changer": {
-              "angle_shift": {
-                "var": {
-                  "lb": 0.0,
-                  "ub": 0.0
-                }
-              },
               "impedance": {
                 "reactance": {
                   "var": {
@@ -5004,97 +4371,75 @@
                   }
                 }
               },
-              "steps": {
-                "arguments": [
-                  "position",
-                  "impedance",
-                  "shunt",
-                  "tap_ratio",
-                  "angle_shift"
-                ],
-                "values": [
-                  [
-                    0,
-                    {
-                      "reactance": 0.0138,
-                      "resistance": 0.0007
-                    },
-                    {
-                      "conductance": 0.0,
-                      "susceptance": 0.0
-                    },
-                    1.06,
-                    0.0
-                  ]
-                ]
-              },
-              "tap_ratio": {
-                "var": {
-                  "lb": 1.06,
-                  "ub": 1.06
+              "steps": [
+                {
+                  "impedance": {
+                    "reactance": 0.0138,
+                    "resistance": 0.0007
+                  },
+                  "position": 0,
+                  "shunt": {
+                    "conductance": 0.0,
+                    "susceptance": 0.0
+                  },
+                  "transform": {
+                    "angle_shift": 0.0,
+                    "tap_ratio": 1.06
+                  }
+                }
+              ],
+              "transform": {
+                "angle_shift": {
+                  "var": {
+                    "lb": 0.0,
+                    "ub": 0.0
+                  }
+                },
+                "tap_ratio": {
+                  "var": {
+                    "lb": 1.06,
+                    "ub": 1.06
+                  }
                 }
               }
             },
-            "thermal_limits_1": {
-              "arguments": [
-                "duration",
-                "min",
-                "max",
-                "report"
-              ],
-              "values": [
-                [
-                  "Inf",
-                  0.0,
-                  9.0,
-                  "off"
-                ],
-                [
-                  900,
-                  0.0,
-                  25.0,
-                  "off"
-                ]
-              ]
-            },
-            "thermal_limits_2": {
-              "arguments": [
-                "duration",
-                "min",
-                "max",
-                "report"
-              ],
-              "values": [
-                [
-                  "Inf",
-                  0.0,
-                  9.0,
-                  "off"
-                ],
-                [
-                  900,
-                  0.0,
-                  25.0,
-                  "off"
-                ]
-              ]
-            },
+            "thermal_limits_1": [
+              {
+                "duration": "Inf",
+                "max": 9.0,
+                "min": 0.0,
+                "report": "off"
+              },
+              {
+                "duration": 900,
+                "max": 25.0,
+                "min": 0.0,
+                "report": "off"
+              }
+            ],
+            "thermal_limits_2": [
+              {
+                "duration": "Inf",
+                "max": 9.0,
+                "min": 0.0,
+                "report": "off"
+              },
+              {
+                "duration": 900,
+                "max": 25.0,
+                "min": 0.0,
+                "report": "off"
+              }
+            ],
             "type": "two_winding_transformer"
           },
           "transformer_07": {
             "id": "transformer_07",
-            "link_1": "voltage_switch_id_108",
-            "link_2": "voltage_switch_id_109",
+            "link_1": "voltage_switch_id_114",
+            "link_2": "voltage_switch_id_115",
             "rates": 3,
             "source_id": "32",
-            "subtype": "PI_model",
             "tap_changer": {
-              "angle_shift": {
-                "var": {
-                  "lb": 0.0,
-                  "ub": 0.0
-                }
-              },
               "impedance": {
                 "reactance": {
                   "var": {
@@ -5129,97 +4474,75 @@
                   }
                 }
               },
-              "steps": {
-                "arguments": [
-                  "position",
-                  "impedance",
-                  "shunt",
-                  "tap_ratio",
-                  "angle_shift"
-                ],
-                "values": [
-                  [
-                    0,
-                    {
-                      "reactance": 0.0142,
-                      "resistance": 0.0007
-                    },
-                    {
-                      "conductance": 0.0,
-                      "susceptance": 0.0
-                    },
-                    1.07,
-                    0.0
-                  ]
-                ]
-              },
-              "tap_ratio": {
-                "var": {
-                  "lb": 1.07,
-                  "ub": 1.07
+              "steps": [
+                {
+                  "impedance": {
+                    "reactance": 0.0142,
+                    "resistance": 0.0007
+                  },
+                  "position": 0,
+                  "shunt": {
+                    "conductance": 0.0,
+                    "susceptance": 0.0
+                  },
+                  "transform": {
+                    "angle_shift": 0.0,
+                    "tap_ratio": 1.07
+                  }
+                }
+              ],
+              "transform": {
+                "angle_shift": {
+                  "var": {
+                    "lb": 0.0,
+                    "ub": 0.0
+                  }
+                },
+                "tap_ratio": {
+                  "var": {
+                    "lb": 1.07,
+                    "ub": 1.07
+                  }
                 }
               }
             },
-            "thermal_limits_1": {
-              "arguments": [
-                "duration",
-                "min",
-                "max",
-                "report"
-              ],
-              "values": [
-                [
-                  "Inf",
-                  0.0,
-                  9.0,
-                  "off"
-                ],
-                [
-                  900,
-                  0.0,
-                  25.0,
-                  "off"
-                ]
-              ]
-            },
-            "thermal_limits_2": {
-              "arguments": [
-                "duration",
-                "min",
-                "max",
-                "report"
-              ],
-              "values": [
-                [
-                  "Inf",
-                  0.0,
-                  9.0,
-                  "off"
-                ],
-                [
-                  900,
-                  0.0,
-                  25.0,
-                  "off"
-                ]
-              ]
-            },
+            "thermal_limits_1": [
+              {
+                "duration": "Inf",
+                "max": 9.0,
+                "min": 0.0,
+                "report": "off"
+              },
+              {
+                "duration": 900,
+                "max": 25.0,
+                "min": 0.0,
+                "report": "off"
+              }
+            ],
+            "thermal_limits_2": [
+              {
+                "duration": "Inf",
+                "max": 9.0,
+                "min": 0.0,
+                "report": "off"
+              },
+              {
+                "duration": 900,
+                "max": 25.0,
+                "min": 0.0,
+                "report": "off"
+              }
+            ],
             "type": "two_winding_transformer"
           },
           "transformer_08": {
             "id": "transformer_08",
-            "link_1": "voltage_switch_id_112",
-            "link_2": "voltage_switch_id_113",
+            "link_1": "voltage_switch_id_116",
+            "link_2": "voltage_switch_id_117",
             "rates": 3,
             "source_id": "33",
-            "subtype": "PI_model",
             "tap_changer": {
-              "angle_shift": {
-                "var": {
-                  "lb": 0.0,
-                  "ub": 0.0
-                }
-              },
               "impedance": {
                 "reactance": {
                   "var": {
@@ -5254,81 +4577,66 @@
                   }
                 }
               },
-              "steps": {
-                "arguments": [
-                  "position",
-                  "impedance",
-                  "shunt",
-                  "tap_ratio",
-                  "angle_shift"
-                ],
-                "values": [
-                  [
-                    0,
-                    {
-                      "reactance": 0.018,
-                      "resistance": 0.0009
-                    },
-                    {
-                      "conductance": 0.0,
-                      "susceptance": 0.0
-                    },
-                    1.009,
-                    0.0
-                  ]
-                ]
-              },
-              "tap_ratio": {
-                "var": {
-                  "lb": 1.009,
-                  "ub": 1.009
+              "steps": [
+                {
+                  "impedance": {
+                    "reactance": 0.018,
+                    "resistance": 0.0009
+                  },
+                  "position": 0,
+                  "shunt": {
+                    "conductance": 0.0,
+                    "susceptance": 0.0
+                  },
+                  "transform": {
+                    "angle_shift": 0.0,
+                    "tap_ratio": 1.009
+                  }
+                }
+              ],
+              "transform": {
+                "angle_shift": {
+                  "var": {
+                    "lb": 0.0,
+                    "ub": 0.0
+                  }
+                },
+                "tap_ratio": {
+                  "var": {
+                    "lb": 1.009,
+                    "ub": 1.009
+                  }
                 }
               }
             },
-            "thermal_limits_1": {
-              "arguments": [
-                "duration",
-                "min",
-                "max",
-                "report"
-              ],
-              "values": [
-                [
-                  "Inf",
-                  0.0,
-                  9.0,
-                  "off"
-                ],
-                [
-                  900,
-                  0.0,
-                  25.0,
-                  "off"
-                ]
-              ]
-            },
-            "thermal_limits_2": {
-              "arguments": [
-                "duration",
-                "min",
-                "max",
-                "report"
-              ],
-              "values": [
-                [
-                  "Inf",
-                  0.0,
-                  9.0,
-                  "off"
-                ],
-                [
-                  900,
-                  0.0,
-                  25.0,
-                  "off"
-                ]
-              ]
-            },
+            "thermal_limits_1": [
+              {
+                "duration": "Inf",
+                "max": 9.0,
+                "min": 0.0,
+                "report": "off"
+              },
+              {
+                "duration": 900,
+                "max": 25.0,
+                "min": 0.0,
+                "report": "off"
+              }
+            ],
+            "thermal_limits_2": [
+              {
+                "duration": "Inf",
+                "max": 9.0,
+                "min": 0.0,
+                "report": "off"
+              },
+              {
+                "duration": 900,
+                "max": 25.0,
+                "min": 0.0,
+                "report": "off"
+              }
+            ],
             "type": "two_winding_transformer"
           },
           "voltage_level_19": {
@@ -5375,10 +4683,10 @@
                 "subtype": "breaker",
                 "type": "switch"
               },
-              "switch_108": {
-                "id": "switch_108",
+              "switch_112": {
+                "id": "switch_112",
                 "link_1": "voltage_bus_id_19",
-                "link_2": "voltage_switch_id_108",
+                "link_2": "voltage_switch_id_112",
                 "status": {
                   "var": [
                     "off",
@@ -5388,10 +4696,10 @@
                 "subtype": "breaker",
                 "type": "switch"
               },
-              "switch_116": {
-                "id": "switch_116",
+              "switch_114": {
+                "id": "switch_114",
                 "link_1": "voltage_bus_id_19",
-                "link_2": "voltage_switch_id_116",
+                "link_2": "voltage_switch_id_114",
                 "status": {
                   "var": [
                     "off",
@@ -5405,8 +4713,8 @@
             "voltage_points": [
               "voltage_bus_id_19",
               "voltage_switch_id_075",
-              "voltage_switch_id_108",
-              "voltage_switch_id_116"
+              "voltage_switch_id_112",
+              "voltage_switch_id_114"
             ]
           },
           "voltage_level_20": {
@@ -5463,10 +4771,10 @@
                 "subtype": "breaker",
                 "type": "switch"
               },
-              "switch_112": {
-                "id": "switch_112",
+              "switch_113": {
+                "id": "switch_113",
                 "link_1": "voltage_bus_id_20",
-                "link_2": "voltage_switch_id_112",
+                "link_2": "voltage_switch_id_113",
                 "status": {
                   "var": [
                     "off",
@@ -5476,10 +4784,10 @@
                 "subtype": "breaker",
                 "type": "switch"
               },
-              "switch_117": {
-                "id": "switch_117",
+              "switch_116": {
+                "id": "switch_116",
                 "link_1": "voltage_bus_id_20",
-                "link_2": "voltage_switch_id_117",
+                "link_2": "voltage_switch_id_116",
                 "status": {
                   "var": [
                     "off",
@@ -5493,8 +4801,8 @@
             "voltage_points": [
               "voltage_bus_id_20",
               "voltage_switch_id_011",
-              "voltage_switch_id_112",
-              "voltage_switch_id_117"
+              "voltage_switch_id_113",
+              "voltage_switch_id_116"
             ]
           },
           "voltage_level_33": {
@@ -5562,10 +4870,10 @@
                 "subtype": "breaker",
                 "type": "switch"
               },
-              "switch_109": {
-                "id": "switch_109",
+              "switch_115": {
+                "id": "switch_115",
                 "link_1": "voltage_bus_id_33",
-                "link_2": "voltage_switch_id_109",
+                "link_2": "voltage_switch_id_115",
                 "status": {
                   "var": [
                     "off",
@@ -5579,7 +4887,7 @@
             "voltage_points": [
               "voltage_bus_id_33",
               "voltage_switch_id_025",
-              "voltage_switch_id_109"
+              "voltage_switch_id_115"
             ]
           },
           "voltage_level_34": {
@@ -5647,10 +4955,10 @@
                 "subtype": "breaker",
                 "type": "switch"
               },
-              "switch_113": {
-                "id": "switch_113",
+              "switch_117": {
+                "id": "switch_117",
                 "link_1": "voltage_bus_id_34",
-                "link_2": "voltage_switch_id_113",
+                "link_2": "voltage_switch_id_117",
                 "status": {
                   "var": [
                     "off",
@@ -5664,7 +4972,7 @@
             "voltage_points": [
               "voltage_bus_id_34",
               "voltage_switch_id_026",
-              "voltage_switch_id_113"
+              "voltage_switch_id_117"
             ]
           }
         },
@@ -5769,18 +5077,11 @@
         "substation_components": {
           "transformer_09": {
             "id": "transformer_09",
-            "link_1": "voltage_switch_id_120",
-            "link_2": "voltage_switch_id_121",
+            "link_1": "voltage_switch_id_118",
+            "link_2": "voltage_switch_id_119",
             "rates": 3,
             "source_id": "36",
-            "subtype": "PI_model",
             "tap_changer": {
-              "angle_shift": {
-                "var": {
-                  "lb": 0.0,
-                  "ub": 0.0
-                }
-              },
               "impedance": {
                 "reactance": {
                   "var": {
@@ -5815,81 +5116,66 @@
                   }
                 }
               },
-              "steps": {
-                "arguments": [
-                  "position",
-                  "impedance",
-                  "shunt",
-                  "tap_ratio",
-                  "angle_shift"
-                ],
-                "values": [
-                  [
-                    0,
-                    {
-                      "reactance": 0.0143,
-                      "resistance": 0.0
-                    },
-                    {
-                      "conductance": 0.0,
-                      "susceptance": 0.0
-                    },
-                    1.025,
-                    0.0
-                  ]
-                ]
-              },
-              "tap_ratio": {
-                "var": {
-                  "lb": 1.025,
-                  "ub": 1.025
+              "steps": [
+                {
+                  "impedance": {
+                    "reactance": 0.0143,
+                    "resistance": 0.0
+                  },
+                  "position": 0,
+                  "shunt": {
+                    "conductance": 0.0,
+                    "susceptance": 0.0
+                  },
+                  "transform": {
+                    "angle_shift": 0.0,
+                    "tap_ratio": 1.025
+                  }
+                }
+              ],
+              "transform": {
+                "angle_shift": {
+                  "var": {
+                    "lb": 0.0,
+                    "ub": 0.0
+                  }
+                },
+                "tap_ratio": {
+                  "var": {
+                    "lb": 1.025,
+                    "ub": 1.025
+                  }
                 }
               }
             },
-            "thermal_limits_1": {
-              "arguments": [
-                "duration",
-                "min",
-                "max",
-                "report"
-              ],
-              "values": [
-                [
-                  "Inf",
-                  0.0,
-                  9.0,
-                  "off"
-                ],
-                [
-                  900,
-                  0.0,
-                  25.0,
-                  "off"
-                ]
-              ]
-            },
-            "thermal_limits_2": {
-              "arguments": [
-                "duration",
-                "min",
-                "max",
-                "report"
-              ],
-              "values": [
-                [
-                  "Inf",
-                  0.0,
-                  9.0,
-                  "off"
-                ],
-                [
-                  900,
-                  0.0,
-                  25.0,
-                  "off"
-                ]
-              ]
-            },
+            "thermal_limits_1": [
+              {
+                "duration": "Inf",
+                "max": 9.0,
+                "min": 0.0,
+                "report": "off"
+              },
+              {
+                "duration": 900,
+                "max": 25.0,
+                "min": 0.0,
+                "report": "off"
+              }
+            ],
+            "thermal_limits_2": [
+              {
+                "duration": "Inf",
+                "max": 9.0,
+                "min": 0.0,
+                "report": "off"
+              },
+              {
+                "duration": 900,
+                "max": 25.0,
+                "min": 0.0,
+                "report": "off"
+              }
+            ],
             "type": "two_winding_transformer"
           },
           "voltage_level_22": {
@@ -5949,10 +5235,10 @@
                 "subtype": "breaker",
                 "type": "switch"
               },
-              "switch_120": {
-                "id": "switch_120",
+              "switch_118": {
+                "id": "switch_118",
                 "link_1": "voltage_bus_id_22",
-                "link_2": "voltage_switch_id_120",
+                "link_2": "voltage_switch_id_118",
                 "status": {
                   "var": [
                     "off",
@@ -5967,7 +5253,7 @@
               "voltage_bus_id_22",
               "voltage_switch_id_085",
               "voltage_switch_id_086",
-              "voltage_switch_id_120"
+              "voltage_switch_id_118"
             ]
           },
           "voltage_level_35": {
@@ -6035,10 +5321,10 @@
                 "subtype": "breaker",
                 "type": "switch"
               },
-              "switch_121": {
-                "id": "switch_121",
+              "switch_119": {
+                "id": "switch_119",
                 "link_1": "voltage_bus_id_35",
-                "link_2": "voltage_switch_id_121",
+                "link_2": "voltage_switch_id_119",
                 "status": {
                   "var": [
                     "off",
@@ -6052,7 +5338,7 @@
             "voltage_points": [
               "voltage_bus_id_35",
               "voltage_switch_id_027",
-              "voltage_switch_id_121"
+              "voltage_switch_id_119"
             ]
           }
         },
@@ -6061,131 +5347,6 @@
       "substation_20": {
         "id": "substation_20",
         "substation_components": {
-          "transformer_10": {
-            "id": "transformer_10",
-            "link_1": "voltage_switch_id_122",
-            "link_2": "voltage_switch_id_123",
-            "rates": 3,
-            "source_id": "38",
-            "subtype": "PI_model",
-            "tap_changer": {
-              "angle_shift": {
-                "var": {
-                  "lb": 0.0,
-                  "ub": 0.0
-                }
-              },
-              "impedance": {
-                "reactance": {
-                  "var": {
-                    "lb": 0.0272,
-                    "ub": 0.0272
-                  }
-                },
-                "resistance": {
-                  "var": {
-                    "lb": 0.0005,
-                    "ub": 0.0005
-                  }
-                }
-              },
-              "position": {
-                "var": {
-                  "lb": 0,
-                  "ub": 0
-                }
-              },
-              "shunt": {
-                "conductance": {
-                  "var": {
-                    "lb": 0,
-                    "ub": 0
-                  }
-                },
-                "susceptance": {
-                  "var": {
-                    "lb": 0.0,
-                    "ub": 0.0
-                  }
-                }
-              },
-              "steps": {
-                "arguments": [
-                  "position",
-                  "impedance",
-                  "shunt",
-                  "tap_ratio",
-                  "angle_shift"
-                ],
-                "values": [
-                  [
-                    0,
-                    {
-                      "reactance": 0.0272,
-                      "resistance": 0.0005
-                    },
-                    {
-                      "conductance": 0.0,
-                      "susceptance": 0.0
-                    },
-                    1.0,
-                    0.0
-                  ]
-                ]
-              },
-              "tap_ratio": {
-                "var": {
-                  "lb": 1.0,
-                  "ub": 1.0
-                }
-              }
-            },
-            "thermal_limits_1": {
-              "arguments": [
-                "duration",
-                "min",
-                "max",
-                "report"
-              ],
-              "values": [
-                [
-                  "Inf",
-                  0.0,
-                  9.0,
-                  "off"
-                ],
-                [
-                  900,
-                  0.0,
-                  25.0,
-                  "off"
-                ]
-              ]
-            },
-            "thermal_limits_2": {
-              "arguments": [
-                "duration",
-                "min",
-                "max",
-                "report"
-              ],
-              "values": [
-                [
-                  "Inf",
-                  0.0,
-                  9.0,
-                  "off"
-                ],
-                [
-                  900,
-                  0.0,
-                  25.0,
-                  "off"
-                ]
-              ]
-            },
-            "type": "two_winding_transformer"
-          },
           "voltage_level_23": {
             "id": "voltage_level_23",
             "type": "voltage_level",
@@ -6266,10 +5427,10 @@
                 "subtype": "breaker",
                 "type": "switch"
               },
-              "switch_122": {
-                "id": "switch_122",
+              "switch_090": {
+                "id": "switch_090",
                 "link_1": "voltage_bus_id_23",
-                "link_2": "voltage_switch_id_122",
+                "link_2": "voltage_switch_id_090",
                 "status": {
                   "var": [
                     "off",
@@ -6285,92 +5446,7 @@
               "voltage_switch_id_013",
               "voltage_switch_id_087",
               "voltage_switch_id_088",
-              "voltage_switch_id_122"
-            ]
-          },
-          "voltage_level_36": {
-            "id": "voltage_level_36",
-            "type": "voltage_level",
-            "voltage": {
-              "lower_limit": 0.94,
-              "nominal_value": 345.0,
-              "upper_limit": 1.06
-            },
-            "voltage_level_components": {
-              "bus_36": {
-                "area": 3,
-                "id": "bus_36",
-                "link": "voltage_bus_id_36",
-                "source_id": "36",
-                "type": "bus",
-                "voltage": {
-                  "angle": {
-                    "var": {
-                      "lb": "-Inf",
-                      "ub": "Inf"
-                    }
-                  },
-                  "magnitude": {
-                    "var": {
-                      "lb": 0.94,
-                      "ub": 1.06
-                    }
-                  }
-                },
-                "zone": 1
-              },
-              "gen_7": {
-                "id": "gen_7",
-                "link": "voltage_switch_id_028",
-                "output": {
-                  "active": {
-                    "var": {
-                      "lb": 0.0,
-                      "ub": 5.8
-                    }
-                  },
-                  "reactive": {
-                    "var": {
-                      "lb": 0.0,
-                      "ub": 2.4
-                    }
-                  }
-                },
-                "source_id": "6",
-                "type": "generator",
-                "vg": 1.0636
-              },
-              "switch_028": {
-                "id": "switch_028",
-                "link_1": "voltage_bus_id_36",
-                "link_2": "voltage_switch_id_028",
-                "status": {
-                  "var": [
-                    "off",
-                    "on"
-                  ]
-                },
-                "subtype": "breaker",
-                "type": "switch"
-              },
-              "switch_123": {
-                "id": "switch_123",
-                "link_1": "voltage_bus_id_36",
-                "link_2": "voltage_switch_id_123",
-                "status": {
-                  "var": [
-                    "off",
-                    "on"
-                  ]
-                },
-                "subtype": "breaker",
-                "type": "switch"
-              }
-            },
-            "voltage_points": [
-              "voltage_bus_id_36",
-              "voltage_switch_id_028",
-              "voltage_switch_id_123"
+              "voltage_switch_id_090"
             ]
           }
         },
@@ -6473,20 +5549,13 @@
       "substation_22": {
         "id": "substation_22",
         "substation_components": {
-          "transformer_11": {
-            "id": "transformer_11",
-            "link_1": "voltage_switch_id_114",
-            "link_2": "voltage_switch_id_115",
+          "transformer_10": {
+            "id": "transformer_10",
+            "link_1": "voltage_switch_id_120",
+            "link_2": "voltage_switch_id_121",
             "rates": 3,
             "source_id": "40",
-            "subtype": "PI_model",
             "tap_changer": {
-              "angle_shift": {
-                "var": {
-                  "lb": 0.0,
-                  "ub": 0.0
-                }
-              },
               "impedance": {
                 "reactance": {
                   "var": {
@@ -6521,81 +5590,66 @@
                   }
                 }
               },
-              "steps": {
-                "arguments": [
-                  "position",
-                  "impedance",
-                  "shunt",
-                  "tap_ratio",
-                  "angle_shift"
-                ],
-                "values": [
-                  [
-                    0,
-                    {
-                      "reactance": 0.0232,
-                      "resistance": 0.0006
-                    },
-                    {
-                      "conductance": 0.0,
-                      "susceptance": 0.0
-                    },
-                    1.025,
-                    0.0
-                  ]
-                ]
-              },
-              "tap_ratio": {
-                "var": {
-                  "lb": 1.025,
-                  "ub": 1.025
+              "steps": [
+                {
+                  "impedance": {
+                    "reactance": 0.0232,
+                    "resistance": 0.0006
+                  },
+                  "position": 0,
+                  "shunt": {
+                    "conductance": 0.0,
+                    "susceptance": 0.0
+                  },
+                  "transform": {
+                    "angle_shift": 0.0,
+                    "tap_ratio": 1.025
+                  }
+                }
+              ],
+              "transform": {
+                "angle_shift": {
+                  "var": {
+                    "lb": 0.0,
+                    "ub": 0.0
+                  }
+                },
+                "tap_ratio": {
+                  "var": {
+                    "lb": 1.025,
+                    "ub": 1.025
+                  }
                 }
               }
             },
-            "thermal_limits_1": {
-              "arguments": [
-                "duration",
-                "min",
-                "max",
-                "report"
-              ],
-              "values": [
-                [
-                  "Inf",
-                  0.0,
-                  9.0,
-                  "off"
-                ],
-                [
-                  900,
-                  0.0,
-                  25.0,
-                  "off"
-                ]
-              ]
-            },
-            "thermal_limits_2": {
-              "arguments": [
-                "duration",
-                "min",
-                "max",
-                "report"
-              ],
-              "values": [
-                [
-                  "Inf",
-                  0.0,
-                  9.0,
-                  "off"
-                ],
-                [
-                  900,
-                  0.0,
-                  25.0,
-                  "off"
-                ]
-              ]
-            },
+            "thermal_limits_1": [
+              {
+                "duration": "Inf",
+                "max": 9.0,
+                "min": 0.0,
+                "report": "off"
+              },
+              {
+                "duration": 900,
+                "max": 25.0,
+                "min": 0.0,
+                "report": "off"
+              }
+            ],
+            "thermal_limits_2": [
+              {
+                "duration": "Inf",
+                "max": 9.0,
+                "min": 0.0,
+                "report": "off"
+              },
+              {
+                "duration": 900,
+                "max": 25.0,
+                "min": 0.0,
+                "report": "off"
+              }
+            ],
             "type": "two_winding_transformer"
           },
           "voltage_level_25": {
@@ -6665,10 +5719,10 @@
                 "subtype": "breaker",
                 "type": "switch"
               },
-              "switch_090": {
-                "id": "switch_090",
+              "switch_092": {
+                "id": "switch_092",
                 "link_1": "voltage_bus_id_25",
-                "link_2": "voltage_switch_id_090",
+                "link_2": "voltage_switch_id_092",
                 "status": {
                   "var": [
                     "off",
@@ -6678,10 +5732,10 @@
                 "subtype": "breaker",
                 "type": "switch"
               },
-              "switch_114": {
-                "id": "switch_114",
+              "switch_120": {
+                "id": "switch_120",
                 "link_1": "voltage_bus_id_25",
-                "link_2": "voltage_switch_id_114",
+                "link_2": "voltage_switch_id_120",
                 "status": {
                   "var": [
                     "off",
@@ -6696,8 +5750,8 @@
               "voltage_bus_id_25",
               "voltage_switch_id_015",
               "voltage_switch_id_039",
-              "voltage_switch_id_090",
-              "voltage_switch_id_114"
+              "voltage_switch_id_092",
+              "voltage_switch_id_120"
             ]
           },
           "voltage_level_37": {
@@ -6765,10 +5819,10 @@
                 "subtype": "breaker",
                 "type": "switch"
               },
-              "switch_115": {
-                "id": "switch_115",
+              "switch_121": {
+                "id": "switch_121",
                 "link_1": "voltage_bus_id_37",
-                "link_2": "voltage_switch_id_115",
+                "link_2": "voltage_switch_id_121",
                 "status": {
                   "var": [
                     "off",
@@ -6782,7 +5836,7 @@
             "voltage_points": [
               "voltage_bus_id_37",
               "voltage_switch_id_029",
-              "voltage_switch_id_115"
+              "voltage_switch_id_121"
             ]
           }
         },
@@ -6845,23 +5899,10 @@
                 "subtype": "breaker",
                 "type": "switch"
               },
-              "switch_091": {
-                "id": "switch_091",
+              "switch_093": {
+                "id": "switch_093",
                 "link_1": "voltage_bus_id_26",
-                "link_2": "voltage_switch_id_091",
-                "status": {
-                  "var": [
-                    "off",
-                    "on"
-                  ]
-                },
-                "subtype": "breaker",
-                "type": "switch"
-              },
-              "switch_092": {
-                "id": "switch_092",
-                "link_1": "voltage_bus_id_26",
-                "link_2": "voltage_switch_id_092",
+                "link_2": "voltage_switch_id_093",
                 "status": {
                   "var": [
                     "off",
@@ -6896,15 +5937,28 @@
                 },
                 "subtype": "breaker",
                 "type": "switch"
+              },
+              "switch_098": {
+                "id": "switch_098",
+                "link_1": "voltage_bus_id_26",
+                "link_2": "voltage_switch_id_098",
+                "status": {
+                  "var": [
+                    "off",
+                    "on"
+                  ]
+                },
+                "subtype": "breaker",
+                "type": "switch"
               }
             },
             "voltage_points": [
               "voltage_bus_id_26",
               "voltage_switch_id_016",
-              "voltage_switch_id_091",
-              "voltage_switch_id_092",
+              "voltage_switch_id_093",
               "voltage_switch_id_094",
-              "voltage_switch_id_096"
+              "voltage_switch_id_096",
+              "voltage_switch_id_098"
             ]
           }
         },
@@ -6980,10 +6034,10 @@
                 "subtype": "breaker",
                 "type": "switch"
               },
-              "switch_093": {
-                "id": "switch_093",
+              "switch_095": {
+                "id": "switch_095",
                 "link_1": "voltage_bus_id_27",
-                "link_2": "voltage_switch_id_093",
+                "link_2": "voltage_switch_id_095",
                 "status": {
                   "var": [
                     "off",
@@ -6998,7 +6052,7 @@
               "voltage_bus_id_27",
               "voltage_switch_id_017",
               "voltage_switch_id_083",
-              "voltage_switch_id_093"
+              "voltage_switch_id_095"
             ]
           }
         },
@@ -7061,10 +6115,10 @@
                 "subtype": "breaker",
                 "type": "switch"
               },
-              "switch_095": {
-                "id": "switch_095",
+              "switch_097": {
+                "id": "switch_097",
                 "link_1": "voltage_bus_id_28",
-                "link_2": "voltage_switch_id_095",
+                "link_2": "voltage_switch_id_097",
                 "status": {
                   "var": [
                     "off",
@@ -7074,10 +6128,10 @@
                 "subtype": "breaker",
                 "type": "switch"
               },
-              "switch_098": {
-                "id": "switch_098",
+              "switch_100": {
+                "id": "switch_100",
                 "link_1": "voltage_bus_id_28",
-                "link_2": "voltage_switch_id_098",
+                "link_2": "voltage_switch_id_100",
                 "status": {
                   "var": [
                     "off",
@@ -7091,8 +6145,8 @@
             "voltage_points": [
               "voltage_bus_id_28",
               "voltage_switch_id_018",
-              "voltage_switch_id_095",
-              "voltage_switch_id_098"
+              "voltage_switch_id_097",
+              "voltage_switch_id_100"
             ]
           }
         },
@@ -7101,20 +6155,13 @@
       "substation_26": {
         "id": "substation_26",
         "substation_components": {
-          "transformer_12": {
-            "id": "transformer_12",
-            "link_1": "voltage_switch_id_118",
-            "link_2": "voltage_switch_id_119",
+          "transformer_11": {
+            "id": "transformer_11",
+            "link_1": "voltage_switch_id_122",
+            "link_2": "voltage_switch_id_123",
             "rates": 3,
             "source_id": "45",
-            "subtype": "PI_model",
             "tap_changer": {
-              "angle_shift": {
-                "var": {
-                  "lb": 0.0,
-                  "ub": 0.0
-                }
-              },
               "impedance": {
                 "reactance": {
                   "var": {
@@ -7149,81 +6196,66 @@
                   }
                 }
               },
-              "steps": {
-                "arguments": [
-                  "position",
-                  "impedance",
-                  "shunt",
-                  "tap_ratio",
-                  "angle_shift"
-                ],
-                "values": [
-                  [
-                    0,
-                    {
-                      "reactance": 0.0156,
-                      "resistance": 0.0008
-                    },
-                    {
-                      "conductance": 0.0,
-                      "susceptance": 0.0
-                    },
-                    1.025,
-                    0.0
-                  ]
-                ]
-              },
-              "tap_ratio": {
-                "var": {
-                  "lb": 1.025,
-                  "ub": 1.025
+              "steps": [
+                {
+                  "impedance": {
+                    "reactance": 0.0156,
+                    "resistance": 0.0008
+                  },
+                  "position": 0,
+                  "shunt": {
+                    "conductance": 0.0,
+                    "susceptance": 0.0
+                  },
+                  "transform": {
+                    "angle_shift": 0.0,
+                    "tap_ratio": 1.025
+                  }
+                }
+              ],
+              "transform": {
+                "angle_shift": {
+                  "var": {
+                    "lb": 0.0,
+                    "ub": 0.0
+                  }
+                },
+                "tap_ratio": {
+                  "var": {
+                    "lb": 1.025,
+                    "ub": 1.025
+                  }
                 }
               }
             },
-            "thermal_limits_1": {
-              "arguments": [
-                "duration",
-                "min",
-                "max",
-                "report"
-              ],
-              "values": [
-                [
-                  "Inf",
-                  0.0,
-                  12.0,
-                  "off"
-                ],
-                [
-                  900,
-                  0.0,
-                  25.0,
-                  "off"
-                ]
-              ]
-            },
-            "thermal_limits_2": {
-              "arguments": [
-                "duration",
-                "min",
-                "max",
-                "report"
-              ],
-              "values": [
-                [
-                  "Inf",
-                  0.0,
-                  12.0,
-                  "off"
-                ],
-                [
-                  900,
-                  0.0,
-                  25.0,
-                  "off"
-                ]
-              ]
-            },
+            "thermal_limits_1": [
+              {
+                "duration": "Inf",
+                "max": 12.0,
+                "min": 0.0,
+                "report": "off"
+              },
+              {
+                "duration": 900,
+                "max": 25.0,
+                "min": 0.0,
+                "report": "off"
+              }
+            ],
+            "thermal_limits_2": [
+              {
+                "duration": "Inf",
+                "max": 12.0,
+                "min": 0.0,
+                "report": "off"
+              },
+              {
+                "duration": 900,
+                "max": 25.0,
+                "min": 0.0,
+                "report": "off"
+              }
+            ],
             "type": "two_winding_transformer"
           },
           "voltage_level_29": {
@@ -7280,19 +6312,6 @@
                 "subtype": "breaker",
                 "type": "switch"
               },
-              "switch_097": {
-                "id": "switch_097",
-                "link_1": "voltage_bus_id_29",
-                "link_2": "voltage_switch_id_097",
-                "status": {
-                  "var": [
-                    "off",
-                    "on"
-                  ]
-                },
-                "subtype": "breaker",
-                "type": "switch"
-              },
               "switch_099": {
                 "id": "switch_099",
                 "link_1": "voltage_bus_id_29",
@@ -7306,10 +6325,23 @@
                 "subtype": "breaker",
                 "type": "switch"
               },
-              "switch_118": {
-                "id": "switch_118",
+              "switch_101": {
+                "id": "switch_101",
                 "link_1": "voltage_bus_id_29",
-                "link_2": "voltage_switch_id_118",
+                "link_2": "voltage_switch_id_101",
+                "status": {
+                  "var": [
+                    "off",
+                    "on"
+                  ]
+                },
+                "subtype": "breaker",
+                "type": "switch"
+              },
+              "switch_122": {
+                "id": "switch_122",
+                "link_1": "voltage_bus_id_29",
+                "link_2": "voltage_switch_id_122",
                 "status": {
                   "var": [
                     "off",
@@ -7323,9 +6355,9 @@
             "voltage_points": [
               "voltage_bus_id_29",
               "voltage_switch_id_019",
-              "voltage_switch_id_097",
               "voltage_switch_id_099",
-              "voltage_switch_id_118"
+              "voltage_switch_id_101",
+              "voltage_switch_id_122"
             ]
           },
           "voltage_level_38": {
@@ -7393,10 +6425,10 @@
                 "subtype": "breaker",
                 "type": "switch"
               },
-              "switch_119": {
-                "id": "switch_119",
+              "switch_123": {
+                "id": "switch_123",
                 "link_1": "voltage_bus_id_38",
-                "link_2": "voltage_switch_id_119",
+                "link_2": "voltage_switch_id_123",
                 "status": {
                   "var": [
                     "off",
@@ -7410,7 +6442,7 @@
             "voltage_points": [
               "voltage_bus_id_38",
               "voltage_switch_id_030",
-              "voltage_switch_id_119"
+              "voltage_switch_id_123"
             ]
           }
         },
@@ -7418,6 +6450,97 @@
       },
       "substation_27": {
         "id": "substation_27",
+        "substation_components": {
+          "voltage_level_36": {
+            "id": "voltage_level_36",
+            "type": "voltage_level",
+            "voltage": {
+              "lower_limit": 0.94,
+              "nominal_value": 345.0,
+              "upper_limit": 1.06
+            },
+            "voltage_level_components": {
+              "bus_36": {
+                "area": 3,
+                "id": "bus_36",
+                "link": "voltage_bus_id_36",
+                "source_id": "36",
+                "type": "bus",
+                "voltage": {
+                  "angle": {
+                    "var": {
+                      "lb": "-Inf",
+                      "ub": "Inf"
+                    }
+                  },
+                  "magnitude": {
+                    "var": {
+                      "lb": 0.94,
+                      "ub": 1.06
+                    }
+                  }
+                },
+                "zone": 1
+              },
+              "gen_7": {
+                "id": "gen_7",
+                "link": "voltage_switch_id_028",
+                "output": {
+                  "active": {
+                    "var": {
+                      "lb": 0.0,
+                      "ub": 5.8
+                    }
+                  },
+                  "reactive": {
+                    "var": {
+                      "lb": 0.0,
+                      "ub": 2.4
+                    }
+                  }
+                },
+                "source_id": "6",
+                "type": "generator",
+                "vg": 1.0636
+              },
+              "switch_028": {
+                "id": "switch_028",
+                "link_1": "voltage_bus_id_36",
+                "link_2": "voltage_switch_id_028",
+                "status": {
+                  "var": [
+                    "off",
+                    "on"
+                  ]
+                },
+                "subtype": "breaker",
+                "type": "switch"
+              },
+              "switch_091": {
+                "id": "switch_091",
+                "link_1": "voltage_bus_id_36",
+                "link_2": "voltage_switch_id_091",
+                "status": {
+                  "var": [
+                    "off",
+                    "on"
+                  ]
+                },
+                "subtype": "breaker",
+                "type": "switch"
+              }
+            },
+            "voltage_points": [
+              "voltage_bus_id_36",
+              "voltage_switch_id_028",
+              "voltage_switch_id_091"
+            ]
+          }
+        },
+        "type": "substation"
+      },
+      "substation_28": {
+        "id": "substation_28",
         "substation_components": {
           "voltage_level_39": {
             "id": "voltage_level_39",
@@ -7757,6 +6880,12 @@
         "ub": 0.5235987755982988
       }
     },
+    "line_35/angle_difference": {
+      "var": {
+        "lb": -0.5235987755982988,
+        "ub": 0.5235987755982988
+      }
+    },
     "transformer_01/angle_difference": {
       "var": {
         "lb": -0.5235987755982988,
@@ -7818,12 +6947,6 @@
       }
     },
     "transformer_11/angle_difference": {
-      "var": {
-        "lb": -0.5235987755982988,
-        "ub": 0.5235987755982988
-      }
-    },
-    "transformer_12/angle_difference": {
       "var": {
         "lb": -0.5235987755982988,
         "ub": 0.5235987755982988

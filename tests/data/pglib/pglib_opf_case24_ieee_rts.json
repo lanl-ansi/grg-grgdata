@@ -1,5 +1,5 @@
 {
-  "grg_version": "v.2.0",
+  "grg_version": "v.4.1",
   "mappings": {
     "breakers_assignment": {
       "switch_001/status": "on",
@@ -434,421 +434,357 @@
     }
   },
   "market": {
-    "costs": {
+    "operational_costs": {
       "gen_01": {
-        "arguments": [
-          "gen_01/output/active"
-        ],
         "coefficients": [
-          [
-            400.6849,
-            13000.0,
-            0.0
-          ]
+          400.6849,
+          13000.0,
+          0.0
         ],
+        "input": "gen_01/output/active",
+        "shutdown": 0.0,
+        "startup": 1500.0,
         "type": "polynomial"
       },
       "gen_02": {
-        "arguments": [
-          "gen_02/output/active"
-        ],
         "coefficients": [
-          [
-            400.6849,
-            13000.0,
-            0.0
-          ]
+          400.6849,
+          13000.0,
+          0.0
         ],
+        "input": "gen_02/output/active",
+        "shutdown": 0.0,
+        "startup": 1500.0,
         "type": "polynomial"
       },
       "gen_03": {
-        "arguments": [
-          "gen_03/output/active"
-        ],
         "coefficients": [
-          [
-            212.3076,
-            1608.11,
-            141.42
-          ]
+          212.3076,
+          1608.11,
+          141.42
         ],
+        "input": "gen_03/output/active",
+        "shutdown": 0.0,
+        "startup": 1500.0,
         "type": "polynomial"
       },
       "gen_04": {
-        "arguments": [
-          "gen_04/output/active"
-        ],
         "coefficients": [
-          [
-            212.3076,
-            1608.11,
-            141.42
-          ]
+          212.3076,
+          1608.11,
+          141.42
         ],
+        "input": "gen_04/output/active",
+        "shutdown": 0.0,
+        "startup": 1500.0,
         "type": "polynomial"
       },
       "gen_05": {
-        "arguments": [
-          "gen_05/output/active"
-        ],
         "coefficients": [
-          [
-            400.6849,
-            13000.0,
-            0.0
-          ]
+          400.6849,
+          13000.0,
+          0.0
         ],
+        "input": "gen_05/output/active",
+        "shutdown": 0.0,
+        "startup": 1500.0,
         "type": "polynomial"
       },
       "gen_06": {
-        "arguments": [
-          "gen_06/output/active"
-        ],
         "coefficients": [
-          [
-            400.6849,
-            13000.0,
-            0.0
-          ]
+          400.6849,
+          13000.0,
+          0.0
         ],
+        "input": "gen_06/output/active",
+        "shutdown": 0.0,
+        "startup": 1500.0,
         "type": "polynomial"
       },
       "gen_07": {
-        "arguments": [
-          "gen_07/output/active"
-        ],
         "coefficients": [
-          [
-            212.3076,
-            1608.11,
-            141.42
-          ]
+          212.3076,
+          1608.11,
+          141.42
         ],
+        "input": "gen_07/output/active",
+        "shutdown": 0.0,
+        "startup": 1500.0,
         "type": "polynomial"
       },
       "gen_08": {
-        "arguments": [
-          "gen_08/output/active"
-        ],
         "coefficients": [
-          [
-            212.3076,
-            1608.11,
-            141.42
-          ]
+          212.3076,
+          1608.11,
+          141.42
         ],
+        "input": "gen_08/output/active",
+        "shutdown": 0.0,
+        "startup": 1500.0,
         "type": "polynomial"
       },
       "gen_09": {
-        "arguments": [
-          "gen_09/output/active"
-        ],
         "coefficients": [
-          [
-            781.521,
-            4366.15,
-            526.7199999999999
-          ]
+          781.521,
+          4366.15,
+          526.7199999999999
         ],
+        "input": "gen_09/output/active",
+        "shutdown": 0.0,
+        "startup": 1500.0,
         "type": "polynomial"
       },
       "gen_10": {
-        "arguments": [
-          "gen_10/output/active"
-        ],
         "coefficients": [
-          [
-            781.521,
-            4366.15,
-            526.7199999999999
-          ]
+          781.521,
+          4366.15,
+          526.7199999999999
         ],
+        "input": "gen_10/output/active",
+        "shutdown": 0.0,
+        "startup": 1500.0,
         "type": "polynomial"
       },
       "gen_11": {
-        "arguments": [
-          "gen_11/output/active"
-        ],
         "coefficients": [
-          [
-            781.521,
-            4366.15,
-            526.7199999999999
-          ]
+          781.521,
+          4366.15,
+          526.7199999999999
         ],
+        "input": "gen_11/output/active",
+        "shutdown": 0.0,
+        "startup": 1500.0,
         "type": "polynomial"
       },
       "gen_12": {
-        "arguments": [
-          "gen_12/output/active"
-        ],
         "coefficients": [
-          [
-            832.7575,
-            4858.04,
-            71.7
-          ]
+          832.7575,
+          4858.04,
+          71.7
         ],
+        "input": "gen_12/output/active",
+        "shutdown": 0.0,
+        "startup": 1500.0,
         "type": "polynomial"
       },
       "gen_13": {
-        "arguments": [
-          "gen_13/output/active"
-        ],
         "coefficients": [
-          [
-            832.7575,
-            4858.04,
-            71.7
-          ]
+          832.7575,
+          4858.04,
+          71.7
         ],
+        "input": "gen_13/output/active",
+        "shutdown": 0.0,
+        "startup": 1500.0,
         "type": "polynomial"
       },
       "gen_14": {
-        "arguments": [
-          "gen_14/output/active"
-        ],
         "coefficients": [
-          [
-            832.7575,
-            4858.04,
-            71.7
-          ]
+          832.7575,
+          4858.04,
+          71.7
         ],
+        "input": "gen_14/output/active",
+        "shutdown": 0.0,
+        "startup": 1500.0,
         "type": "polynomial"
       },
       "gen_15": {
-        "arguments": [
-          "gen_15/output/active"
-        ],
         "coefficients": [
-          [
-            86.3852,
-            5656.4,
-            3284.12
-          ]
+          86.3852,
+          5656.4,
+          3284.12
         ],
+        "input": "gen_15/output/active",
+        "shutdown": 0.0,
+        "startup": 1500.0,
         "type": "polynomial"
       },
       "gen_16": {
-        "arguments": [
-          "gen_16/output/active"
-        ],
         "coefficients": [
-          [
-            86.3852,
-            5656.4,
-            3284.12
-          ]
+          86.3852,
+          5656.4,
+          3284.12
         ],
+        "input": "gen_16/output/active",
+        "shutdown": 0.0,
+        "startup": 1500.0,
         "type": "polynomial"
       },
       "gen_17": {
-        "arguments": [
-          "gen_17/output/active"
-        ],
         "coefficients": [
-          [
-            86.3852,
-            5656.4,
-            3284.12
-          ]
+          86.3852,
+          5656.4,
+          3284.12
         ],
+        "input": "gen_17/output/active",
+        "shutdown": 0.0,
+        "startup": 1500.0,
         "type": "polynomial"
       },
       "gen_18": {
-        "arguments": [
-          "gen_18/output/active"
-        ],
         "coefficients": [
-          [
-            86.3852,
-            5656.4,
-            3284.12
-          ]
+          86.3852,
+          5656.4,
+          3284.12
         ],
+        "input": "gen_18/output/active",
+        "shutdown": 0.0,
+        "startup": 1500.0,
         "type": "polynomial"
       },
       "gen_19": {
-        "arguments": [
-          "gen_19/output/active"
-        ],
         "coefficients": [
-          [
-            86.3852,
-            5656.4,
-            3284.12
-          ]
+          86.3852,
+          5656.4,
+          3284.12
         ],
+        "input": "gen_19/output/active",
+        "shutdown": 0.0,
+        "startup": 1500.0,
         "type": "polynomial"
       },
       "gen_20": {
-        "arguments": [
-          "gen_20/output/active"
-        ],
         "coefficients": [
-          [
-            382.2391,
-            1238.83,
-            83.42
-          ]
+          382.2391,
+          1238.83,
+          83.42
         ],
+        "input": "gen_20/output/active",
+        "shutdown": 0.0,
+        "startup": 1500.0,
         "type": "polynomial"
       },
       "gen_21": {
-        "arguments": [
-          "gen_21/output/active"
-        ],
         "coefficients": [
-          [
-            382.2391,
-            1238.83,
-            83.42
-          ]
+          382.2391,
+          1238.83,
+          83.42
         ],
+        "input": "gen_21/output/active",
+        "shutdown": 0.0,
+        "startup": 1500.0,
         "type": "polynomial"
       },
       "gen_22": {
-        "arguments": [
-          "gen_22/output/active"
-        ],
         "coefficients": [
-          [
-            395.3749,
-            442.31,
-            2.13
-          ]
+          395.3749,
+          442.31,
+          2.13
         ],
+        "input": "gen_22/output/active",
+        "shutdown": 0.0,
+        "startup": 1500.0,
         "type": "polynomial"
       },
       "gen_23": {
-        "arguments": [
-          "gen_23/output/active"
-        ],
         "coefficients": [
-          [
-            395.3749,
-            442.31,
-            2.13
-          ]
+          395.3749,
+          442.31,
+          2.13
         ],
+        "input": "gen_23/output/active",
+        "shutdown": 0.0,
+        "startup": 1500.0,
         "type": "polynomial"
       },
       "gen_24": {
-        "arguments": [
-          "gen_24/output/active"
-        ],
         "coefficients": [
-          [
-            0.001,
-            0.1,
-            0.0
-          ]
+          0.001,
+          0.1,
+          0.0
         ],
+        "input": "gen_24/output/active",
+        "shutdown": 0.0,
+        "startup": 1500.0,
         "type": "polynomial"
       },
       "gen_25": {
-        "arguments": [
-          "gen_25/output/active"
-        ],
         "coefficients": [
-          [
-            0.001,
-            0.1,
-            0.0
-          ]
+          0.001,
+          0.1,
+          0.0
         ],
+        "input": "gen_25/output/active",
+        "shutdown": 0.0,
+        "startup": 1500.0,
         "type": "polynomial"
       },
       "gen_26": {
-        "arguments": [
-          "gen_26/output/active"
-        ],
         "coefficients": [
-          [
-            0.001,
-            0.1,
-            0.0
-          ]
+          0.001,
+          0.1,
+          0.0
         ],
+        "input": "gen_26/output/active",
+        "shutdown": 0.0,
+        "startup": 1500.0,
         "type": "polynomial"
       },
       "gen_27": {
-        "arguments": [
-          "gen_27/output/active"
-        ],
         "coefficients": [
-          [
-            0.001,
-            0.1,
-            0.0
-          ]
+          0.001,
+          0.1,
+          0.0
         ],
+        "input": "gen_27/output/active",
+        "shutdown": 0.0,
+        "startup": 1500.0,
         "type": "polynomial"
       },
       "gen_28": {
-        "arguments": [
-          "gen_28/output/active"
-        ],
         "coefficients": [
-          [
-            0.001,
-            0.1,
-            0.0
-          ]
+          0.001,
+          0.1,
+          0.0
         ],
+        "input": "gen_28/output/active",
+        "shutdown": 0.0,
+        "startup": 1500.0,
         "type": "polynomial"
       },
       "gen_29": {
-        "arguments": [
-          "gen_29/output/active"
-        ],
         "coefficients": [
-          [
-            0.001,
-            0.1,
-            0.0
-          ]
+          0.001,
+          0.1,
+          0.0
         ],
+        "input": "gen_29/output/active",
+        "shutdown": 0.0,
+        "startup": 1500.0,
         "type": "polynomial"
       },
       "gen_30": {
-        "arguments": [
-          "gen_30/output/active"
-        ],
         "coefficients": [
-          [
-            382.2391,
-            1238.83,
-            83.42
-          ]
+          382.2391,
+          1238.83,
+          83.42
         ],
+        "input": "gen_30/output/active",
+        "shutdown": 0.0,
+        "startup": 1500.0,
         "type": "polynomial"
       },
       "gen_31": {
-        "arguments": [
-          "gen_31/output/active"
-        ],
         "coefficients": [
-          [
-            382.2391,
-            1238.83,
-            83.42
-          ]
+          382.2391,
+          1238.83,
+          83.42
         ],
+        "input": "gen_31/output/active",
+        "shutdown": 0.0,
+        "startup": 1500.0,
         "type": "polynomial"
       },
       "gen_32": {
-        "arguments": [
-          "gen_32/output/active"
-        ],
         "coefficients": [
-          [
-            665.1094,
-            1184.95,
-            48.95
-          ]
+          665.1094,
+          1184.95,
+          48.95
         ],
+        "input": "gen_32/output/active",
+        "shutdown": 0.0,
+        "startup": 1500.0,
         "type": "polynomial"
       }
     }
@@ -875,62 +811,46 @@
         },
         "source_id": "0",
         "subtype": "overhead",
-        "thermal_limits_1": {
-          "arguments": [
-            "duration",
-            "min",
-            "max",
-            "report"
-          ],
-          "values": [
-            [
-              "Inf",
-              0.0,
-              1.75,
-              "off"
-            ],
-            [
-              14400,
-              0.0,
-              1.93,
-              "off"
-            ],
-            [
-              900,
-              0.0,
-              2.0,
-              "off"
-            ]
-          ]
-        },
-        "thermal_limits_2": {
-          "arguments": [
-            "duration",
-            "min",
-            "max",
-            "report"
-          ],
-          "values": [
-            [
-              "Inf",
-              0.0,
-              1.75,
-              "off"
-            ],
-            [
-              14400,
-              0.0,
-              1.93,
-              "off"
-            ],
-            [
-              900,
-              0.0,
-              2.0,
-              "off"
-            ]
-          ]
-        },
+        "thermal_limits_1": [
+          {
+            "duration": "Inf",
+            "max": 1.75,
+            "min": 0.0,
+            "report": "off"
+          },
+          {
+            "duration": 14400,
+            "max": 1.93,
+            "min": 0.0,
+            "report": "off"
+          },
+          {
+            "duration": 900,
+            "max": 2.0,
+            "min": 0.0,
+            "report": "off"
+          }
+        ],
+        "thermal_limits_2": [
+          {
+            "duration": "Inf",
+            "max": 1.75,
+            "min": 0.0,
+            "report": "off"
+          },
+          {
+            "duration": 14400,
+            "max": 1.93,
+            "min": 0.0,
+            "report": "off"
+          },
+          {
+            "duration": 900,
+            "max": 2.0,
+            "min": 0.0,
+            "report": "off"
+          }
+        ],
         "type": "ac_line"
       },
       "line_02": {
@@ -952,62 +872,46 @@
         },
         "source_id": "1",
         "subtype": "overhead",
-        "thermal_limits_1": {
-          "arguments": [
-            "duration",
-            "min",
-            "max",
-            "report"
-          ],
-          "values": [
-            [
-              "Inf",
-              0.0,
-              1.75,
-              "off"
-            ],
-            [
-              14400,
-              0.0,
-              2.08,
-              "off"
-            ],
-            [
-              900,
-              0.0,
-              2.2,
-              "off"
-            ]
-          ]
-        },
-        "thermal_limits_2": {
-          "arguments": [
-            "duration",
-            "min",
-            "max",
-            "report"
-          ],
-          "values": [
-            [
-              "Inf",
-              0.0,
-              1.75,
-              "off"
-            ],
-            [
-              14400,
-              0.0,
-              2.08,
-              "off"
-            ],
-            [
-              900,
-              0.0,
-              2.2,
-              "off"
-            ]
-          ]
-        },
+        "thermal_limits_1": [
+          {
+            "duration": "Inf",
+            "max": 1.75,
+            "min": 0.0,
+            "report": "off"
+          },
+          {
+            "duration": 14400,
+            "max": 2.08,
+            "min": 0.0,
+            "report": "off"
+          },
+          {
+            "duration": 900,
+            "max": 2.2,
+            "min": 0.0,
+            "report": "off"
+          }
+        ],
+        "thermal_limits_2": [
+          {
+            "duration": "Inf",
+            "max": 1.75,
+            "min": 0.0,
+            "report": "off"
+          },
+          {
+            "duration": 14400,
+            "max": 2.08,
+            "min": 0.0,
+            "report": "off"
+          },
+          {
+            "duration": 900,
+            "max": 2.2,
+            "min": 0.0,
+            "report": "off"
+          }
+        ],
         "type": "ac_line"
       },
       "line_03": {
@@ -1029,62 +933,46 @@
         },
         "source_id": "2",
         "subtype": "overhead",
-        "thermal_limits_1": {
-          "arguments": [
-            "duration",
-            "min",
-            "max",
-            "report"
-          ],
-          "values": [
-            [
-              "Inf",
-              0.0,
-              1.75,
-              "off"
-            ],
-            [
-              14400,
-              0.0,
-              2.08,
-              "off"
-            ],
-            [
-              900,
-              0.0,
-              2.2,
-              "off"
-            ]
-          ]
-        },
-        "thermal_limits_2": {
-          "arguments": [
-            "duration",
-            "min",
-            "max",
-            "report"
-          ],
-          "values": [
-            [
-              "Inf",
-              0.0,
-              1.75,
-              "off"
-            ],
-            [
-              14400,
-              0.0,
-              2.08,
-              "off"
-            ],
-            [
-              900,
-              0.0,
-              2.2,
-              "off"
-            ]
-          ]
-        },
+        "thermal_limits_1": [
+          {
+            "duration": "Inf",
+            "max": 1.75,
+            "min": 0.0,
+            "report": "off"
+          },
+          {
+            "duration": 14400,
+            "max": 2.08,
+            "min": 0.0,
+            "report": "off"
+          },
+          {
+            "duration": 900,
+            "max": 2.2,
+            "min": 0.0,
+            "report": "off"
+          }
+        ],
+        "thermal_limits_2": [
+          {
+            "duration": "Inf",
+            "max": 1.75,
+            "min": 0.0,
+            "report": "off"
+          },
+          {
+            "duration": 14400,
+            "max": 2.08,
+            "min": 0.0,
+            "report": "off"
+          },
+          {
+            "duration": 900,
+            "max": 2.2,
+            "min": 0.0,
+            "report": "off"
+          }
+        ],
         "type": "ac_line"
       },
       "line_04": {
@@ -1106,62 +994,46 @@
         },
         "source_id": "3",
         "subtype": "overhead",
-        "thermal_limits_1": {
-          "arguments": [
-            "duration",
-            "min",
-            "max",
-            "report"
-          ],
-          "values": [
-            [
-              "Inf",
-              0.0,
-              1.75,
-              "off"
-            ],
-            [
-              14400,
-              0.0,
-              2.08,
-              "off"
-            ],
-            [
-              900,
-              0.0,
-              2.2,
-              "off"
-            ]
-          ]
-        },
-        "thermal_limits_2": {
-          "arguments": [
-            "duration",
-            "min",
-            "max",
-            "report"
-          ],
-          "values": [
-            [
-              "Inf",
-              0.0,
-              1.75,
-              "off"
-            ],
-            [
-              14400,
-              0.0,
-              2.08,
-              "off"
-            ],
-            [
-              900,
-              0.0,
-              2.2,
-              "off"
-            ]
-          ]
-        },
+        "thermal_limits_1": [
+          {
+            "duration": "Inf",
+            "max": 1.75,
+            "min": 0.0,
+            "report": "off"
+          },
+          {
+            "duration": 14400,
+            "max": 2.08,
+            "min": 0.0,
+            "report": "off"
+          },
+          {
+            "duration": 900,
+            "max": 2.2,
+            "min": 0.0,
+            "report": "off"
+          }
+        ],
+        "thermal_limits_2": [
+          {
+            "duration": "Inf",
+            "max": 1.75,
+            "min": 0.0,
+            "report": "off"
+          },
+          {
+            "duration": 14400,
+            "max": 2.08,
+            "min": 0.0,
+            "report": "off"
+          },
+          {
+            "duration": 900,
+            "max": 2.2,
+            "min": 0.0,
+            "report": "off"
+          }
+        ],
         "type": "ac_line"
       },
       "line_05": {
@@ -1183,62 +1055,46 @@
         },
         "source_id": "4",
         "subtype": "overhead",
-        "thermal_limits_1": {
-          "arguments": [
-            "duration",
-            "min",
-            "max",
-            "report"
-          ],
-          "values": [
-            [
-              "Inf",
-              0.0,
-              1.75,
-              "off"
-            ],
-            [
-              14400,
-              0.0,
-              2.08,
-              "off"
-            ],
-            [
-              900,
-              0.0,
-              2.2,
-              "off"
-            ]
-          ]
-        },
-        "thermal_limits_2": {
-          "arguments": [
-            "duration",
-            "min",
-            "max",
-            "report"
-          ],
-          "values": [
-            [
-              "Inf",
-              0.0,
-              1.75,
-              "off"
-            ],
-            [
-              14400,
-              0.0,
-              2.08,
-              "off"
-            ],
-            [
-              900,
-              0.0,
-              2.2,
-              "off"
-            ]
-          ]
-        },
+        "thermal_limits_1": [
+          {
+            "duration": "Inf",
+            "max": 1.75,
+            "min": 0.0,
+            "report": "off"
+          },
+          {
+            "duration": 14400,
+            "max": 2.08,
+            "min": 0.0,
+            "report": "off"
+          },
+          {
+            "duration": 900,
+            "max": 2.2,
+            "min": 0.0,
+            "report": "off"
+          }
+        ],
+        "thermal_limits_2": [
+          {
+            "duration": "Inf",
+            "max": 1.75,
+            "min": 0.0,
+            "report": "off"
+          },
+          {
+            "duration": 14400,
+            "max": 2.08,
+            "min": 0.0,
+            "report": "off"
+          },
+          {
+            "duration": 900,
+            "max": 2.2,
+            "min": 0.0,
+            "report": "off"
+          }
+        ],
         "type": "ac_line"
       },
       "line_06": {
@@ -1260,62 +1116,46 @@
         },
         "source_id": "5",
         "subtype": "overhead",
-        "thermal_limits_1": {
-          "arguments": [
-            "duration",
-            "min",
-            "max",
-            "report"
-          ],
-          "values": [
-            [
-              "Inf",
-              0.0,
-              1.75,
-              "off"
-            ],
-            [
-              14400,
-              0.0,
-              2.08,
-              "off"
-            ],
-            [
-              900,
-              0.0,
-              2.2,
-              "off"
-            ]
-          ]
-        },
-        "thermal_limits_2": {
-          "arguments": [
-            "duration",
-            "min",
-            "max",
-            "report"
-          ],
-          "values": [
-            [
-              "Inf",
-              0.0,
-              1.75,
-              "off"
-            ],
-            [
-              14400,
-              0.0,
-              2.08,
-              "off"
-            ],
-            [
-              900,
-              0.0,
-              2.2,
-              "off"
-            ]
-          ]
-        },
+        "thermal_limits_1": [
+          {
+            "duration": "Inf",
+            "max": 1.75,
+            "min": 0.0,
+            "report": "off"
+          },
+          {
+            "duration": 14400,
+            "max": 2.08,
+            "min": 0.0,
+            "report": "off"
+          },
+          {
+            "duration": 900,
+            "max": 2.2,
+            "min": 0.0,
+            "report": "off"
+          }
+        ],
+        "thermal_limits_2": [
+          {
+            "duration": "Inf",
+            "max": 1.75,
+            "min": 0.0,
+            "report": "off"
+          },
+          {
+            "duration": 14400,
+            "max": 2.08,
+            "min": 0.0,
+            "report": "off"
+          },
+          {
+            "duration": 900,
+            "max": 2.2,
+            "min": 0.0,
+            "report": "off"
+          }
+        ],
         "type": "ac_line"
       },
       "line_07": {
@@ -1337,62 +1177,46 @@
         },
         "source_id": "7",
         "subtype": "overhead",
-        "thermal_limits_1": {
-          "arguments": [
-            "duration",
-            "min",
-            "max",
-            "report"
-          ],
-          "values": [
-            [
-              "Inf",
-              0.0,
-              1.75,
-              "off"
-            ],
-            [
-              14400,
-              0.0,
-              2.08,
-              "off"
-            ],
-            [
-              900,
-              0.0,
-              2.2,
-              "off"
-            ]
-          ]
-        },
-        "thermal_limits_2": {
-          "arguments": [
-            "duration",
-            "min",
-            "max",
-            "report"
-          ],
-          "values": [
-            [
-              "Inf",
-              0.0,
-              1.75,
-              "off"
-            ],
-            [
-              14400,
-              0.0,
-              2.08,
-              "off"
-            ],
-            [
-              900,
-              0.0,
-              2.2,
-              "off"
-            ]
-          ]
-        },
+        "thermal_limits_1": [
+          {
+            "duration": "Inf",
+            "max": 1.75,
+            "min": 0.0,
+            "report": "off"
+          },
+          {
+            "duration": 14400,
+            "max": 2.08,
+            "min": 0.0,
+            "report": "off"
+          },
+          {
+            "duration": 900,
+            "max": 2.2,
+            "min": 0.0,
+            "report": "off"
+          }
+        ],
+        "thermal_limits_2": [
+          {
+            "duration": "Inf",
+            "max": 1.75,
+            "min": 0.0,
+            "report": "off"
+          },
+          {
+            "duration": 14400,
+            "max": 2.08,
+            "min": 0.0,
+            "report": "off"
+          },
+          {
+            "duration": 900,
+            "max": 2.2,
+            "min": 0.0,
+            "report": "off"
+          }
+        ],
         "type": "ac_line"
       },
       "line_08": {
@@ -1414,62 +1238,46 @@
         },
         "source_id": "8",
         "subtype": "overhead",
-        "thermal_limits_1": {
-          "arguments": [
-            "duration",
-            "min",
-            "max",
-            "report"
-          ],
-          "values": [
-            [
-              "Inf",
-              0.0,
-              1.75,
-              "off"
-            ],
-            [
-              14400,
-              0.0,
-              2.08,
-              "off"
-            ],
-            [
-              900,
-              0.0,
-              2.2,
-              "off"
-            ]
-          ]
-        },
-        "thermal_limits_2": {
-          "arguments": [
-            "duration",
-            "min",
-            "max",
-            "report"
-          ],
-          "values": [
-            [
-              "Inf",
-              0.0,
-              1.75,
-              "off"
-            ],
-            [
-              14400,
-              0.0,
-              2.08,
-              "off"
-            ],
-            [
-              900,
-              0.0,
-              2.2,
-              "off"
-            ]
-          ]
-        },
+        "thermal_limits_1": [
+          {
+            "duration": "Inf",
+            "max": 1.75,
+            "min": 0.0,
+            "report": "off"
+          },
+          {
+            "duration": 14400,
+            "max": 2.08,
+            "min": 0.0,
+            "report": "off"
+          },
+          {
+            "duration": 900,
+            "max": 2.2,
+            "min": 0.0,
+            "report": "off"
+          }
+        ],
+        "thermal_limits_2": [
+          {
+            "duration": "Inf",
+            "max": 1.75,
+            "min": 0.0,
+            "report": "off"
+          },
+          {
+            "duration": 14400,
+            "max": 2.08,
+            "min": 0.0,
+            "report": "off"
+          },
+          {
+            "duration": 900,
+            "max": 2.2,
+            "min": 0.0,
+            "report": "off"
+          }
+        ],
         "type": "ac_line"
       },
       "line_09": {
@@ -1491,62 +1299,46 @@
         },
         "source_id": "9",
         "subtype": "overhead",
-        "thermal_limits_1": {
-          "arguments": [
-            "duration",
-            "min",
-            "max",
-            "report"
-          ],
-          "values": [
-            [
-              "Inf",
-              0.0,
-              1.75,
-              "off"
-            ],
-            [
-              14400,
-              0.0,
-              1.93,
-              "off"
-            ],
-            [
-              900,
-              0.0,
-              2.0,
-              "off"
-            ]
-          ]
-        },
-        "thermal_limits_2": {
-          "arguments": [
-            "duration",
-            "min",
-            "max",
-            "report"
-          ],
-          "values": [
-            [
-              "Inf",
-              0.0,
-              1.75,
-              "off"
-            ],
-            [
-              14400,
-              0.0,
-              1.93,
-              "off"
-            ],
-            [
-              900,
-              0.0,
-              2.0,
-              "off"
-            ]
-          ]
-        },
+        "thermal_limits_1": [
+          {
+            "duration": "Inf",
+            "max": 1.75,
+            "min": 0.0,
+            "report": "off"
+          },
+          {
+            "duration": 14400,
+            "max": 1.93,
+            "min": 0.0,
+            "report": "off"
+          },
+          {
+            "duration": 900,
+            "max": 2.0,
+            "min": 0.0,
+            "report": "off"
+          }
+        ],
+        "thermal_limits_2": [
+          {
+            "duration": "Inf",
+            "max": 1.75,
+            "min": 0.0,
+            "report": "off"
+          },
+          {
+            "duration": 14400,
+            "max": 1.93,
+            "min": 0.0,
+            "report": "off"
+          },
+          {
+            "duration": 900,
+            "max": 2.0,
+            "min": 0.0,
+            "report": "off"
+          }
+        ],
         "type": "ac_line"
       },
       "line_10": {
@@ -1568,62 +1360,46 @@
         },
         "source_id": "10",
         "subtype": "overhead",
-        "thermal_limits_1": {
-          "arguments": [
-            "duration",
-            "min",
-            "max",
-            "report"
-          ],
-          "values": [
-            [
-              "Inf",
-              0.0,
-              1.75,
-              "off"
-            ],
-            [
-              14400,
-              0.0,
-              2.08,
-              "off"
-            ],
-            [
-              900,
-              0.0,
-              2.2,
-              "off"
-            ]
-          ]
-        },
-        "thermal_limits_2": {
-          "arguments": [
-            "duration",
-            "min",
-            "max",
-            "report"
-          ],
-          "values": [
-            [
-              "Inf",
-              0.0,
-              1.75,
-              "off"
-            ],
-            [
-              14400,
-              0.0,
-              2.08,
-              "off"
-            ],
-            [
-              900,
-              0.0,
-              2.2,
-              "off"
-            ]
-          ]
-        },
+        "thermal_limits_1": [
+          {
+            "duration": "Inf",
+            "max": 1.75,
+            "min": 0.0,
+            "report": "off"
+          },
+          {
+            "duration": 14400,
+            "max": 2.08,
+            "min": 0.0,
+            "report": "off"
+          },
+          {
+            "duration": 900,
+            "max": 2.2,
+            "min": 0.0,
+            "report": "off"
+          }
+        ],
+        "thermal_limits_2": [
+          {
+            "duration": "Inf",
+            "max": 1.75,
+            "min": 0.0,
+            "report": "off"
+          },
+          {
+            "duration": 14400,
+            "max": 2.08,
+            "min": 0.0,
+            "report": "off"
+          },
+          {
+            "duration": 900,
+            "max": 2.2,
+            "min": 0.0,
+            "report": "off"
+          }
+        ],
         "type": "ac_line"
       },
       "line_11": {
@@ -1645,62 +1421,46 @@
         },
         "source_id": "11",
         "subtype": "overhead",
-        "thermal_limits_1": {
-          "arguments": [
-            "duration",
-            "min",
-            "max",
-            "report"
-          ],
-          "values": [
-            [
-              "Inf",
-              0.0,
-              1.75,
-              "off"
-            ],
-            [
-              14400,
-              0.0,
-              2.08,
-              "off"
-            ],
-            [
-              900,
-              0.0,
-              2.2,
-              "off"
-            ]
-          ]
-        },
-        "thermal_limits_2": {
-          "arguments": [
-            "duration",
-            "min",
-            "max",
-            "report"
-          ],
-          "values": [
-            [
-              "Inf",
-              0.0,
-              1.75,
-              "off"
-            ],
-            [
-              14400,
-              0.0,
-              2.08,
-              "off"
-            ],
-            [
-              900,
-              0.0,
-              2.2,
-              "off"
-            ]
-          ]
-        },
+        "thermal_limits_1": [
+          {
+            "duration": "Inf",
+            "max": 1.75,
+            "min": 0.0,
+            "report": "off"
+          },
+          {
+            "duration": 14400,
+            "max": 2.08,
+            "min": 0.0,
+            "report": "off"
+          },
+          {
+            "duration": 900,
+            "max": 2.2,
+            "min": 0.0,
+            "report": "off"
+          }
+        ],
+        "thermal_limits_2": [
+          {
+            "duration": "Inf",
+            "max": 1.75,
+            "min": 0.0,
+            "report": "off"
+          },
+          {
+            "duration": 14400,
+            "max": 2.08,
+            "min": 0.0,
+            "report": "off"
+          },
+          {
+            "duration": 900,
+            "max": 2.2,
+            "min": 0.0,
+            "report": "off"
+          }
+        ],
         "type": "ac_line"
       },
       "line_12": {
@@ -1722,62 +1482,46 @@
         },
         "source_id": "12",
         "subtype": "overhead",
-        "thermal_limits_1": {
-          "arguments": [
-            "duration",
-            "min",
-            "max",
-            "report"
-          ],
-          "values": [
-            [
-              "Inf",
-              0.0,
-              1.75,
-              "off"
-            ],
-            [
-              14400,
-              0.0,
-              2.08,
-              "off"
-            ],
-            [
-              900,
-              0.0,
-              2.2,
-              "off"
-            ]
-          ]
-        },
-        "thermal_limits_2": {
-          "arguments": [
-            "duration",
-            "min",
-            "max",
-            "report"
-          ],
-          "values": [
-            [
-              "Inf",
-              0.0,
-              1.75,
-              "off"
-            ],
-            [
-              14400,
-              0.0,
-              2.08,
-              "off"
-            ],
-            [
-              900,
-              0.0,
-              2.2,
-              "off"
-            ]
-          ]
-        },
+        "thermal_limits_1": [
+          {
+            "duration": "Inf",
+            "max": 1.75,
+            "min": 0.0,
+            "report": "off"
+          },
+          {
+            "duration": 14400,
+            "max": 2.08,
+            "min": 0.0,
+            "report": "off"
+          },
+          {
+            "duration": 900,
+            "max": 2.2,
+            "min": 0.0,
+            "report": "off"
+          }
+        ],
+        "thermal_limits_2": [
+          {
+            "duration": "Inf",
+            "max": 1.75,
+            "min": 0.0,
+            "report": "off"
+          },
+          {
+            "duration": 14400,
+            "max": 2.08,
+            "min": 0.0,
+            "report": "off"
+          },
+          {
+            "duration": 900,
+            "max": 2.2,
+            "min": 0.0,
+            "report": "off"
+          }
+        ],
         "type": "ac_line"
       },
       "line_13": {
@@ -1799,62 +1543,46 @@
         },
         "source_id": "17",
         "subtype": "overhead",
-        "thermal_limits_1": {
-          "arguments": [
-            "duration",
-            "min",
-            "max",
-            "report"
-          ],
-          "values": [
-            [
-              "Inf",
-              0.0,
-              5.0,
-              "off"
-            ],
-            [
-              14400,
-              0.0,
-              6.0,
-              "off"
-            ],
-            [
-              900,
-              0.0,
-              6.25,
-              "off"
-            ]
-          ]
-        },
-        "thermal_limits_2": {
-          "arguments": [
-            "duration",
-            "min",
-            "max",
-            "report"
-          ],
-          "values": [
-            [
-              "Inf",
-              0.0,
-              5.0,
-              "off"
-            ],
-            [
-              14400,
-              0.0,
-              6.0,
-              "off"
-            ],
-            [
-              900,
-              0.0,
-              6.25,
-              "off"
-            ]
-          ]
-        },
+        "thermal_limits_1": [
+          {
+            "duration": "Inf",
+            "max": 5.0,
+            "min": 0.0,
+            "report": "off"
+          },
+          {
+            "duration": 14400,
+            "max": 6.0,
+            "min": 0.0,
+            "report": "off"
+          },
+          {
+            "duration": 900,
+            "max": 6.25,
+            "min": 0.0,
+            "report": "off"
+          }
+        ],
+        "thermal_limits_2": [
+          {
+            "duration": "Inf",
+            "max": 5.0,
+            "min": 0.0,
+            "report": "off"
+          },
+          {
+            "duration": 14400,
+            "max": 6.0,
+            "min": 0.0,
+            "report": "off"
+          },
+          {
+            "duration": 900,
+            "max": 6.25,
+            "min": 0.0,
+            "report": "off"
+          }
+        ],
         "type": "ac_line"
       },
       "line_14": {
@@ -1876,62 +1604,46 @@
         },
         "source_id": "18",
         "subtype": "overhead",
-        "thermal_limits_1": {
-          "arguments": [
-            "duration",
-            "min",
-            "max",
-            "report"
-          ],
-          "values": [
-            [
-              "Inf",
-              0.0,
-              5.0,
-              "off"
-            ],
-            [
-              14400,
-              0.0,
-              6.0,
-              "off"
-            ],
-            [
-              900,
-              0.0,
-              6.25,
-              "off"
-            ]
-          ]
-        },
-        "thermal_limits_2": {
-          "arguments": [
-            "duration",
-            "min",
-            "max",
-            "report"
-          ],
-          "values": [
-            [
-              "Inf",
-              0.0,
-              5.0,
-              "off"
-            ],
-            [
-              14400,
-              0.0,
-              6.0,
-              "off"
-            ],
-            [
-              900,
-              0.0,
-              6.25,
-              "off"
-            ]
-          ]
-        },
+        "thermal_limits_1": [
+          {
+            "duration": "Inf",
+            "max": 5.0,
+            "min": 0.0,
+            "report": "off"
+          },
+          {
+            "duration": 14400,
+            "max": 6.0,
+            "min": 0.0,
+            "report": "off"
+          },
+          {
+            "duration": 900,
+            "max": 6.25,
+            "min": 0.0,
+            "report": "off"
+          }
+        ],
+        "thermal_limits_2": [
+          {
+            "duration": "Inf",
+            "max": 5.0,
+            "min": 0.0,
+            "report": "off"
+          },
+          {
+            "duration": 14400,
+            "max": 6.0,
+            "min": 0.0,
+            "report": "off"
+          },
+          {
+            "duration": 900,
+            "max": 6.25,
+            "min": 0.0,
+            "report": "off"
+          }
+        ],
         "type": "ac_line"
       },
       "line_15": {
@@ -1953,62 +1665,46 @@
         },
         "source_id": "19",
         "subtype": "overhead",
-        "thermal_limits_1": {
-          "arguments": [
-            "duration",
-            "min",
-            "max",
-            "report"
-          ],
-          "values": [
-            [
-              "Inf",
-              0.0,
-              5.0,
-              "off"
-            ],
-            [
-              14400,
-              0.0,
-              6.0,
-              "off"
-            ],
-            [
-              900,
-              0.0,
-              6.25,
-              "off"
-            ]
-          ]
-        },
-        "thermal_limits_2": {
-          "arguments": [
-            "duration",
-            "min",
-            "max",
-            "report"
-          ],
-          "values": [
-            [
-              "Inf",
-              0.0,
-              5.0,
-              "off"
-            ],
-            [
-              14400,
-              0.0,
-              6.0,
-              "off"
-            ],
-            [
-              900,
-              0.0,
-              6.25,
-              "off"
-            ]
-          ]
-        },
+        "thermal_limits_1": [
+          {
+            "duration": "Inf",
+            "max": 5.0,
+            "min": 0.0,
+            "report": "off"
+          },
+          {
+            "duration": 14400,
+            "max": 6.0,
+            "min": 0.0,
+            "report": "off"
+          },
+          {
+            "duration": 900,
+            "max": 6.25,
+            "min": 0.0,
+            "report": "off"
+          }
+        ],
+        "thermal_limits_2": [
+          {
+            "duration": "Inf",
+            "max": 5.0,
+            "min": 0.0,
+            "report": "off"
+          },
+          {
+            "duration": 14400,
+            "max": 6.0,
+            "min": 0.0,
+            "report": "off"
+          },
+          {
+            "duration": 900,
+            "max": 6.25,
+            "min": 0.0,
+            "report": "off"
+          }
+        ],
         "type": "ac_line"
       },
       "line_16": {
@@ -2030,62 +1726,46 @@
         },
         "source_id": "20",
         "subtype": "overhead",
-        "thermal_limits_1": {
-          "arguments": [
-            "duration",
-            "min",
-            "max",
-            "report"
-          ],
-          "values": [
-            [
-              "Inf",
-              0.0,
-              5.0,
-              "off"
-            ],
-            [
-              14400,
-              0.0,
-              6.0,
-              "off"
-            ],
-            [
-              900,
-              0.0,
-              6.25,
-              "off"
-            ]
-          ]
-        },
-        "thermal_limits_2": {
-          "arguments": [
-            "duration",
-            "min",
-            "max",
-            "report"
-          ],
-          "values": [
-            [
-              "Inf",
-              0.0,
-              5.0,
-              "off"
-            ],
-            [
-              14400,
-              0.0,
-              6.0,
-              "off"
-            ],
-            [
-              900,
-              0.0,
-              6.25,
-              "off"
-            ]
-          ]
-        },
+        "thermal_limits_1": [
+          {
+            "duration": "Inf",
+            "max": 5.0,
+            "min": 0.0,
+            "report": "off"
+          },
+          {
+            "duration": 14400,
+            "max": 6.0,
+            "min": 0.0,
+            "report": "off"
+          },
+          {
+            "duration": 900,
+            "max": 6.25,
+            "min": 0.0,
+            "report": "off"
+          }
+        ],
+        "thermal_limits_2": [
+          {
+            "duration": "Inf",
+            "max": 5.0,
+            "min": 0.0,
+            "report": "off"
+          },
+          {
+            "duration": 14400,
+            "max": 6.0,
+            "min": 0.0,
+            "report": "off"
+          },
+          {
+            "duration": 900,
+            "max": 6.25,
+            "min": 0.0,
+            "report": "off"
+          }
+        ],
         "type": "ac_line"
       },
       "line_17": {
@@ -2107,62 +1787,46 @@
         },
         "source_id": "21",
         "subtype": "overhead",
-        "thermal_limits_1": {
-          "arguments": [
-            "duration",
-            "min",
-            "max",
-            "report"
-          ],
-          "values": [
-            [
-              "Inf",
-              0.0,
-              5.0,
-              "off"
-            ],
-            [
-              14400,
-              0.0,
-              6.0,
-              "off"
-            ],
-            [
-              900,
-              0.0,
-              6.25,
-              "off"
-            ]
-          ]
-        },
-        "thermal_limits_2": {
-          "arguments": [
-            "duration",
-            "min",
-            "max",
-            "report"
-          ],
-          "values": [
-            [
-              "Inf",
-              0.0,
-              5.0,
-              "off"
-            ],
-            [
-              14400,
-              0.0,
-              6.0,
-              "off"
-            ],
-            [
-              900,
-              0.0,
-              6.25,
-              "off"
-            ]
-          ]
-        },
+        "thermal_limits_1": [
+          {
+            "duration": "Inf",
+            "max": 5.0,
+            "min": 0.0,
+            "report": "off"
+          },
+          {
+            "duration": 14400,
+            "max": 6.0,
+            "min": 0.0,
+            "report": "off"
+          },
+          {
+            "duration": 900,
+            "max": 6.25,
+            "min": 0.0,
+            "report": "off"
+          }
+        ],
+        "thermal_limits_2": [
+          {
+            "duration": "Inf",
+            "max": 5.0,
+            "min": 0.0,
+            "report": "off"
+          },
+          {
+            "duration": 14400,
+            "max": 6.0,
+            "min": 0.0,
+            "report": "off"
+          },
+          {
+            "duration": 900,
+            "max": 6.25,
+            "min": 0.0,
+            "report": "off"
+          }
+        ],
         "type": "ac_line"
       },
       "line_18": {
@@ -2184,62 +1848,46 @@
         },
         "source_id": "22",
         "subtype": "overhead",
-        "thermal_limits_1": {
-          "arguments": [
-            "duration",
-            "min",
-            "max",
-            "report"
-          ],
-          "values": [
-            [
-              "Inf",
-              0.0,
-              5.0,
-              "off"
-            ],
-            [
-              14400,
-              0.0,
-              6.0,
-              "off"
-            ],
-            [
-              900,
-              0.0,
-              6.25,
-              "off"
-            ]
-          ]
-        },
-        "thermal_limits_2": {
-          "arguments": [
-            "duration",
-            "min",
-            "max",
-            "report"
-          ],
-          "values": [
-            [
-              "Inf",
-              0.0,
-              5.0,
-              "off"
-            ],
-            [
-              14400,
-              0.0,
-              6.0,
-              "off"
-            ],
-            [
-              900,
-              0.0,
-              6.25,
-              "off"
-            ]
-          ]
-        },
+        "thermal_limits_1": [
+          {
+            "duration": "Inf",
+            "max": 5.0,
+            "min": 0.0,
+            "report": "off"
+          },
+          {
+            "duration": 14400,
+            "max": 6.0,
+            "min": 0.0,
+            "report": "off"
+          },
+          {
+            "duration": 900,
+            "max": 6.25,
+            "min": 0.0,
+            "report": "off"
+          }
+        ],
+        "thermal_limits_2": [
+          {
+            "duration": "Inf",
+            "max": 5.0,
+            "min": 0.0,
+            "report": "off"
+          },
+          {
+            "duration": 14400,
+            "max": 6.0,
+            "min": 0.0,
+            "report": "off"
+          },
+          {
+            "duration": 900,
+            "max": 6.25,
+            "min": 0.0,
+            "report": "off"
+          }
+        ],
         "type": "ac_line"
       },
       "line_19": {
@@ -2261,62 +1909,46 @@
         },
         "source_id": "23",
         "subtype": "overhead",
-        "thermal_limits_1": {
-          "arguments": [
-            "duration",
-            "min",
-            "max",
-            "report"
-          ],
-          "values": [
-            [
-              "Inf",
-              0.0,
-              5.0,
-              "off"
-            ],
-            [
-              14400,
-              0.0,
-              6.0,
-              "off"
-            ],
-            [
-              900,
-              0.0,
-              6.25,
-              "off"
-            ]
-          ]
-        },
-        "thermal_limits_2": {
-          "arguments": [
-            "duration",
-            "min",
-            "max",
-            "report"
-          ],
-          "values": [
-            [
-              "Inf",
-              0.0,
-              5.0,
-              "off"
-            ],
-            [
-              14400,
-              0.0,
-              6.0,
-              "off"
-            ],
-            [
-              900,
-              0.0,
-              6.25,
-              "off"
-            ]
-          ]
-        },
+        "thermal_limits_1": [
+          {
+            "duration": "Inf",
+            "max": 5.0,
+            "min": 0.0,
+            "report": "off"
+          },
+          {
+            "duration": 14400,
+            "max": 6.0,
+            "min": 0.0,
+            "report": "off"
+          },
+          {
+            "duration": 900,
+            "max": 6.25,
+            "min": 0.0,
+            "report": "off"
+          }
+        ],
+        "thermal_limits_2": [
+          {
+            "duration": "Inf",
+            "max": 5.0,
+            "min": 0.0,
+            "report": "off"
+          },
+          {
+            "duration": 14400,
+            "max": 6.0,
+            "min": 0.0,
+            "report": "off"
+          },
+          {
+            "duration": 900,
+            "max": 6.25,
+            "min": 0.0,
+            "report": "off"
+          }
+        ],
         "type": "ac_line"
       },
       "line_20": {
@@ -2338,62 +1970,46 @@
         },
         "source_id": "24",
         "subtype": "overhead",
-        "thermal_limits_1": {
-          "arguments": [
-            "duration",
-            "min",
-            "max",
-            "report"
-          ],
-          "values": [
-            [
-              "Inf",
-              0.0,
-              5.0,
-              "off"
-            ],
-            [
-              14400,
-              0.0,
-              6.0,
-              "off"
-            ],
-            [
-              900,
-              0.0,
-              6.25,
-              "off"
-            ]
-          ]
-        },
-        "thermal_limits_2": {
-          "arguments": [
-            "duration",
-            "min",
-            "max",
-            "report"
-          ],
-          "values": [
-            [
-              "Inf",
-              0.0,
-              5.0,
-              "off"
-            ],
-            [
-              14400,
-              0.0,
-              6.0,
-              "off"
-            ],
-            [
-              900,
-              0.0,
-              6.25,
-              "off"
-            ]
-          ]
-        },
+        "thermal_limits_1": [
+          {
+            "duration": "Inf",
+            "max": 5.0,
+            "min": 0.0,
+            "report": "off"
+          },
+          {
+            "duration": 14400,
+            "max": 6.0,
+            "min": 0.0,
+            "report": "off"
+          },
+          {
+            "duration": 900,
+            "max": 6.25,
+            "min": 0.0,
+            "report": "off"
+          }
+        ],
+        "thermal_limits_2": [
+          {
+            "duration": "Inf",
+            "max": 5.0,
+            "min": 0.0,
+            "report": "off"
+          },
+          {
+            "duration": 14400,
+            "max": 6.0,
+            "min": 0.0,
+            "report": "off"
+          },
+          {
+            "duration": 900,
+            "max": 6.25,
+            "min": 0.0,
+            "report": "off"
+          }
+        ],
         "type": "ac_line"
       },
       "line_21": {
@@ -2415,62 +2031,46 @@
         },
         "source_id": "25",
         "subtype": "overhead",
-        "thermal_limits_1": {
-          "arguments": [
-            "duration",
-            "min",
-            "max",
-            "report"
-          ],
-          "values": [
-            [
-              "Inf",
-              0.0,
-              5.0,
-              "off"
-            ],
-            [
-              14400,
-              0.0,
-              6.0,
-              "off"
-            ],
-            [
-              900,
-              0.0,
-              6.25,
-              "off"
-            ]
-          ]
-        },
-        "thermal_limits_2": {
-          "arguments": [
-            "duration",
-            "min",
-            "max",
-            "report"
-          ],
-          "values": [
-            [
-              "Inf",
-              0.0,
-              5.0,
-              "off"
-            ],
-            [
-              14400,
-              0.0,
-              6.0,
-              "off"
-            ],
-            [
-              900,
-              0.0,
-              6.25,
-              "off"
-            ]
-          ]
-        },
+        "thermal_limits_1": [
+          {
+            "duration": "Inf",
+            "max": 5.0,
+            "min": 0.0,
+            "report": "off"
+          },
+          {
+            "duration": 14400,
+            "max": 6.0,
+            "min": 0.0,
+            "report": "off"
+          },
+          {
+            "duration": 900,
+            "max": 6.25,
+            "min": 0.0,
+            "report": "off"
+          }
+        ],
+        "thermal_limits_2": [
+          {
+            "duration": "Inf",
+            "max": 5.0,
+            "min": 0.0,
+            "report": "off"
+          },
+          {
+            "duration": 14400,
+            "max": 6.0,
+            "min": 0.0,
+            "report": "off"
+          },
+          {
+            "duration": 900,
+            "max": 6.25,
+            "min": 0.0,
+            "report": "off"
+          }
+        ],
         "type": "ac_line"
       },
       "line_22": {
@@ -2492,62 +2092,46 @@
         },
         "source_id": "26",
         "subtype": "overhead",
-        "thermal_limits_1": {
-          "arguments": [
-            "duration",
-            "min",
-            "max",
-            "report"
-          ],
-          "values": [
-            [
-              "Inf",
-              0.0,
-              5.0,
-              "off"
-            ],
-            [
-              14400,
-              0.0,
-              6.0,
-              "off"
-            ],
-            [
-              900,
-              0.0,
-              6.25,
-              "off"
-            ]
-          ]
-        },
-        "thermal_limits_2": {
-          "arguments": [
-            "duration",
-            "min",
-            "max",
-            "report"
-          ],
-          "values": [
-            [
-              "Inf",
-              0.0,
-              5.0,
-              "off"
-            ],
-            [
-              14400,
-              0.0,
-              6.0,
-              "off"
-            ],
-            [
-              900,
-              0.0,
-              6.25,
-              "off"
-            ]
-          ]
-        },
+        "thermal_limits_1": [
+          {
+            "duration": "Inf",
+            "max": 5.0,
+            "min": 0.0,
+            "report": "off"
+          },
+          {
+            "duration": 14400,
+            "max": 6.0,
+            "min": 0.0,
+            "report": "off"
+          },
+          {
+            "duration": 900,
+            "max": 6.25,
+            "min": 0.0,
+            "report": "off"
+          }
+        ],
+        "thermal_limits_2": [
+          {
+            "duration": "Inf",
+            "max": 5.0,
+            "min": 0.0,
+            "report": "off"
+          },
+          {
+            "duration": 14400,
+            "max": 6.0,
+            "min": 0.0,
+            "report": "off"
+          },
+          {
+            "duration": 900,
+            "max": 6.25,
+            "min": 0.0,
+            "report": "off"
+          }
+        ],
         "type": "ac_line"
       },
       "line_23": {
@@ -2569,62 +2153,46 @@
         },
         "source_id": "27",
         "subtype": "overhead",
-        "thermal_limits_1": {
-          "arguments": [
-            "duration",
-            "min",
-            "max",
-            "report"
-          ],
-          "values": [
-            [
-              "Inf",
-              0.0,
-              5.0,
-              "off"
-            ],
-            [
-              14400,
-              0.0,
-              6.0,
-              "off"
-            ],
-            [
-              900,
-              0.0,
-              6.25,
-              "off"
-            ]
-          ]
-        },
-        "thermal_limits_2": {
-          "arguments": [
-            "duration",
-            "min",
-            "max",
-            "report"
-          ],
-          "values": [
-            [
-              "Inf",
-              0.0,
-              5.0,
-              "off"
-            ],
-            [
-              14400,
-              0.0,
-              6.0,
-              "off"
-            ],
-            [
-              900,
-              0.0,
-              6.25,
-              "off"
-            ]
-          ]
-        },
+        "thermal_limits_1": [
+          {
+            "duration": "Inf",
+            "max": 5.0,
+            "min": 0.0,
+            "report": "off"
+          },
+          {
+            "duration": 14400,
+            "max": 6.0,
+            "min": 0.0,
+            "report": "off"
+          },
+          {
+            "duration": 900,
+            "max": 6.25,
+            "min": 0.0,
+            "report": "off"
+          }
+        ],
+        "thermal_limits_2": [
+          {
+            "duration": "Inf",
+            "max": 5.0,
+            "min": 0.0,
+            "report": "off"
+          },
+          {
+            "duration": 14400,
+            "max": 6.0,
+            "min": 0.0,
+            "report": "off"
+          },
+          {
+            "duration": 900,
+            "max": 6.25,
+            "min": 0.0,
+            "report": "off"
+          }
+        ],
         "type": "ac_line"
       },
       "line_24": {
@@ -2646,62 +2214,46 @@
         },
         "source_id": "28",
         "subtype": "overhead",
-        "thermal_limits_1": {
-          "arguments": [
-            "duration",
-            "min",
-            "max",
-            "report"
-          ],
-          "values": [
-            [
-              "Inf",
-              0.0,
-              5.0,
-              "off"
-            ],
-            [
-              14400,
-              0.0,
-              6.0,
-              "off"
-            ],
-            [
-              900,
-              0.0,
-              6.25,
-              "off"
-            ]
-          ]
-        },
-        "thermal_limits_2": {
-          "arguments": [
-            "duration",
-            "min",
-            "max",
-            "report"
-          ],
-          "values": [
-            [
-              "Inf",
-              0.0,
-              5.0,
-              "off"
-            ],
-            [
-              14400,
-              0.0,
-              6.0,
-              "off"
-            ],
-            [
-              900,
-              0.0,
-              6.25,
-              "off"
-            ]
-          ]
-        },
+        "thermal_limits_1": [
+          {
+            "duration": "Inf",
+            "max": 5.0,
+            "min": 0.0,
+            "report": "off"
+          },
+          {
+            "duration": 14400,
+            "max": 6.0,
+            "min": 0.0,
+            "report": "off"
+          },
+          {
+            "duration": 900,
+            "max": 6.25,
+            "min": 0.0,
+            "report": "off"
+          }
+        ],
+        "thermal_limits_2": [
+          {
+            "duration": "Inf",
+            "max": 5.0,
+            "min": 0.0,
+            "report": "off"
+          },
+          {
+            "duration": 14400,
+            "max": 6.0,
+            "min": 0.0,
+            "report": "off"
+          },
+          {
+            "duration": 900,
+            "max": 6.25,
+            "min": 0.0,
+            "report": "off"
+          }
+        ],
         "type": "ac_line"
       },
       "line_25": {
@@ -2723,62 +2275,46 @@
         },
         "source_id": "29",
         "subtype": "overhead",
-        "thermal_limits_1": {
-          "arguments": [
-            "duration",
-            "min",
-            "max",
-            "report"
-          ],
-          "values": [
-            [
-              "Inf",
-              0.0,
-              5.0,
-              "off"
-            ],
-            [
-              14400,
-              0.0,
-              6.0,
-              "off"
-            ],
-            [
-              900,
-              0.0,
-              6.25,
-              "off"
-            ]
-          ]
-        },
-        "thermal_limits_2": {
-          "arguments": [
-            "duration",
-            "min",
-            "max",
-            "report"
-          ],
-          "values": [
-            [
-              "Inf",
-              0.0,
-              5.0,
-              "off"
-            ],
-            [
-              14400,
-              0.0,
-              6.0,
-              "off"
-            ],
-            [
-              900,
-              0.0,
-              6.25,
-              "off"
-            ]
-          ]
-        },
+        "thermal_limits_1": [
+          {
+            "duration": "Inf",
+            "max": 5.0,
+            "min": 0.0,
+            "report": "off"
+          },
+          {
+            "duration": 14400,
+            "max": 6.0,
+            "min": 0.0,
+            "report": "off"
+          },
+          {
+            "duration": 900,
+            "max": 6.25,
+            "min": 0.0,
+            "report": "off"
+          }
+        ],
+        "thermal_limits_2": [
+          {
+            "duration": "Inf",
+            "max": 5.0,
+            "min": 0.0,
+            "report": "off"
+          },
+          {
+            "duration": 14400,
+            "max": 6.0,
+            "min": 0.0,
+            "report": "off"
+          },
+          {
+            "duration": 900,
+            "max": 6.25,
+            "min": 0.0,
+            "report": "off"
+          }
+        ],
         "type": "ac_line"
       },
       "line_26": {
@@ -2800,62 +2336,46 @@
         },
         "source_id": "30",
         "subtype": "overhead",
-        "thermal_limits_1": {
-          "arguments": [
-            "duration",
-            "min",
-            "max",
-            "report"
-          ],
-          "values": [
-            [
-              "Inf",
-              0.0,
-              5.0,
-              "off"
-            ],
-            [
-              14400,
-              0.0,
-              6.0,
-              "off"
-            ],
-            [
-              900,
-              0.0,
-              6.25,
-              "off"
-            ]
-          ]
-        },
-        "thermal_limits_2": {
-          "arguments": [
-            "duration",
-            "min",
-            "max",
-            "report"
-          ],
-          "values": [
-            [
-              "Inf",
-              0.0,
-              5.0,
-              "off"
-            ],
-            [
-              14400,
-              0.0,
-              6.0,
-              "off"
-            ],
-            [
-              900,
-              0.0,
-              6.25,
-              "off"
-            ]
-          ]
-        },
+        "thermal_limits_1": [
+          {
+            "duration": "Inf",
+            "max": 5.0,
+            "min": 0.0,
+            "report": "off"
+          },
+          {
+            "duration": 14400,
+            "max": 6.0,
+            "min": 0.0,
+            "report": "off"
+          },
+          {
+            "duration": 900,
+            "max": 6.25,
+            "min": 0.0,
+            "report": "off"
+          }
+        ],
+        "thermal_limits_2": [
+          {
+            "duration": "Inf",
+            "max": 5.0,
+            "min": 0.0,
+            "report": "off"
+          },
+          {
+            "duration": 14400,
+            "max": 6.0,
+            "min": 0.0,
+            "report": "off"
+          },
+          {
+            "duration": 900,
+            "max": 6.25,
+            "min": 0.0,
+            "report": "off"
+          }
+        ],
         "type": "ac_line"
       },
       "line_27": {
@@ -2877,62 +2397,46 @@
         },
         "source_id": "31",
         "subtype": "overhead",
-        "thermal_limits_1": {
-          "arguments": [
-            "duration",
-            "min",
-            "max",
-            "report"
-          ],
-          "values": [
-            [
-              "Inf",
-              0.0,
-              5.0,
-              "off"
-            ],
-            [
-              14400,
-              0.0,
-              6.0,
-              "off"
-            ],
-            [
-              900,
-              0.0,
-              6.25,
-              "off"
-            ]
-          ]
-        },
-        "thermal_limits_2": {
-          "arguments": [
-            "duration",
-            "min",
-            "max",
-            "report"
-          ],
-          "values": [
-            [
-              "Inf",
-              0.0,
-              5.0,
-              "off"
-            ],
-            [
-              14400,
-              0.0,
-              6.0,
-              "off"
-            ],
-            [
-              900,
-              0.0,
-              6.25,
-              "off"
-            ]
-          ]
-        },
+        "thermal_limits_1": [
+          {
+            "duration": "Inf",
+            "max": 5.0,
+            "min": 0.0,
+            "report": "off"
+          },
+          {
+            "duration": 14400,
+            "max": 6.0,
+            "min": 0.0,
+            "report": "off"
+          },
+          {
+            "duration": 900,
+            "max": 6.25,
+            "min": 0.0,
+            "report": "off"
+          }
+        ],
+        "thermal_limits_2": [
+          {
+            "duration": "Inf",
+            "max": 5.0,
+            "min": 0.0,
+            "report": "off"
+          },
+          {
+            "duration": 14400,
+            "max": 6.0,
+            "min": 0.0,
+            "report": "off"
+          },
+          {
+            "duration": 900,
+            "max": 6.25,
+            "min": 0.0,
+            "report": "off"
+          }
+        ],
         "type": "ac_line"
       },
       "line_28": {
@@ -2954,62 +2458,46 @@
         },
         "source_id": "32",
         "subtype": "overhead",
-        "thermal_limits_1": {
-          "arguments": [
-            "duration",
-            "min",
-            "max",
-            "report"
-          ],
-          "values": [
-            [
-              "Inf",
-              0.0,
-              5.0,
-              "off"
-            ],
-            [
-              14400,
-              0.0,
-              6.0,
-              "off"
-            ],
-            [
-              900,
-              0.0,
-              6.25,
-              "off"
-            ]
-          ]
-        },
-        "thermal_limits_2": {
-          "arguments": [
-            "duration",
-            "min",
-            "max",
-            "report"
-          ],
-          "values": [
-            [
-              "Inf",
-              0.0,
-              5.0,
-              "off"
-            ],
-            [
-              14400,
-              0.0,
-              6.0,
-              "off"
-            ],
-            [
-              900,
-              0.0,
-              6.25,
-              "off"
-            ]
-          ]
-        },
+        "thermal_limits_1": [
+          {
+            "duration": "Inf",
+            "max": 5.0,
+            "min": 0.0,
+            "report": "off"
+          },
+          {
+            "duration": 14400,
+            "max": 6.0,
+            "min": 0.0,
+            "report": "off"
+          },
+          {
+            "duration": 900,
+            "max": 6.25,
+            "min": 0.0,
+            "report": "off"
+          }
+        ],
+        "thermal_limits_2": [
+          {
+            "duration": "Inf",
+            "max": 5.0,
+            "min": 0.0,
+            "report": "off"
+          },
+          {
+            "duration": 14400,
+            "max": 6.0,
+            "min": 0.0,
+            "report": "off"
+          },
+          {
+            "duration": 900,
+            "max": 6.25,
+            "min": 0.0,
+            "report": "off"
+          }
+        ],
         "type": "ac_line"
       },
       "line_29": {
@@ -3031,62 +2519,46 @@
         },
         "source_id": "33",
         "subtype": "overhead",
-        "thermal_limits_1": {
-          "arguments": [
-            "duration",
-            "min",
-            "max",
-            "report"
-          ],
-          "values": [
-            [
-              "Inf",
-              0.0,
-              5.0,
-              "off"
-            ],
-            [
-              14400,
-              0.0,
-              6.0,
-              "off"
-            ],
-            [
-              900,
-              0.0,
-              6.25,
-              "off"
-            ]
-          ]
-        },
-        "thermal_limits_2": {
-          "arguments": [
-            "duration",
-            "min",
-            "max",
-            "report"
-          ],
-          "values": [
-            [
-              "Inf",
-              0.0,
-              5.0,
-              "off"
-            ],
-            [
-              14400,
-              0.0,
-              6.0,
-              "off"
-            ],
-            [
-              900,
-              0.0,
-              6.25,
-              "off"
-            ]
-          ]
-        },
+        "thermal_limits_1": [
+          {
+            "duration": "Inf",
+            "max": 5.0,
+            "min": 0.0,
+            "report": "off"
+          },
+          {
+            "duration": 14400,
+            "max": 6.0,
+            "min": 0.0,
+            "report": "off"
+          },
+          {
+            "duration": 900,
+            "max": 6.25,
+            "min": 0.0,
+            "report": "off"
+          }
+        ],
+        "thermal_limits_2": [
+          {
+            "duration": "Inf",
+            "max": 5.0,
+            "min": 0.0,
+            "report": "off"
+          },
+          {
+            "duration": 14400,
+            "max": 6.0,
+            "min": 0.0,
+            "report": "off"
+          },
+          {
+            "duration": 900,
+            "max": 6.25,
+            "min": 0.0,
+            "report": "off"
+          }
+        ],
         "type": "ac_line"
       },
       "line_30": {
@@ -3108,62 +2580,46 @@
         },
         "source_id": "34",
         "subtype": "overhead",
-        "thermal_limits_1": {
-          "arguments": [
-            "duration",
-            "min",
-            "max",
-            "report"
-          ],
-          "values": [
-            [
-              "Inf",
-              0.0,
-              5.0,
-              "off"
-            ],
-            [
-              14400,
-              0.0,
-              6.0,
-              "off"
-            ],
-            [
-              900,
-              0.0,
-              6.25,
-              "off"
-            ]
-          ]
-        },
-        "thermal_limits_2": {
-          "arguments": [
-            "duration",
-            "min",
-            "max",
-            "report"
-          ],
-          "values": [
-            [
-              "Inf",
-              0.0,
-              5.0,
-              "off"
-            ],
-            [
-              14400,
-              0.0,
-              6.0,
-              "off"
-            ],
-            [
-              900,
-              0.0,
-              6.25,
-              "off"
-            ]
-          ]
-        },
+        "thermal_limits_1": [
+          {
+            "duration": "Inf",
+            "max": 5.0,
+            "min": 0.0,
+            "report": "off"
+          },
+          {
+            "duration": 14400,
+            "max": 6.0,
+            "min": 0.0,
+            "report": "off"
+          },
+          {
+            "duration": 900,
+            "max": 6.25,
+            "min": 0.0,
+            "report": "off"
+          }
+        ],
+        "thermal_limits_2": [
+          {
+            "duration": "Inf",
+            "max": 5.0,
+            "min": 0.0,
+            "report": "off"
+          },
+          {
+            "duration": 14400,
+            "max": 6.0,
+            "min": 0.0,
+            "report": "off"
+          },
+          {
+            "duration": 900,
+            "max": 6.25,
+            "min": 0.0,
+            "report": "off"
+          }
+        ],
         "type": "ac_line"
       },
       "line_31": {
@@ -3185,62 +2641,46 @@
         },
         "source_id": "35",
         "subtype": "overhead",
-        "thermal_limits_1": {
-          "arguments": [
-            "duration",
-            "min",
-            "max",
-            "report"
-          ],
-          "values": [
-            [
-              "Inf",
-              0.0,
-              5.0,
-              "off"
-            ],
-            [
-              14400,
-              0.0,
-              6.0,
-              "off"
-            ],
-            [
-              900,
-              0.0,
-              6.25,
-              "off"
-            ]
-          ]
-        },
-        "thermal_limits_2": {
-          "arguments": [
-            "duration",
-            "min",
-            "max",
-            "report"
-          ],
-          "values": [
-            [
-              "Inf",
-              0.0,
-              5.0,
-              "off"
-            ],
-            [
-              14400,
-              0.0,
-              6.0,
-              "off"
-            ],
-            [
-              900,
-              0.0,
-              6.25,
-              "off"
-            ]
-          ]
-        },
+        "thermal_limits_1": [
+          {
+            "duration": "Inf",
+            "max": 5.0,
+            "min": 0.0,
+            "report": "off"
+          },
+          {
+            "duration": 14400,
+            "max": 6.0,
+            "min": 0.0,
+            "report": "off"
+          },
+          {
+            "duration": 900,
+            "max": 6.25,
+            "min": 0.0,
+            "report": "off"
+          }
+        ],
+        "thermal_limits_2": [
+          {
+            "duration": "Inf",
+            "max": 5.0,
+            "min": 0.0,
+            "report": "off"
+          },
+          {
+            "duration": 14400,
+            "max": 6.0,
+            "min": 0.0,
+            "report": "off"
+          },
+          {
+            "duration": 900,
+            "max": 6.25,
+            "min": 0.0,
+            "report": "off"
+          }
+        ],
         "type": "ac_line"
       },
       "line_32": {
@@ -3262,62 +2702,46 @@
         },
         "source_id": "36",
         "subtype": "overhead",
-        "thermal_limits_1": {
-          "arguments": [
-            "duration",
-            "min",
-            "max",
-            "report"
-          ],
-          "values": [
-            [
-              "Inf",
-              0.0,
-              5.0,
-              "off"
-            ],
-            [
-              14400,
-              0.0,
-              6.0,
-              "off"
-            ],
-            [
-              900,
-              0.0,
-              6.25,
-              "off"
-            ]
-          ]
-        },
-        "thermal_limits_2": {
-          "arguments": [
-            "duration",
-            "min",
-            "max",
-            "report"
-          ],
-          "values": [
-            [
-              "Inf",
-              0.0,
-              5.0,
-              "off"
-            ],
-            [
-              14400,
-              0.0,
-              6.0,
-              "off"
-            ],
-            [
-              900,
-              0.0,
-              6.25,
-              "off"
-            ]
-          ]
-        },
+        "thermal_limits_1": [
+          {
+            "duration": "Inf",
+            "max": 5.0,
+            "min": 0.0,
+            "report": "off"
+          },
+          {
+            "duration": 14400,
+            "max": 6.0,
+            "min": 0.0,
+            "report": "off"
+          },
+          {
+            "duration": 900,
+            "max": 6.25,
+            "min": 0.0,
+            "report": "off"
+          }
+        ],
+        "thermal_limits_2": [
+          {
+            "duration": "Inf",
+            "max": 5.0,
+            "min": 0.0,
+            "report": "off"
+          },
+          {
+            "duration": 14400,
+            "max": 6.0,
+            "min": 0.0,
+            "report": "off"
+          },
+          {
+            "duration": 900,
+            "max": 6.25,
+            "min": 0.0,
+            "report": "off"
+          }
+        ],
         "type": "ac_line"
       },
       "line_33": {
@@ -3339,62 +2763,46 @@
         },
         "source_id": "37",
         "subtype": "overhead",
-        "thermal_limits_1": {
-          "arguments": [
-            "duration",
-            "min",
-            "max",
-            "report"
-          ],
-          "values": [
-            [
-              "Inf",
-              0.0,
-              5.0,
-              "off"
-            ],
-            [
-              14400,
-              0.0,
-              6.0,
-              "off"
-            ],
-            [
-              900,
-              0.0,
-              6.25,
-              "off"
-            ]
-          ]
-        },
-        "thermal_limits_2": {
-          "arguments": [
-            "duration",
-            "min",
-            "max",
-            "report"
-          ],
-          "values": [
-            [
-              "Inf",
-              0.0,
-              5.0,
-              "off"
-            ],
-            [
-              14400,
-              0.0,
-              6.0,
-              "off"
-            ],
-            [
-              900,
-              0.0,
-              6.25,
-              "off"
-            ]
-          ]
-        },
+        "thermal_limits_1": [
+          {
+            "duration": "Inf",
+            "max": 5.0,
+            "min": 0.0,
+            "report": "off"
+          },
+          {
+            "duration": 14400,
+            "max": 6.0,
+            "min": 0.0,
+            "report": "off"
+          },
+          {
+            "duration": 900,
+            "max": 6.25,
+            "min": 0.0,
+            "report": "off"
+          }
+        ],
+        "thermal_limits_2": [
+          {
+            "duration": "Inf",
+            "max": 5.0,
+            "min": 0.0,
+            "report": "off"
+          },
+          {
+            "duration": 14400,
+            "max": 6.0,
+            "min": 0.0,
+            "report": "off"
+          },
+          {
+            "duration": 900,
+            "max": 6.25,
+            "min": 0.0,
+            "report": "off"
+          }
+        ],
         "type": "ac_line"
       },
       "substation_01": {
@@ -3898,18 +3306,11 @@
         "substation_components": {
           "transformer_01": {
             "id": "transformer_01",
-            "link_1": "voltage_switch_id_122",
-            "link_2": "voltage_switch_id_123",
+            "link_1": "voltage_switch_id_118",
+            "link_2": "voltage_switch_id_119",
             "rates": 3,
             "source_id": "6",
-            "subtype": "PI_model",
             "tap_changer": {
-              "angle_shift": {
-                "var": {
-                  "lb": 0.0,
-                  "ub": 0.0
-                }
-              },
               "impedance": {
                 "reactance": {
                   "var": {
@@ -3944,93 +3345,78 @@
                   }
                 }
               },
-              "steps": {
-                "arguments": [
-                  "position",
-                  "impedance",
-                  "shunt",
-                  "tap_ratio",
-                  "angle_shift"
-                ],
-                "values": [
-                  [
-                    0,
-                    {
-                      "reactance": 0.0839,
-                      "resistance": 0.0023
-                    },
-                    {
-                      "conductance": 0.0,
-                      "susceptance": 0.0
-                    },
-                    1.03,
-                    0.0
-                  ]
-                ]
-              },
-              "tap_ratio": {
-                "var": {
-                  "lb": 1.03,
-                  "ub": 1.03
+              "steps": [
+                {
+                  "impedance": {
+                    "reactance": 0.0839,
+                    "resistance": 0.0023
+                  },
+                  "position": 0,
+                  "shunt": {
+                    "conductance": 0.0,
+                    "susceptance": 0.0
+                  },
+                  "transform": {
+                    "angle_shift": 0.0,
+                    "tap_ratio": 1.03
+                  }
+                }
+              ],
+              "transform": {
+                "angle_shift": {
+                  "var": {
+                    "lb": 0.0,
+                    "ub": 0.0
+                  }
+                },
+                "tap_ratio": {
+                  "var": {
+                    "lb": 1.03,
+                    "ub": 1.03
+                  }
                 }
               }
             },
-            "thermal_limits_1": {
-              "arguments": [
-                "duration",
-                "min",
-                "max",
-                "report"
-              ],
-              "values": [
-                [
-                  "Inf",
-                  0.0,
-                  4.0,
-                  "off"
-                ],
-                [
-                  14400,
-                  0.0,
-                  5.1,
-                  "off"
-                ],
-                [
-                  900,
-                  0.0,
-                  6.0,
-                  "off"
-                ]
-              ]
-            },
-            "thermal_limits_2": {
-              "arguments": [
-                "duration",
-                "min",
-                "max",
-                "report"
-              ],
-              "values": [
-                [
-                  "Inf",
-                  0.0,
-                  4.0,
-                  "off"
-                ],
-                [
-                  14400,
-                  0.0,
-                  5.1,
-                  "off"
-                ],
-                [
-                  900,
-                  0.0,
-                  6.0,
-                  "off"
-                ]
-              ]
-            },
+            "thermal_limits_1": [
+              {
+                "duration": "Inf",
+                "max": 4.0,
+                "min": 0.0,
+                "report": "off"
+              },
+              {
+                "duration": 14400,
+                "max": 5.1,
+                "min": 0.0,
+                "report": "off"
+              },
+              {
+                "duration": 900,
+                "max": 6.0,
+                "min": 0.0,
+                "report": "off"
+              }
+            ],
+            "thermal_limits_2": [
+              {
+                "duration": "Inf",
+                "max": 4.0,
+                "min": 0.0,
+                "report": "off"
+              },
+              {
+                "duration": 14400,
+                "max": 5.1,
+                "min": 0.0,
+                "report": "off"
+              },
+              {
+                "duration": 900,
+                "max": 6.0,
+                "min": 0.0,
+                "report": "off"
+              }
+            ],
             "type": "two_winding_transformer"
           },
           "voltage_level_03": {
@@ -4113,10 +3499,10 @@
                 "subtype": "breaker",
                 "type": "switch"
               },
-              "switch_122": {
-                "id": "switch_122",
+              "switch_118": {
+                "id": "switch_118",
                 "link_1": "voltage_bus_id_03",
-                "link_2": "voltage_switch_id_122",
+                "link_2": "voltage_switch_id_118",
                 "status": {
                   "var": [
                     "off",
@@ -4132,7 +3518,7 @@
               "voltage_switch_id_003",
               "voltage_switch_id_055",
               "voltage_switch_id_062",
-              "voltage_switch_id_122"
+              "voltage_switch_id_118"
             ]
           },
           "voltage_level_24": {
@@ -4179,10 +3565,10 @@
                 "subtype": "breaker",
                 "type": "switch"
               },
-              "switch_123": {
-                "id": "switch_123",
+              "switch_119": {
+                "id": "switch_119",
                 "link_1": "voltage_bus_id_24",
-                "link_2": "voltage_switch_id_123",
+                "link_2": "voltage_switch_id_119",
                 "status": {
                   "var": [
                     "off",
@@ -4196,7 +3582,7 @@
             "voltage_points": [
               "voltage_bus_id_24",
               "voltage_switch_id_095",
-              "voltage_switch_id_123"
+              "voltage_switch_id_119"
             ]
           }
         },
@@ -4806,18 +4192,11 @@
         "substation_components": {
           "transformer_02": {
             "id": "transformer_02",
-            "link_1": "voltage_switch_id_118",
-            "link_2": "voltage_switch_id_119",
+            "link_1": "voltage_switch_id_120",
+            "link_2": "voltage_switch_id_121",
             "rates": 3,
             "source_id": "13",
-            "subtype": "PI_model",
             "tap_changer": {
-              "angle_shift": {
-                "var": {
-                  "lb": 0.0,
-                  "ub": 0.0
-                }
-              },
               "impedance": {
                 "reactance": {
                   "var": {
@@ -4852,109 +4231,87 @@
                   }
                 }
               },
-              "steps": {
-                "arguments": [
-                  "position",
-                  "impedance",
-                  "shunt",
-                  "tap_ratio",
-                  "angle_shift"
-                ],
-                "values": [
-                  [
-                    0,
-                    {
-                      "reactance": 0.0839,
-                      "resistance": 0.0023
-                    },
-                    {
-                      "conductance": 0.0,
-                      "susceptance": 0.0
-                    },
-                    1.03,
-                    0.0
-                  ]
-                ]
-              },
-              "tap_ratio": {
-                "var": {
-                  "lb": 1.03,
-                  "ub": 1.03
+              "steps": [
+                {
+                  "impedance": {
+                    "reactance": 0.0839,
+                    "resistance": 0.0023
+                  },
+                  "position": 0,
+                  "shunt": {
+                    "conductance": 0.0,
+                    "susceptance": 0.0
+                  },
+                  "transform": {
+                    "angle_shift": 0.0,
+                    "tap_ratio": 1.03
+                  }
+                }
+              ],
+              "transform": {
+                "angle_shift": {
+                  "var": {
+                    "lb": 0.0,
+                    "ub": 0.0
+                  }
+                },
+                "tap_ratio": {
+                  "var": {
+                    "lb": 1.03,
+                    "ub": 1.03
+                  }
                 }
               }
             },
-            "thermal_limits_1": {
-              "arguments": [
-                "duration",
-                "min",
-                "max",
-                "report"
-              ],
-              "values": [
-                [
-                  "Inf",
-                  0.0,
-                  4.0,
-                  "off"
-                ],
-                [
-                  14400,
-                  0.0,
-                  5.1,
-                  "off"
-                ],
-                [
-                  900,
-                  0.0,
-                  6.0,
-                  "off"
-                ]
-              ]
-            },
-            "thermal_limits_2": {
-              "arguments": [
-                "duration",
-                "min",
-                "max",
-                "report"
-              ],
-              "values": [
-                [
-                  "Inf",
-                  0.0,
-                  4.0,
-                  "off"
-                ],
-                [
-                  14400,
-                  0.0,
-                  5.1,
-                  "off"
-                ],
-                [
-                  900,
-                  0.0,
-                  6.0,
-                  "off"
-                ]
-              ]
-            },
+            "thermal_limits_1": [
+              {
+                "duration": "Inf",
+                "max": 4.0,
+                "min": 0.0,
+                "report": "off"
+              },
+              {
+                "duration": 14400,
+                "max": 5.1,
+                "min": 0.0,
+                "report": "off"
+              },
+              {
+                "duration": 900,
+                "max": 6.0,
+                "min": 0.0,
+                "report": "off"
+              }
+            ],
+            "thermal_limits_2": [
+              {
+                "duration": "Inf",
+                "max": 4.0,
+                "min": 0.0,
+                "report": "off"
+              },
+              {
+                "duration": 14400,
+                "max": 5.1,
+                "min": 0.0,
+                "report": "off"
+              },
+              {
+                "duration": 900,
+                "max": 6.0,
+                "min": 0.0,
+                "report": "off"
+              }
+            ],
             "type": "two_winding_transformer"
           },
           "transformer_03": {
             "id": "transformer_03",
-            "link_1": "voltage_switch_id_120",
-            "link_2": "voltage_switch_id_121",
+            "link_1": "voltage_switch_id_122",
+            "link_2": "voltage_switch_id_123",
             "rates": 3,
             "source_id": "14",
-            "subtype": "PI_model",
             "tap_changer": {
-              "angle_shift": {
-                "var": {
-                  "lb": 0.0,
-                  "ub": 0.0
-                }
-              },
               "impedance": {
                 "reactance": {
                   "var": {
@@ -4989,109 +4346,87 @@
                   }
                 }
               },
-              "steps": {
-                "arguments": [
-                  "position",
-                  "impedance",
-                  "shunt",
-                  "tap_ratio",
-                  "angle_shift"
-                ],
-                "values": [
-                  [
-                    0,
-                    {
-                      "reactance": 0.0839,
-                      "resistance": 0.0023
-                    },
-                    {
-                      "conductance": 0.0,
-                      "susceptance": 0.0
-                    },
-                    1.03,
-                    0.0
-                  ]
-                ]
-              },
-              "tap_ratio": {
-                "var": {
-                  "lb": 1.03,
-                  "ub": 1.03
+              "steps": [
+                {
+                  "impedance": {
+                    "reactance": 0.0839,
+                    "resistance": 0.0023
+                  },
+                  "position": 0,
+                  "shunt": {
+                    "conductance": 0.0,
+                    "susceptance": 0.0
+                  },
+                  "transform": {
+                    "angle_shift": 0.0,
+                    "tap_ratio": 1.03
+                  }
+                }
+              ],
+              "transform": {
+                "angle_shift": {
+                  "var": {
+                    "lb": 0.0,
+                    "ub": 0.0
+                  }
+                },
+                "tap_ratio": {
+                  "var": {
+                    "lb": 1.03,
+                    "ub": 1.03
+                  }
                 }
               }
             },
-            "thermal_limits_1": {
-              "arguments": [
-                "duration",
-                "min",
-                "max",
-                "report"
-              ],
-              "values": [
-                [
-                  "Inf",
-                  0.0,
-                  4.0,
-                  "off"
-                ],
-                [
-                  14400,
-                  0.0,
-                  5.1,
-                  "off"
-                ],
-                [
-                  900,
-                  0.0,
-                  6.0,
-                  "off"
-                ]
-              ]
-            },
-            "thermal_limits_2": {
-              "arguments": [
-                "duration",
-                "min",
-                "max",
-                "report"
-              ],
-              "values": [
-                [
-                  "Inf",
-                  0.0,
-                  4.0,
-                  "off"
-                ],
-                [
-                  14400,
-                  0.0,
-                  5.1,
-                  "off"
-                ],
-                [
-                  900,
-                  0.0,
-                  6.0,
-                  "off"
-                ]
-              ]
-            },
+            "thermal_limits_1": [
+              {
+                "duration": "Inf",
+                "max": 4.0,
+                "min": 0.0,
+                "report": "off"
+              },
+              {
+                "duration": 14400,
+                "max": 5.1,
+                "min": 0.0,
+                "report": "off"
+              },
+              {
+                "duration": 900,
+                "max": 6.0,
+                "min": 0.0,
+                "report": "off"
+              }
+            ],
+            "thermal_limits_2": [
+              {
+                "duration": "Inf",
+                "max": 4.0,
+                "min": 0.0,
+                "report": "off"
+              },
+              {
+                "duration": 14400,
+                "max": 5.1,
+                "min": 0.0,
+                "report": "off"
+              },
+              {
+                "duration": 900,
+                "max": 6.0,
+                "min": 0.0,
+                "report": "off"
+              }
+            ],
             "type": "two_winding_transformer"
           },
           "transformer_04": {
             "id": "transformer_04",
-            "link_1": "voltage_switch_id_126",
-            "link_2": "voltage_switch_id_127",
+            "link_1": "voltage_switch_id_124",
+            "link_2": "voltage_switch_id_125",
             "rates": 3,
             "source_id": "15",
-            "subtype": "PI_model",
             "tap_changer": {
-              "angle_shift": {
-                "var": {
-                  "lb": 0.0,
-                  "ub": 0.0
-                }
-              },
               "impedance": {
                 "reactance": {
                   "var": {
@@ -5126,109 +4461,87 @@
                   }
                 }
               },
-              "steps": {
-                "arguments": [
-                  "position",
-                  "impedance",
-                  "shunt",
-                  "tap_ratio",
-                  "angle_shift"
-                ],
-                "values": [
-                  [
-                    0,
-                    {
-                      "reactance": 0.0839,
-                      "resistance": 0.0023
-                    },
-                    {
-                      "conductance": 0.0,
-                      "susceptance": 0.0
-                    },
-                    1.02,
-                    0.0
-                  ]
-                ]
-              },
-              "tap_ratio": {
-                "var": {
-                  "lb": 1.02,
-                  "ub": 1.02
+              "steps": [
+                {
+                  "impedance": {
+                    "reactance": 0.0839,
+                    "resistance": 0.0023
+                  },
+                  "position": 0,
+                  "shunt": {
+                    "conductance": 0.0,
+                    "susceptance": 0.0
+                  },
+                  "transform": {
+                    "angle_shift": 0.0,
+                    "tap_ratio": 1.02
+                  }
+                }
+              ],
+              "transform": {
+                "angle_shift": {
+                  "var": {
+                    "lb": 0.0,
+                    "ub": 0.0
+                  }
+                },
+                "tap_ratio": {
+                  "var": {
+                    "lb": 1.02,
+                    "ub": 1.02
+                  }
                 }
               }
             },
-            "thermal_limits_1": {
-              "arguments": [
-                "duration",
-                "min",
-                "max",
-                "report"
-              ],
-              "values": [
-                [
-                  "Inf",
-                  0.0,
-                  4.0,
-                  "off"
-                ],
-                [
-                  14400,
-                  0.0,
-                  5.1,
-                  "off"
-                ],
-                [
-                  900,
-                  0.0,
-                  6.0,
-                  "off"
-                ]
-              ]
-            },
-            "thermal_limits_2": {
-              "arguments": [
-                "duration",
-                "min",
-                "max",
-                "report"
-              ],
-              "values": [
-                [
-                  "Inf",
-                  0.0,
-                  4.0,
-                  "off"
-                ],
-                [
-                  14400,
-                  0.0,
-                  5.1,
-                  "off"
-                ],
-                [
-                  900,
-                  0.0,
-                  6.0,
-                  "off"
-                ]
-              ]
-            },
+            "thermal_limits_1": [
+              {
+                "duration": "Inf",
+                "max": 4.0,
+                "min": 0.0,
+                "report": "off"
+              },
+              {
+                "duration": 14400,
+                "max": 5.1,
+                "min": 0.0,
+                "report": "off"
+              },
+              {
+                "duration": 900,
+                "max": 6.0,
+                "min": 0.0,
+                "report": "off"
+              }
+            ],
+            "thermal_limits_2": [
+              {
+                "duration": "Inf",
+                "max": 4.0,
+                "min": 0.0,
+                "report": "off"
+              },
+              {
+                "duration": 14400,
+                "max": 5.1,
+                "min": 0.0,
+                "report": "off"
+              },
+              {
+                "duration": 900,
+                "max": 6.0,
+                "min": 0.0,
+                "report": "off"
+              }
+            ],
             "type": "two_winding_transformer"
           },
           "transformer_05": {
             "id": "transformer_05",
-            "link_1": "voltage_switch_id_124",
-            "link_2": "voltage_switch_id_125",
+            "link_1": "voltage_switch_id_126",
+            "link_2": "voltage_switch_id_127",
             "rates": 3,
             "source_id": "16",
-            "subtype": "PI_model",
             "tap_changer": {
-              "angle_shift": {
-                "var": {
-                  "lb": 0.0,
-                  "ub": 0.0
-                }
-              },
               "impedance": {
                 "reactance": {
                   "var": {
@@ -5263,93 +4576,78 @@
                   }
                 }
               },
-              "steps": {
-                "arguments": [
-                  "position",
-                  "impedance",
-                  "shunt",
-                  "tap_ratio",
-                  "angle_shift"
-                ],
-                "values": [
-                  [
-                    0,
-                    {
-                      "reactance": 0.0839,
-                      "resistance": 0.0023
-                    },
-                    {
-                      "conductance": 0.0,
-                      "susceptance": 0.0
-                    },
-                    1.02,
-                    0.0
-                  ]
-                ]
-              },
-              "tap_ratio": {
-                "var": {
-                  "lb": 1.02,
-                  "ub": 1.02
+              "steps": [
+                {
+                  "impedance": {
+                    "reactance": 0.0839,
+                    "resistance": 0.0023
+                  },
+                  "position": 0,
+                  "shunt": {
+                    "conductance": 0.0,
+                    "susceptance": 0.0
+                  },
+                  "transform": {
+                    "angle_shift": 0.0,
+                    "tap_ratio": 1.02
+                  }
+                }
+              ],
+              "transform": {
+                "angle_shift": {
+                  "var": {
+                    "lb": 0.0,
+                    "ub": 0.0
+                  }
+                },
+                "tap_ratio": {
+                  "var": {
+                    "lb": 1.02,
+                    "ub": 1.02
+                  }
                 }
               }
             },
-            "thermal_limits_1": {
-              "arguments": [
-                "duration",
-                "min",
-                "max",
-                "report"
-              ],
-              "values": [
-                [
-                  "Inf",
-                  0.0,
-                  4.0,
-                  "off"
-                ],
-                [
-                  14400,
-                  0.0,
-                  5.1,
-                  "off"
-                ],
-                [
-                  900,
-                  0.0,
-                  6.0,
-                  "off"
-                ]
-              ]
-            },
-            "thermal_limits_2": {
-              "arguments": [
-                "duration",
-                "min",
-                "max",
-                "report"
-              ],
-              "values": [
-                [
-                  "Inf",
-                  0.0,
-                  4.0,
-                  "off"
-                ],
-                [
-                  14400,
-                  0.0,
-                  5.1,
-                  "off"
-                ],
-                [
-                  900,
-                  0.0,
-                  6.0,
-                  "off"
-                ]
-              ]
-            },
+            "thermal_limits_1": [
+              {
+                "duration": "Inf",
+                "max": 4.0,
+                "min": 0.0,
+                "report": "off"
+              },
+              {
+                "duration": 14400,
+                "max": 5.1,
+                "min": 0.0,
+                "report": "off"
+              },
+              {
+                "duration": 900,
+                "max": 6.0,
+                "min": 0.0,
+                "report": "off"
+              }
+            ],
+            "thermal_limits_2": [
+              {
+                "duration": "Inf",
+                "max": 4.0,
+                "min": 0.0,
+                "report": "off"
+              },
+              {
+                "duration": 14400,
+                "max": 5.1,
+                "min": 0.0,
+                "report": "off"
+              },
+              {
+                "duration": 900,
+                "max": 6.0,
+                "min": 0.0,
+                "report": "off"
+              }
+            ],
             "type": "two_winding_transformer"
           },
           "voltage_level_09": {
@@ -5445,10 +4743,10 @@
                 "subtype": "breaker",
                 "type": "switch"
               },
-              "switch_118": {
-                "id": "switch_118",
+              "switch_120": {
+                "id": "switch_120",
                 "link_1": "voltage_bus_id_09",
-                "link_2": "voltage_switch_id_118",
+                "link_2": "voltage_switch_id_120",
                 "status": {
                   "var": [
                     "off",
@@ -5458,10 +4756,10 @@
                 "subtype": "breaker",
                 "type": "switch"
               },
-              "switch_120": {
-                "id": "switch_120",
+              "switch_122": {
+                "id": "switch_122",
                 "link_1": "voltage_bus_id_09",
-                "link_2": "voltage_switch_id_120",
+                "link_2": "voltage_switch_id_122",
                 "status": {
                   "var": [
                     "off",
@@ -5478,8 +4776,8 @@
               "voltage_switch_id_063",
               "voltage_switch_id_065",
               "voltage_switch_id_073",
-              "voltage_switch_id_118",
-              "voltage_switch_id_120"
+              "voltage_switch_id_120",
+              "voltage_switch_id_122"
             ]
           },
           "voltage_level_10": {
@@ -5669,10 +4967,10 @@
                 "subtype": "breaker",
                 "type": "switch"
               },
-              "switch_119": {
-                "id": "switch_119",
+              "switch_121": {
+                "id": "switch_121",
                 "link_1": "voltage_bus_id_11",
-                "link_2": "voltage_switch_id_119",
+                "link_2": "voltage_switch_id_121",
                 "status": {
                   "var": [
                     "off",
@@ -5682,10 +4980,10 @@
                 "subtype": "breaker",
                 "type": "switch"
               },
-              "switch_127": {
-                "id": "switch_127",
+              "switch_125": {
+                "id": "switch_125",
                 "link_1": "voltage_bus_id_11",
-                "link_2": "voltage_switch_id_127",
+                "link_2": "voltage_switch_id_125",
                 "status": {
                   "var": [
                     "off",
@@ -5700,8 +4998,8 @@
               "voltage_bus_id_11",
               "voltage_switch_id_076",
               "voltage_switch_id_078",
-              "voltage_switch_id_119",
-              "voltage_switch_id_127"
+              "voltage_switch_id_121",
+              "voltage_switch_id_125"
             ]
           },
           "voltage_level_12": {
@@ -5761,10 +5059,10 @@
                 "subtype": "breaker",
                 "type": "switch"
               },
-              "switch_121": {
-                "id": "switch_121",
+              "switch_123": {
+                "id": "switch_123",
                 "link_1": "voltage_bus_id_12",
-                "link_2": "voltage_switch_id_121",
+                "link_2": "voltage_switch_id_123",
                 "status": {
                   "var": [
                     "off",
@@ -5774,10 +5072,10 @@
                 "subtype": "breaker",
                 "type": "switch"
               },
-              "switch_125": {
-                "id": "switch_125",
+              "switch_127": {
+                "id": "switch_127",
                 "link_1": "voltage_bus_id_12",
-                "link_2": "voltage_switch_id_125",
+                "link_2": "voltage_switch_id_127",
                 "status": {
                   "var": [
                     "off",
@@ -5792,8 +5090,8 @@
               "voltage_bus_id_12",
               "voltage_switch_id_080",
               "voltage_switch_id_082",
-              "voltage_switch_id_121",
-              "voltage_switch_id_125"
+              "voltage_switch_id_123",
+              "voltage_switch_id_127"
             ]
           }
         },
