@@ -44,6 +44,11 @@ Changelog
 - nothing
 
 
+**v0.2.1**
+
+- Add manifest for schema files
+
+
 **v0.2.0**
 
 - Update to GRG v4.1
