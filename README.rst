@@ -43,6 +43,10 @@ Changelog
 
 - nothing
 
+**v0.2.2**
+
+- Update manifest for schema files
+
 
 **v0.2.1**
 
