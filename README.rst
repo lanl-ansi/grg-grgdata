@@ -43,6 +43,12 @@ Changelog
 
 - nothing
 
+
+**v0.2.3**
+
+- Added include_package_data to setup function 
+
+
 **v0.2.2**
 
 - Update manifest for schema files
