@@ -41,6 +41,11 @@ Changelog
 
 **staged**
 
+- nothing
+
+
+**v0.2.4**
+
 - Drop support for python 2.7 and 3.4
 
 
